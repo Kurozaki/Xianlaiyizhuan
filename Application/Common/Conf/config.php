@@ -1,4 +1,5 @@
 <?php
 return array(
-	//'配置项'=>'配置值'
+    'AVATAR_STORE_ROOT' => './Public/'
+    //'配置项'=>'配置值'
 );
