@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: ThinkPad
+ * User: Kurozaki
  * Date: 2017/3/9
  * Time: 12:08
  */
@@ -31,7 +31,7 @@ class UserController extends BaseController
             }
             $regData[$key] = $val;
         }
-        $add = UserModel::add_user($regFields);
+        $add = UserModel::add_user($regData);
         if ($add) {
             $this->ajaxReturn(qc_json_success('Register success'));
         } else {
@@ -62,7 +62,7 @@ class UserController extends BaseController
         $this->req_user_login();
 
         $userId = session_id('user_id');
-        $updateFields = array('tel', 'sex', 'addr');
+        $updateFields = array('nickname', 'tel', 'sex', 'addr');
         $updateData = null;
 
         foreach ($updateFields as $key) {
@@ -144,8 +144,9 @@ class UserController extends BaseController
         $this->req_user_login();
         $username = I('srh_name');
         $userModel = new UserModel();
+
         if (is_invalid_param($username)) {
-            $userId = session_id('user_id');
+            $userId = session('user_id');
             $res = $userModel->find($userId);
         } else {
             $res = $userModel->where('username = %s', $username)->find();

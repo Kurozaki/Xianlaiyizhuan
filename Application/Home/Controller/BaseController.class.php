@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: ThinkPad
+ * User: Kurozaki
  * Date: 2017/3/9
  * Time: 12:28
  */
@@ -16,7 +16,7 @@ class BaseController extends Controller
     protected function req_user_login()
     {
         if (session('?user_id') && session('?username')) {
-            return true;
+            return session('user_id');
         } else {
             $this->ajaxReturn(qc_json_error('Please login first'));
             return false;

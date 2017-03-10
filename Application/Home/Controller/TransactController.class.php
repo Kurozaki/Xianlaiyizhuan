@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: ThinkPad
+ * User: Kurozaki
  * Date: 2017/3/9
  * Time: 19:42
  */
@@ -105,7 +105,7 @@ class TransactController extends BaseController
         $this->req_user_login();
 
         $queryCount = 15;
-
+//        $queryCount = I('post.query_count');
         $start = intval(I('offset'));
         $userId = session('user_id');
 
@@ -124,7 +124,6 @@ class TransactController extends BaseController
         $likec = intval(I('post.likec')) > 0 ? 1 : -1;
         $trModel = new TransactModel();
         $res = $trModel->where("id = $trId and seller_id = $userId")->save(array('likec' => $likec));
-
         $res ? $this->ajaxReturn(qc_json_success('Operate success')) : $this->ajaxReturn('Error', 40002);
     }
 }
