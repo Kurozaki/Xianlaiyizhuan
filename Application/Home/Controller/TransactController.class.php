@@ -2,128 +2,115 @@
 /**
  * Created by PhpStorm.
  * User: Kurozaki
- * Date: 2017/3/9
- * Time: 19:42
+ * Date: 2017/3/17
+ * Time: 21:57
  */
 
 namespace Home\Controller;
 
 
+use Common\Controller\BaseController;
 use Common\Model\TransactModel;
-use Think\Upload;
 
 class TransactController extends BaseController
 {
-    public function create_transact_info()
+    public function createTransaction()
     {
-        $this->req_user_login();
+        $userId = $this->reqLogin();
 
-        $userId = session('user_id');
+        $tInfo = $this->reqPost(array('intro', 'type', 'price'));
 
-        $cFields = array('goods_name', 'goods_intro', 'price', 'type');
-        $tInfo = array('seller_id' => $userId);
-
-        //get post params
-        foreach ($cFields as $key) {
-            $val = I('post.' . $key);
-            if (is_invalid_param($val)) {
-                $this->ajaxReturn(qc_json_error('Need param: ' . $key));
-            }
-            $tInfo[$key] = $val;
-        }
-
+        //set seller id and create time
+        $tInfo['seller_id'] = $userId;
         $tInfo['ctime'] = time();
+        $tInfo['sell'] = 0;
 
-        //get upload pics
-        $saveRoot = C('AVATAR_STORE_ROOT');
-        $saveRoot = $saveRoot . 'UserAvatar/';
-        $uploadFile = new Upload(array('rootPath' => $saveRoot));
-        $info = $uploadFile->upload();
-        $counter = 0;
-
-        $imgsPath = '';
-        foreach ($info as $img) {
-            $path = '[' . $saveRoot . $img['savepath'] . $img['savename'] . ']';
-            $imgsPath .= $path;
-            if (++$counter > 3) {
-                break;
-            }
+        $fPaths = '';
+        $fInfo = $this->uploadPictures('transact_intro', true);
+        $fArr = $fInfo['success_array'];
+        foreach ($fArr as $f) {
+            $fPaths .= $f['url'] . '|';
         }
-        $tInfo['pics'] = $imgsPath;
+        $fPaths = substr($fPaths, 0, strlen($fPaths) - 1);
+        $tInfo['pics'] = $fPaths;
 
         $model = new TransactModel();
-        $create = $model->add($tInfo);
-        if ($create) {
-            $this->ajaxReturn(qc_json_success('Create success!'));
+        $add = $model->add($tInfo);
+        if ($add) {
+            $tInfo['id'] = $add;
+            $this->ajaxReturn(qc_json_success($tInfo));
         } else {
-            $this->ajaxReturn(qc_json_error('Create failed!', 40002));
+            $this->ajaxReturn(qc_json_error('Failed to create.'));
         }
     }
 
-    public function modify_transact_info()
+    public function deleteTransaction()
     {
-        $this->req_user_login();
-        $userId = session('user_id');
-        $traId = I('t_id');
-
-        $mFields = array('goods_name', 'goods_intro', 'type', 'price');
-        $mData = null;
-
-        foreach ($mFields as $key) {
-            $val = I('post.' . $key);
-            if (!is_invalid_param($val)) {
-                $mData[$key] = $val;
-                if ('price' == $key && floatval($val) < 0) {
-                    $this->ajaxReturn(qc_json_error('Illegal param!'));
-                }
-            }
-        }
-        if (is_null($mData)) {
-            $this->ajaxReturn('No new info.', 40002);
+        $userId = $this->reqLogin();
+        $del_id = I('post.del_id', 0);
+        if (0 == $del_id) {
+            $this->ajaxReturn(qc_json_error('Please post the delete id'));
         }
 
-        $traModel = new TransactModel();
-        $save = $traModel->where("id = %d and seller_id = $userId", $traId)->save($mData);
-        $save ? $this->ajaxReturn(qc_json_success('Update success.')) : $this->ajaxReturn(qc_json_error('Failed to
-        update.', 40002));
+        $model = new TransactModel();
+        $delete = $model->where("id = %d and seller_id = %d", $del_id, $userId)->delete();
+
+        $delete ? $this->ajaxReturn(qc_json_success('Delete success')) :
+            $this->ajaxReturn(qc_json_error('You have no permission to delete it'));
     }
 
-    public function delete_transact_info()
+    public function updateTransactionInfo()
     {
-        $this->req_user_login();
-
-        $del_id = intval(I('del_id'));
-        $userId = session('user_id');
-        $trModel = new TransactModel();
-        $delRes = $trModel->where("id = $del_id and seller_id = $userId")->delete();
-        $delRes ? $this->ajaxReturn(qc_json_success('Delete success')) : $this->ajaxReturn(qc_json_error('Deleted
-        transact does not exist'));
+        $userId = $this->reqLogin();
+        $update_id = I('post.update_id');
+        $data = $this->reqPost(null, array('intro', 'type', 'price'));
+        if (count($data, COUNT_NORMAL) == 0) {
+            $this->ajaxReturn(qc_json_error('No data update'));
+        }
+        $model = new TransactModel();
+        $update = $model->where("id = %d and seller_id = %d", $update_id, $userId);
+        if ($update) {
+            $this->ajaxReturn(qc_json_success('Update success'));
+        } else {
+            $this->ajaxReturn(qc_json_error('Failed to update'));
+        }
     }
 
-    public function get_transact_list()
+    public function editTransactionIntroPics()
     {
-        $this->req_user_login();
+        $userId = $this->reqLogin();
+        $postData = $this->reqPost(array('update_id', 'op_str'));
+        $fInfo = $this->uploadPictures('transact_intro', true);
+        $fArr = $fInfo['success_array'];
 
-        $queryCount = 15;
-//        $queryCount = I('post.query_count');
-        $start = intval(I('offset'));
-        $userId = session('user_id');
+        $fPaths = array();
+        foreach ($fArr as $f) {
+            array_push($fPaths, $f['url']);
+        }
+        $model = new TransactModel();
+        $update = $model->editTransactPics($userId, $postData['update_id'], $postData['op_str'], $fPaths);
 
-        $trModel = new TransactModel();
-        $data = $trModel->where("seller_id = $userId")->limit($start, $queryCount)->select();
-        $this->ajaxReturn(qc_json_success('Success', array('end' => $start + $queryCount, 'list' => $data)));
+        if ($update) {
+            $this->ajaxReturn(qc_json_success($update));
+        } else
+            $this->ajaxReturn(qc_json_error('Failed to update'));
     }
 
-    public function give_transact_like()
+    public function getMyTransactionList()
     {
-        $this->req_user_login();
+        $userId = $this->reqLogin();
+        $model = new TransactModel();
+        $result = $model->where("seller_id = %d", $userId)->select();
+        $this->ajaxReturn(qc_json_success($result));
+    }
 
-        $userId = session('user_id');
-        $trId = intval(I('post.t_id'));
+    public function specifyUserTransactionList()
+    {
+        //todo search specify user transaction list
+    }
 
-        $likec = intval(I('post.likec')) > 0 ? 1 : -1;
-        $trModel = new TransactModel();
-        $res = $trModel->where("id = $trId and seller_id = $userId")->save(array('likec' => $likec));
-        $res ? $this->ajaxReturn(qc_json_success('Operate success')) : $this->ajaxReturn('Error', 40002);
+    public function test()
+    {
+//        var_dump(split_str('a12', 1));
     }
 }

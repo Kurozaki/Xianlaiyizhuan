@@ -2,165 +2,156 @@
 /**
  * Created by PhpStorm.
  * User: Kurozaki
- * Date: 2017/3/9
- * Time: 12:08
+ * Date: 2017/3/17
+ * Time: 20:05
  */
-
 namespace Home\Controller;
 
+
+use Common\Controller\BaseController;
 use Common\Model\UserModel;
-use Think\Controller;
-use Think\Upload;
 
 class UserController extends BaseController
 {
-
-    public function user_register()
+    public function idnCheck()
     {
-        //(confirm verify)
+        $data = $this->reqPost(array('id_number', 'password', 'realname'));
+        $realName = $this->getStudentName($data['id_number'], $data['password']);
 
-        $regFields = array('username', 'password', 'sex', 'tel');
-        $regData = array();
-        foreach ($regFields as $key) {
-            $val = I('post.' . $key);
-            if (is_invalid_param($val)) {
-                $this->ajaxReturn(qc_json_error('Need param: ' . $key));
-            }
-            if ('password' == $key) {   //md5加密密码
-                $val = md5($val);
-            }
-            $regData[$key] = $val;
-        }
-        $add = UserModel::add_user($regData);
-        if ($add) {
-            $this->ajaxReturn(qc_json_success('Register success'));
+        if (0 == strcmp($realName, $data['realname'])) {
+            session('verify_info', $data);
+            $this->ajaxReturn(qc_json_success('Confirm success'));
         } else {
-            $this->ajaxReturn(qc_json_error('Register failed', 40001));
+            $this->ajaxReturn(qc_json_error('Wrong student info.'));
         }
     }
 
-    public function user_login()
+    public function userRegister()
     {
-        $username = I('post.username');
+        if (session('?verify_info')) {
+            $data = session('verify_info');
+
+            $id_number = $data['id_number'];
+            $realname = $data['realname'];
+            session('verify_info', null);
+
+            $regData = $this->reqPost(array('tel', 'password'), array('nickname', 'addr', 'sign'));
+            $regData['id_number'] = $id_number;
+            $regData['realname'] = $realname;
+
+            $model = new UserModel();
+            $regRes = $model->regUserInfo($regData);
+
+            $regRes ? $this->ajaxReturn(qc_json_success('Register success')) : $this->ajaxReturn(qc_json_error
+            ('Failed to register'));
+        } else {
+            $this->ajaxReturn(qc_json_error('Please check student info first.'));
+        }
+    }
+
+    public function userLogin()
+    {
+        $id_number = I('post.id_number');
         $password = I('post.password');
 
-        $confirmData = array('username' => $username, 'password' => md5($password));
-        $userModel = new UserModel();
-        $res = $userModel->where($confirmData)->find();
-
-        if ($res) {
-            session('user_id', $res['id']);
-            session('username', $res['username']);
-            $this->ajaxReturn(qc_json_success('Login success'));
-        } else {
-            $this->ajaxReturn(qc_json_error('Failed to login', 40002));
+        $model = new UserModel();
+        $info = $model->userLoginConfirm($id_number, $password);
+        if (!$info) {
+            $this->ajaxReturn(qc_json_error('Wrong password or id number'));
         }
+        session('user_idn', $id_number);
+        session('user_id', $info['id']);
+        $this->ajaxReturn(qc_json_success('Login success'));
     }
 
-    public function update_userinfo()
+    public function userLogout()
     {
-        $this->req_user_login();
-
-        $userId = session_id('user_id');
-        $updateFields = array('nickname', 'tel', 'sex', 'addr');
-        $updateData = null;
-
-        foreach ($updateFields as $key) {
-            $val = I('post.' . $key);
-            if (!is_invalid_param($val)) {
-                $updateData[$key] = $val;
-            }
-        }
-        if (is_null($updateData)) {
-            $this->ajaxReturn(qc_json_error('No new update fields', 40002));
-        } else {
-            $userModel = new UserModel();
-            $updateRes = $userModel->where($userId)->save($updateData);
-            if ($updateRes) {
-                $this->ajaxReturn(qc_json_success('Update success'));
-            } else {
-                $this->ajaxReturn(qc_json_error('Failed to update user info', 40002));
-            }
-        }
-    }
-
-    public function user_logout()
-    {
-        $this->req_user_login();
+        $this->reqLogin();
         session('user_id', null);
-        session('username', null);
-        $this->ajaxReturn(qc_json_success('Logout success.'));
+        session('user_idn', null);
+        $this->ajaxReturn(qc_json_success('Logout success'));
     }
 
-    public function change_password()
+    public function getUserInfo()
     {
-        $this->req_user_login();
-        $userId = session('user_id');
-
-        $username = session('username');
-        $oldPwd = I('post.old_pwd');
-        $newPwd = I('post.new_pwd');
-
-        $userModel = new UserModel();
-        $res = $userModel->find($userId);
-
-        if ($res['username'] == $username && md5($oldPwd) == $res['password']) {
-            if (is_legal_password($newPwd)) {
-                $userModel->save(array('password', md5($oldPwd)));
-            } else {
-                $this->ajaxReturn(qc_json_error('Illegal password.', 40001));
+        $userId = $this->reqLogin();
+        $searchId = intval(I('post.srh_id'));
+        $searchId = (0 == $searchId) ? $userId : $searchId;
+        $model = new UserModel();
+        $info = $model->where("id = %d", $searchId)->find();
+        if ($info) {
+            if (isset($info['password'])) {
+                unset($info['password']);
             }
+            $this->ajaxReturn(qc_json_success($info));
         } else {
-            $this->ajaxReturn(qc_json_error('Error old password.', 40001));
+            $this->ajaxReturn(qc_json_error('This user does not exist'));
         }
     }
 
-    public function update_avatar()
+    public function searchUser()
     {
-        $this->req_user_login();
-        $userId = session('user_id');
-
-        $saveRoot = C('AVATAR_STORE_ROOT');
-        $saveRoot = $saveRoot . 'UserAvatar/';
-        $uploadFile = new Upload(array('rootPath' => $saveRoot));
-        $info = $uploadFile->upload();
-
-        $avatarInfo = $info['avatar'];
-        $avatarPath = substr($saveRoot . $avatarInfo['savepath'] . $avatarInfo['savename'], 2);
-
-        //save the path to the database
-        $userModel = new UserModel();
-        $userModel->find($userId);
-        $save = $userModel->save(array('avatar_url' => $avatarPath));
-        if ($save) {
-            $this->ajaxReturn(qc_json_success('Update success', array('data' => $avatarPath)));
-        } else {
-            $this->ajaxReturn(qc_json_error('Failed to upload avatar'));
+        $allowKeys = array('id_number', 'realname', 'nickname');
+        $key = intval(I('post.key'));
+        $val = I('post.val');
+        if (!in_array($key, $allowKeys)) {
+            $this->ajaxReturn(qc_json_error('Illegal search key'));
         }
+        $model = new UserModel();
+        $result = $model->where("%s = %s", $key, $val)->select();
+        if ($result)
+            for ($i = 0; $i < count($result, COUNT_NORMAL); $i++) {
+                if (isset($result[$i]['password']))
+                    unset($result[$i]['password']);
+            }
+        $this->ajaxReturn(qc_json_success($result));
     }
 
-    public function get_user_info()
+    public function updatePassword()
     {
-        $this->req_user_login();
-        $username = I('srh_name');
-        $userModel = new UserModel();
+        $userId = $this->reqLogin();
+        $data = $this->reqPost(array('oldPwd', 'newPwd'));
+        $oldPwd = md5($data['oldPwd']);
+        $newPwd = md5($data['newPwd']);
 
-        if (is_invalid_param($username)) {
-            $userId = session('user_id');
-            $res = $userModel->find($userId);
-        } else {
-            $res = $userModel->where('username = %s', $username)->find();
-        }
+        $model = new UserModel();
+        $res = $model->where("id = %d and password = %s", $userId, $oldPwd)->find();
         if (!$res) {
-            $this->ajaxReturn(qc_json_error('Search error.', 40002));
+            $this->ajaxReturn(qc_json_error('Wrong password'));
+        }
+        if (is_password_pattern($newPwd)) {
+            $save = $model->save(['password' => $newPwd]);
+            if ($save)
+                $this->ajaxReturn(qc_json_success('Update success'));
+            else
+                $this->ajaxReturn(qc_json_error('Failed to update password'));
         } else {
-            unset($res['password']);
-            $this->ajaxReturn(qc_json_success('Operate success', $res));
+            $this->ajaxReturn(qc_json_error('Illegal password form'));
         }
     }
 
-    public function wx_user_login()
+    public function updateUserInfo()
     {
-        //todo wechat user login
+        $userId = $this->reqLogin();
+        $info = $this->reqPost(null, array('nickname', 'addr', 'sign'));
+
+        if (count($info) == 0) {
+            $this->ajaxReturn(qc_json_error('Request at least one param.'));
+        }
+        $userModel = new UserModel();
+        $save = $userModel->where("id = $userId")->save($info);
+        $save ? $this->ajaxReturn(qc_json_success('Update success')) : $this->ajaxReturn(qc_json_error('Failed to
+            update user info'));
+    }
+
+    public function updateAvatar()
+    {
+        $userId = $this->reqLogin();
+        $uploadInfo = $this->uploadPictures('user_avatar');
+        $savePath = $path = C('FILE_STORE_ROOT') . $uploadInfo['savepath'] . $uploadInfo['savename'];
+        $userModel = new UserModel();
+        $save = $userModel->where("id = $userId")->save(['avatar' => $savePath]);
+        $save ? $this->ajaxReturn(qc_json_success('Update success')) : $this->ajaxReturn(qc_json_error('Failed to
+            update user info'));
     }
 }

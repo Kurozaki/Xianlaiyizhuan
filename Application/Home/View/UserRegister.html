@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <title></title>
 </head>
-<style>
-    input {
-        margin-top: 0.2rem;
-    }
-</style>
 <body>
 <div style="text-align: center">
-    <form action="http://localhost/Xianlaiyizhuan/Home/User/user_register" method="post" enctype="multipart/form-data">
-        <input type="text" name="username"><br>
-        <input type="text" name="password"><br>
-        <input type="number" name="sex"><br>
-        <input type="text" name="tel"><br>
-        <input type="submit" value="register"><br>
+    <form action="http://localhost/Xianlaiyizhuan/Home/User/userRegister" method="post"
+          enctype="multipart/form-data">
+        <input name="password" type="password"><br>
+        <input name="tel" type="text"><br>
+
+        <input name="nickname" type="text"><br>
+        <input name="addr" type="text"><br>
+        <input name="sign" type="text"><br>
+        <input type="submit">
     </form>
 </div>
 </body>

@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Kurozaki
- * Date: 2017/3/9
- * Time: 12:12
+ * Date: 2017/3/14
+ * Time: 16:58
  */
 
 namespace Common\Model;
@@ -16,18 +16,21 @@ class UserModel extends BaseModel
         parent::__construct('user', $this->tablePrefix, $this->connection);
     }
 
-    public static function add_user($data)
+    public function userLoginConfirm($id_number, $password)
     {
-        $model = new self();
-        return $model->add($data);
+        $idn_pattern = "/^[\\d]{10}$/";
+        $password = md5($password);
+        if (preg_match($idn_pattern, $id_number)) {
+            $find = $this->where("id_number = '$id_number' and password = '$password'")->find();
+            return $find;
+        } else {
+            return false;
+        }
     }
 
-    public static function user_exist($user_id)
+    public function regUserInfo($userInfo)
     {
-        $user_id = intval($user_id);
-        $model = new self();
-        return $model->find($user_id);
+        $userInfo['password'] = md5($userInfo['password']);
+        return $this->add($userInfo);
     }
-
-
 }
