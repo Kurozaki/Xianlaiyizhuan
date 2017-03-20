@@ -115,6 +115,21 @@ class TransactController extends BaseController
     public function giveLikeToTransaction()
     {
         $this->reqLogin();
+        $like_tId = I('post.tid');
+
+        $model = new TransactModel();
+        $giveLike = $model->giveLike($like_tId);
+
+        if ($giveLike != -1) {
+            $this->ajaxReturn(qc_json_success(['likec' => $giveLike]));
+        } else {
+            $this->ajaxReturn(qc_json_error('Failed to give like'));
+        }
+    }
+
+    public function getRecentTransactionList()
+    {
+
     }
 
     public function test()

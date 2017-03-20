@@ -73,6 +73,8 @@ class TransactModel extends BaseModel
             return -1;
         }
         $like = intval($find['likec']);
-        return $this->save(['likec' => ($like + 1)]);
+        $like++;
+        $save = $this->save(['likec' => $like]);
+        return $save > 0 ? $like : -1;
     }
 }
