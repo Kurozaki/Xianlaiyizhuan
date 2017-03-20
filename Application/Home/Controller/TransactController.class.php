@@ -114,7 +114,6 @@ class TransactController extends BaseController
 
     public function giveLikeToTransaction()
     {
-        //todo give a like
         $this->reqLogin();
     }
 
