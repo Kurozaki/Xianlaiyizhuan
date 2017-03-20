@@ -100,13 +100,22 @@ class TransactController extends BaseController
     {
         $userId = $this->reqLogin();
         $model = new TransactModel();
-        $result = $model->where("seller_id = %d", $userId)->select();
-        $this->ajaxReturn(qc_json_success($result));
+        $data = $model->where("seller_id = %d", $userId)->select();
+        $this->ajaxReturn(qc_json_success($data));
     }
 
     public function specifyUserTransactionList()
     {
-        //todo search specify user transaction list
+        $seller_id = I('post.seller_id');
+        $model = new TransactModel();
+        $data = $model->where("seller_id = %d", $seller_id)->select();
+        $this->ajaxReturn(qc_json_success($data));
+    }
+
+    public function giveLikeToTransaction()
+    {
+        //todo give a like
+        $this->reqLogin();
     }
 
     public function test()

@@ -65,4 +65,14 @@ class TransactModel extends BaseModel
         $newPicsStr = substr($newPicsStr, strlen($newPicsStr) - 1);
         return $this->save(['pics' => $newPicsStr]);
     }
+
+    public function giveLike($tra_id)
+    {
+        $find = $this->where("id = %d", $tra_id)->find();
+        if ($find) {
+            return -1;
+        }
+        $like = intval($find['likec']);
+        return $this->save(['likec' => ($like + 1)]);
+    }
 }
