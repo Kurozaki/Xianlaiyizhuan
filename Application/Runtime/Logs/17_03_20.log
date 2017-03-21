@@ -1,0 +1,8 @@
+[ 2017-03-20T22:31:53+08:00 ] ::1 /xianlaiyizhuan/Home/TrComment/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034857s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.021270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021821s ]
+

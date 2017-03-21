@@ -27,6 +27,7 @@ $allow_origin = array(
     'http://192.168.16.1:3002',
     'http://192.168.16.1:63342',
 );
+
 if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $allow_origin)) {
 
     //配置信任的跨域来源
