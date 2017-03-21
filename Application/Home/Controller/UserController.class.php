@@ -80,9 +80,8 @@ class UserController extends BaseController
         $model = new UserModel();
         $info = $model->where("id = %d", $searchId)->find();
         if ($info) {
-            if (isset($info['password'])) {
-                unset($info['password']);
-            }
+            unset($info['password']);
+            unset($info['pmsg']);
             $this->ajaxReturn(qc_json_success($info));
         } else {
             $this->ajaxReturn(qc_json_error('This user does not exist'));
@@ -101,8 +100,8 @@ class UserController extends BaseController
         $result = $model->where("%s = %s", $key, $val)->select();
         if ($result)
             for ($i = 0; $i < count($result, COUNT_NORMAL); $i++) {
-                if (isset($result[$i]['password']))
-                    unset($result[$i]['password']);
+                unset($result[$i]['password']);
+                unset($result[$i]['pmsg']);
             }
         $this->ajaxReturn(qc_json_success($result));
     }

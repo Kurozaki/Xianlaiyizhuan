@@ -20,6 +20,9 @@ class PMsgController extends BaseController
         $userId = $this->reqLogin();
         $data = $this->reqPost('receiver', 'content');
 
+        if ($data['receiver'] == $userId) {
+            $this->ajaxReturn(qc_json_error('Could not send message to yourself.'));
+        }
         $data['sender'] = $userId;
         $data['ctime'] = time();
         $data['status'] = 0;
@@ -37,7 +40,7 @@ class PMsgController extends BaseController
     public function deletePMsg()
     {
         $userId = $this->reqLogin();
-        $del_id = I('pm_id');
+        $del_id = I('post.pm_id');
         $model = new PMsgModel();
         $delete = $model->deletePrivateMessage($del_id, $userId);
         if ($delete)
@@ -64,14 +67,27 @@ class PMsgController extends BaseController
     public function getPMsgNotice()
     {
         $userId = $this->reqLogin();
-        $model = new UserModel();
-        $res = $model->where('id = %d', $userId)->field('pmsg')->find();
-        $res ? $this->ajaxReturn(qc_json_success(['pm' => $res['pmsg']])) :
-            $this->ajaxReturn(qc_json_error('Get notice error'));
+        $pmsg = S('pmsg_uid_' . $userId);
+        if (!$pmsg) {
+            $this->ajaxReturn(qc_json_success(['pm' => $pmsg]));
+        } else {
+            $model = new UserModel();
+            $res = $model->where('id = %d', $userId)->field('pmsg')->find();
+            $pmsg = $res['pmsg'];
+            S('pmsg_uid_' . $userId, $pmsg, 7200);
+            $res ? $this->ajaxReturn(qc_json_success(['pm' => $pmsg])) :
+                $this->ajaxReturn(qc_json_error('Get notice error'));
+        }
     }
 
-    public function test()
-    {
-//        var_dump((new PMsgModel())->getDbFields());
-    }
+//    public function test()
+//    {
+//        var_dump(S('sss'));
+//        if (!S('sss')) {
+//            S('sss', 'hahah', 200);
+//        } else {
+//            S('sss', null);
+//        }
+//
+//    }
 }

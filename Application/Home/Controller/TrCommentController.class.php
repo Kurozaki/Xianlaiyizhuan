@@ -18,7 +18,7 @@ class TrCommentController extends BaseController
     public function leaveComment()
     {
         $userId = $this->reqLogin();
-        $postData = $this->reqPost('tid', 'content');
+        $postData = $this->reqPost(array('tid', 'content'));
         $traId = $postData['tid'];
         $model = new TransactModel();
         if (!$model->where("id = %d", $traId)->find()) {
@@ -74,8 +74,4 @@ class TrCommentController extends BaseController
         $this->ajaxReturn(qc_json_success(['count' => $count, 'comm_list' => $commList]));
     }
 
-//    public function test()
-//    {
-//        var_dump((new TrCommentModel())->getDbFields());
-//    }
 }
