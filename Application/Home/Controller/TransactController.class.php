@@ -166,6 +166,6 @@ class TransactController extends BaseController
     {
 //        $res = $this->uploadPictures('transact_intro', true);
 //        var_dump($res);
-        echo 'Your are my son?';
+        echo 'Your are my son?  ';
     }
 }
