@@ -33,4 +33,16 @@ class UserModel extends BaseModel
         $userInfo['password'] = md5($userInfo['password']);
         return $this->add($userInfo);
     }
+
+    public function addUserPMNotice($userId)
+    {
+        $info = $this->where("id = %d", $userId)->find();
+        $notice = $info['pmsg'] + 1;
+        return $this->save(['pmsg' => $notice]);
+    }
+
+    public function clearUserNotice($userId)
+    {
+        return $this->where("id = %d", $userId)->save(['pmsg' => 0]);
+    }
 }

@@ -162,10 +162,10 @@ class TransactController extends BaseController
         return $recent ? $recent : [];
     }
 
-    public function test()
-    {
+//    public function test()
+//    {
 //        $res = $this->uploadPictures('transact_intro', true);
 //        var_dump($res);
-        echo 'Your are my son?  ';
-    }
+//        echo 'Your are my son?  ';
+//    }
 }
