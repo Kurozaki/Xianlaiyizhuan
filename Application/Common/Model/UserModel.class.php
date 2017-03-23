@@ -37,12 +37,18 @@ class UserModel extends BaseModel
     public function addUserPMNotice($userId)
     {
         $info = $this->where("id = %d", $userId)->find();
-        $notice = $info['pmsg'] + 1;
-        return $this->save(['pmsg' => $notice]);
+        $notice = intval($info['pmsg']) + 1;
+        $save = $this->where("id = %d", $userId)->save(['pmsg' => $notice]);
+        return $save;
     }
 
     public function clearUserNotice($userId)
     {
+        $exits = S('pmsg_uid_' . $userId);
+        if ($exits) {
+            S('pmsg_uid_' . $userId, null);
+        }
         return $this->where("id = %d", $userId)->save(['pmsg' => 0]);
     }
+
 }

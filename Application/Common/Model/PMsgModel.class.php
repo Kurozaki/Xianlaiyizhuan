@@ -17,6 +17,11 @@ class PMsgModel extends BaseModel
         parent::__construct('pmsg', $this->tablePrefix, $this->connection);
     }
 
+    public function sendPrivateMessage($info)
+    {
+
+    }
+
     //status of private message -1: receiver delete, 1: sender delete
     public function deletePrivateMessage($del_id, $user_id)
     {
@@ -57,6 +62,8 @@ class PMsgModel extends BaseModel
                 break;
 
             case 'receive':
+                $userModel = new UserModel();
+                $userModel->clearUserNotice($userId);
                 $list = $this->where("receiver = %d and type = 0 and status != -1", $userId)->select();
                 break;
 

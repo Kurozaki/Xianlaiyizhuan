@@ -87,3 +87,15 @@ function split_str($str = '', $split_pos = 0)
     $right = substr($str, $split_pos);
     return array($left, $right);
 }
+
+function array_del_by_val(array &$arr, $delVal)
+{
+    if (is_array($arr)) {
+        foreach ($arr as $key => $val)
+            if ($val == $delVal) {
+                unset($arr[$key]);
+                return true;
+            }
+    }
+    return false;
+}

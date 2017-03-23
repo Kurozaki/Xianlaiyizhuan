@@ -1,8 +1,8 @@
-﻿tags:Xianlaiyizhuan
+﻿Made by Kurozaki
+
+tags:Xianlaiyizhuan
 
 #用户API
-
-``Base url: http://139.199.195.54/Xianlaiyizhuan``
 
 
 ###学生信息认证###

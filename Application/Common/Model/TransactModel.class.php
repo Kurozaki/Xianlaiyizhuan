@@ -77,4 +77,43 @@ class TransactModel extends BaseModel
         $save = $this->save(['likec' => $like]);
         return $save > 0 ? $like : -1;
     }
+
+    public function createTransact($info)
+    {
+        $addId = $this->add($info);
+        if ($addId) {
+            $recent = F('recent_tra');
+            if (!$recent)
+                $recent = array();
+            array_unshift($recent, $addId);
+            if (count($recent, COUNT_NORMAL) > 20) {
+                array_pop($recent);
+            }
+            F('recent_tra', $recent);
+        }
+        return $addId;
+    }
+
+    public function deleteTransact($delId, $userId)
+    {
+        //delete record from database
+        $deleteFlag = $this->where("id = %d and seller_id = %d", $delId, $userId)->delete();
+        if ($deleteFlag) {      //if delete success, remove the record in cache
+            $recent = F('recent_tra');
+            if (is_array($recent))
+                array_del_by_val($recent, $delId);
+            F('recent_tra', $recent);
+        }
+        return $deleteFlag;
+    }
+
+    public function recentTransactList()
+    {
+        $recent = F('recent_tra');
+        $data = [];
+        if (is_array($recent)) {
+            $data = $this->where(['id' => ['in', $recent]])->select();
+        }
+        return $data;
+    }
 }

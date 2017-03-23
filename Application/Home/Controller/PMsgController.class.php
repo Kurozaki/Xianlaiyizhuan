@@ -18,23 +18,32 @@ class PMsgController extends BaseController
     public function sendPMsg()
     {
         $userId = $this->reqLogin();
-        $data = $this->reqPost('receiver', 'content');
+        $data = $this->reqPost(array('receiver', 'content'));
 
-        if ($data['receiver'] == $userId) {
+        $receiver = $data['receiver'];
+        if ($receiver == $userId) {
             $this->ajaxReturn(qc_json_error('Could not send message to yourself.'));
         }
-        $data['sender'] = $userId;
-        $data['ctime'] = time();
-        $data['status'] = 0;
-        $data['type'] = 0;
+        $userModel = new UserModel();
+        $find = $userModel->where("id = %d", $receiver)->find();
+        if ($find) {
 
-        $model = new PMsgModel();
-        $add = $model->add($data);
-        if ($add) {
-            $data['id'] = $add;
-            $this->ajaxReturn(qc_json_success($data));
-        } else
-            $this->ajaxReturn(qc_json_error('Failed to send private message'));
+            $data['sender'] = $userId;
+            $data['ctime'] = time();
+            $data['status'] = 0;
+            $data['type'] = 0;
+
+            $model = new PMsgModel();
+            $add = $model->add($data);
+            if ($add) {
+                $data['id'] = $add;
+                $userModel->addUserPMNotice($receiver);
+                $this->ajaxReturn(qc_json_success($data));
+            } else
+                $this->ajaxReturn(qc_json_error('Failed to send private message'));
+        } else {
+            $this->ajaxReturn(qc_json_error('The receiver user does not exist'));
+        }
     }
 
     public function deletePMsg()
@@ -58,8 +67,6 @@ class PMsgController extends BaseController
         if (!$list)
             $this->ajaxReturn(qc_json_error('Failed to get msg list'));
         else {
-            $userModel = new UserModel();
-            $userModel->clearUserNotice($userId);
             $this->ajaxReturn(qc_json_success($list));
         }
     }
@@ -68,9 +75,13 @@ class PMsgController extends BaseController
     {
         $userId = $this->reqLogin();
         $pmsg = S('pmsg_uid_' . $userId);
-        if (!$pmsg) {
+        if ($pmsg) {
+            //if the pm notice has exist in the cache, return it
+
             $this->ajaxReturn(qc_json_success(['pm' => $pmsg]));
         } else {
+            //if pm notice don't exist in the cache, search in the db and put it into cache
+
             $model = new UserModel();
             $res = $model->where('id = %d', $userId)->field('pmsg')->find();
             $pmsg = $res['pmsg'];
@@ -80,14 +91,4 @@ class PMsgController extends BaseController
         }
     }
 
-//    public function test()
-//    {
-//        var_dump(S('sss'));
-//        if (!S('sss')) {
-//            S('sss', 'hahah', 200);
-//        } else {
-//            S('sss', null);
-//        }
-//
-//    }
 }
