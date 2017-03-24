@@ -35,7 +35,8 @@ class UserController extends BaseController
             $realname = $data['realname'];
             session('verify_info', null);
 
-            $regData = $this->reqPost(array('tel', 'password'), array('nickname', 'addr', 'sign'));
+            $regData = $this->reqPost(array('tel', 'password'),
+                array('qq_num', 'wx_id', 'nickname', 'addr', 'sign'));
             $regData['id_number'] = $id_number;
             $regData['realname'] = $realname;
 
@@ -132,11 +133,12 @@ class UserController extends BaseController
     public function updateUserInfo()
     {
         $userId = $this->reqLogin();
-        $info = $this->reqPost(null, array('nickname', 'addr', 'sign'));
+        $info = $this->reqPost(null, array('qq_num', 'wx_id', 'nickname', 'addr', 'sign'));
 
         if (count($info) == 0) {
             $this->ajaxReturn(qc_json_error('Request at least one param.'));
         }
+
         $userModel = new UserModel();
         $save = $userModel->where("id = $userId")->save($info);
         $save ? $this->ajaxReturn(qc_json_success('Update success')) : $this->ajaxReturn(qc_json_error('Failed to

@@ -14,11 +14,12 @@ Home/User/idnCheck
 **提交参数**
 ``Post提交``
 
-字段|描述|是否必须|类型|备注
+字段|描述|是否必须|类型
 -|-|-|-|-
 id_number|学号|Y|VARCHAR
 password|子系统的登录密码|Y|VARCHAR|
 realname|真实姓名|Y|VARCHAR|
+
 
 **返回结果**
 
@@ -44,9 +45,12 @@ Home/User/userRegister
 -|-|-|-|-
 tel|电话号码|Y|VARCHAR
 password|账号登录密码|Y|VARCHAR|
-nickname|昵称|N|VARCHAR|
-addr|住址|N|VARCHAR|
-sign|个性签名|N|VARCHAR|
+|||
+qq_num|qq号码|N|VARCHAR
+wx_id|微信号|N|VARCHAR
+nickname|昵称|N|VARCHAR
+addr|地址|N|VARCHAR
+sign|签名|N|VARCHAR
 
 **返回结果**
 
@@ -211,9 +215,11 @@ Home/User/updateUserInfo
 ``需要登录，要求至少提交一个参数``
 字段|描述|是否必须|类型
 -|-|-|-|-
-nickname|现用密码|N|VARCHAR
-addr|新密码|N|VARCHAR
-sign|个性签名|N|VARCHAR
+qq_num|qq号码|N|VARCHAR
+wx_id|微信号|N|VARCHAR
+nickname|昵称|N|VARCHAR
+addr|地址|N|VARCHAR
+sign|签名|N|VARCHAR
 
 
 **返回结果

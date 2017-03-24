@@ -137,7 +137,18 @@ class TransactController extends BaseController
         $this->ajaxReturn(qc_json_success($dataList));
     }
 
-
+    public function setToSoldStatus()
+    {
+        $userId = $this->reqLogin();
+        $t_id = I('post.t_id');
+        $model = new TransactModel();
+        $flag = $model->where("id = %d and seller_id = %d", $t_id, $userId)->save(['sell' => 1]);
+        if ($flag) {
+            $this->ajaxReturn(qc_json_success('Operate success'));
+        } else {
+            $this->ajaxReturn(qc_json_error('Failed to operate'));
+        }
+    }
 
 //    public function test()
 //    {

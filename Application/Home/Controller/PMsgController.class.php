@@ -24,6 +24,7 @@ class PMsgController extends BaseController
         if ($receiver == $userId) {
             $this->ajaxReturn(qc_json_error('Could not send message to yourself.'));
         }
+
         $userModel = new UserModel();
         $find = $userModel->where("id = %d", $receiver)->find();
         if ($find) {
@@ -32,12 +33,12 @@ class PMsgController extends BaseController
             $data['ctime'] = time();
             $data['status'] = 0;
             $data['type'] = 0;
+            $data['mark'] = 0;
 
             $model = new PMsgModel();
-            $add = $model->add($data);
+            $add = $model->sendPrivateMessage($data);
             if ($add) {
                 $data['id'] = $add;
-                $userModel->addUserPMNotice($receiver);
                 $this->ajaxReturn(qc_json_success($data));
             } else
                 $this->ajaxReturn(qc_json_error('Failed to send private message'));
@@ -50,11 +51,14 @@ class PMsgController extends BaseController
     {
         $userId = $this->reqLogin();
         $del_id = I('post.pm_id');
+
         $model = new PMsgModel();
         $delete = $model->deletePrivateMessage($del_id, $userId);
-        if ($delete)
+
+        if ($delete) {
+            (new UserModel())->clearUserNotice($userId);
             $this->ajaxReturn(qc_json_success('Delete success'));
-        else
+        } else
             $this->ajaxReturn(qc_json_error('Failed to delete'));
     }
 
@@ -62,8 +66,10 @@ class PMsgController extends BaseController
     {
         $userId = $this->reqLogin();
         $msgType = I('post.m_type');
+
         $model = new PMsgModel();
         $list = $model->getPrivateMessageList($userId, $msgType);
+
         if (!$list)
             $this->ajaxReturn(qc_json_error('Failed to get msg list'));
         else {

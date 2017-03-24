@@ -21,6 +21,7 @@ class RequirementController extends BaseController
 
         $reqInfo['req_user'] = $userId;
         $reqInfo['ctime'] = time();
+        $reqInfo['solve'] = 0;
 
         $reqModel = new RequirementModel();
         $add = $reqModel->createReq($reqInfo);
@@ -75,5 +76,17 @@ class RequirementController extends BaseController
             $data = $model->where(['id' => ['in', $recentList]])->select();
         }
         $this->ajaxReturn(qc_json_success($data));
+    }
+
+    public function setToSolvedStatus()
+    {
+        $userId = $this->reqLogin();
+        $reqId = I('post.req_id');
+        $model = new RequirementModel();
+        $flag = $model->where("id = %d and req_user = %d", $reqId, $userId)->save(['solve' => 1]);
+        if ($flag) {
+            $this->ajaxReturn(qc_json_success('Operate success'));
+        } else
+            $this->ajaxReturn(qc_json_error('Failed to operate'));
     }
 }

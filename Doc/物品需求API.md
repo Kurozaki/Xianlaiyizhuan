@@ -104,6 +104,26 @@ Home/Requirement/myRequirementList
 ```
 ***
 
+###需求置为解决状态###
+``url``
+Home/Requirement/setToSolvedStatus
+
+**提交数据**
+``POST，需要登录``
+字段|描述|是否必须|类型
+-|-|-|-
+req_id|需求id|Y|INT
+
+
+**返回内容**
+```
+{
+    "code": 20000,
+    "response": "Operate success"
+}
+```
+***
+
 ###最新发布的需求###
 ``url``
 Home/Requirement/recentRequirementList

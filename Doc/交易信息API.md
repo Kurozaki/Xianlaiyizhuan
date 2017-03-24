@@ -123,6 +123,28 @@ d代表删除，u代表更新
 
 ***
 
+###将交易信息置为已售###
+
+``url``
+Home/Transact/setToSoldStatus
+
+**提交参数**
+``Post提交，需要登录``
+
+字段|描述|是否必须|类型
+-|-|-|-|-
+t_id|交易信息id|Y|VARCHAR
+
+
+**返回结果**
+
+```
+{
+    "code":20000,
+    "response":"Operate success"
+}
+```
+***
 ###获取我发布的交易信息列表###
 
 ``url``

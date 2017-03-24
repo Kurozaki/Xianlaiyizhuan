@@ -17,11 +17,6 @@ class PMsgModel extends BaseModel
         parent::__construct('pmsg', $this->tablePrefix, $this->connection);
     }
 
-    public function sendPrivateMessage($info)
-    {
-
-    }
-
     //status of private message -1: receiver delete, 1: sender delete
     public function deletePrivateMessage($del_id, $user_id)
     {
@@ -72,4 +67,19 @@ class PMsgModel extends BaseModel
         }
         return $list;
     }
+
+
+    public function sendPrivateMessage($info)
+    {
+        $add = $this->add($info);
+        if ($add) {
+            $receiver = $info['receiver'];
+            S('PMsg_uid_' . $receiver, 1);
+
+            $userModel = new UserModel();
+            $userModel->where("id = %d", $receiver)->save(['pmsg' => 1]);
+        }
+        return $add;
+    }
+
 }
