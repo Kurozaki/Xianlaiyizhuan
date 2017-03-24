@@ -91,8 +91,8 @@ function split_str($str = '', $split_pos = 0)
 function array_del_by_val(array &$arr, $delVal)
 {
     if (is_array($arr)) {
-        foreach ($arr as $key => $val)
-            if ($val == $delVal) {
+        foreach ($arr as $key => $value)
+            if ($value == $delVal) {
                 unset($arr[$key]);
                 return true;
             }

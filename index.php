@@ -26,6 +26,11 @@ $allow_origin = array(
     'http://192.168.16.1:3000',
     'http://192.168.16.1:3002',
     'http://192.168.16.1:63342',
+    'http://localhost',
+    'http://localhost:80',
+    'http://localhost:3000',
+    'http://localhost:3002',
+    'http://localhost:63342'
 );
 
 if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $allow_origin)) {

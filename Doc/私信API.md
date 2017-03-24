@@ -2,6 +2,7 @@
 
 tags:Xianlaiyizhuan
 
+``baseurl: http://139.199.195.54/Xianlaiyizhuan``
 #私信API
 
 ###发送私信###

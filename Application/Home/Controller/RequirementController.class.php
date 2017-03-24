@@ -14,12 +14,6 @@ use Common\Model\RequirementModel;
 
 class RequirementController extends BaseController
 {
-    public function test()
-    {
-        $array = F('recent_req');
-        var_dump($array);
-    }
-
     public function createRequirement()
     {
         $userId = $this->reqLogin();
