@@ -33,6 +33,8 @@ class TrCommentController extends BaseController
         $model = new TrCommentModel();
         $add = $model->add($comm);
         if ($add) {
+            //send system message to the seller
+
             $comm['id'] = $add;
             $this->ajaxReturn(qc_json_success($comm));
         } else {
@@ -51,7 +53,6 @@ class TrCommentController extends BaseController
         else
             $this->ajaxReturn(qc_json_error('Delete failed'));
     }
-
 
     public function giveLikeToComment()
     {

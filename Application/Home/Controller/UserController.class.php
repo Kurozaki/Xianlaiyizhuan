@@ -155,4 +155,6 @@ class UserController extends BaseController
         $save ? $this->ajaxReturn(qc_json_success('Update success')) : $this->ajaxReturn(qc_json_error('Failed to
             update user info'));
     }
+
+
 }

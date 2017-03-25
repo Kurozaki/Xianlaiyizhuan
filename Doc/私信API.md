@@ -7,7 +7,7 @@ tags:Xianlaiyizhuan
 
 ###发送私信###
 ``url``
-Home/PMsg/getPMsgNotice
+Home/PMsg/sendPMsg
 
 **提交数据**
 ``POST，需要登录``
@@ -27,7 +27,8 @@ content|私信内容|Y|TEXT
         "receiver": 2,
         "content": "private message content!",
         "ctime": 1286934098,
-        "status": 0   
+        "status": 0,
+        "mark": 0     //是否为已读
     }
 }
 ```
@@ -41,7 +42,7 @@ Home/PMsg/deletePMsg
 ``POST，需要登录``
 字段|描述|是否必须|类型
 -|-|-|-
-pm_id|私信id|Y|INT
+del_id|私信id|Y|INT
 
 **返回内容**
 ```
@@ -79,7 +80,8 @@ sys: 系统消息
             "receiver": 2,
             "content": "private message content!",
             "ctime": 1286934098,
-            "status": 0   
+            "status": 0,
+            "mark": 0
         },
         ...
     ]
@@ -89,13 +91,11 @@ sys: 系统消息
 ***
 ###获取新私信条数###
 ``url``
-Home/PMsg/deletePMsg
+Home/PMsg/getPMsgNotice
 
 **提交数据**
 ``POST，需要登录``
-字段|描述|是否必须|类型
--|-|-|-
-pm_id|私信id|Y|INT
+(无)
 
 **返回内容**
 ```
@@ -105,5 +105,25 @@ pm_id|私信id|Y|INT
     "response": {
         "pm":"1"    //新私信的条数
     }
+}
+```
+
+***
+###将接收的私信标记为已读###
+``url``
+Home/PMsg/markRecPMsg
+
+**提交数据**
+``POST，需要登录``
+字段|描述|是否必须|类型
+-|-|-|-
+mk_id|私信id|Y|INT
+
+**返回内容**
+```
+
+{
+    "code":20000,
+    "response": "Mark success"
 }
 ```

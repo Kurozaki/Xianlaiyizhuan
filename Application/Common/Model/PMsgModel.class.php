@@ -17,69 +17,92 @@ class PMsgModel extends BaseModel
         parent::__construct('pmsg', $this->tablePrefix, $this->connection);
     }
 
-    //status of private message -1: receiver delete, 1: sender delete
-    public function deletePrivateMessage($del_id, $user_id)
+    public function sendPM($sender, $receiver, $content, $type = 0)
     {
-        $data = $this->where("id = %d", $del_id);
-        if ($data)
+
+        $userModel = new UserModel();
+        $find = $userModel->where("id = %d", $receiver)->find();
+        if ($find) {
+
+            $info = array(
+                'type' => $type,
+                'sender' => $sender,
+                'receiver' => $receiver,
+                'content' => $content,
+                'ctime' => time(),
+                'status' => 0,
+                'mark' => 0
+            );
+            $add = $this->add($info);
+
+            if ($add) {
+                $info['id'] = $add;
+                $userModel->addPMsgNotice($receiver);
+                return $info;
+            } else
+                return false;
+        } else
             return false;
-        $status = $data['status'];
-        switch ($status) {
-            case -1:
-                if ($user_id == $data['sender'])
-                    return $this->delete($del_id);
-                break;
-
-            case 0:
-                if ($user_id == $data['sender'])
-                    return $this->save(['status' => 1]);
-                else if ($user_id == $data['receiver'])
-                    return $this->save(['status' => -1]);
-                break;
-
-            case 1:
-                if ($user_id == $data['receiver'])
-                    return $this->delete($del_id);
-                break;
-
-            default:
-                break;
-        }
-        return false;
     }
 
-    public function getPrivateMessageList($userId, $msgType = 'send')
+    public function getPMList($userId, $mType = 'send')
     {
-
-        switch ($msgType) {
+        $list = [];
+        switch ($mType) {
             case 'send':
-                $list = $this->where("sender = %d and type = 0 and status != 1", $userId)->select();
+                $list = $this->where("sender = %d and status != 1", $userId)->select();
                 break;
 
             case 'receive':
-                $userModel = new UserModel();
-                $userModel->clearUserNotice($userId);
-                $list = $this->where("receiver = %d and type = 0 and status != -1", $userId)->select();
+                $list = $this->where("receiver = %d and status != -1", $userId)->select();
+                break;
+
+            case 'sys':
+                $list = $this->where("receiver = %d and type = 1", $userId)->select();
                 break;
 
             default:
-                return false;
+                break;
         }
         return $list;
     }
 
-
-    public function sendPrivateMessage($info)
+    public function deletePM($userId, $pmId)
     {
-        $add = $this->add($info);
-        if ($add) {
-            $receiver = $info['receiver'];
-            S('PMsg_uid_' . $receiver, 1);
+        $flag = false;
+        $_data = $this->where("id = %d", $pmId)->find();
+        if (!$_data) {
+            $status = intval($_data['status']);
+            switch ($status) {
+                case -1:
+                    if ($userId == $_data['sender']) {
+                        $flag = $this->where("id = %d", $pmId)->delete();
+                    }
+                    break;
 
-            $userModel = new UserModel();
-            $userModel->where("id = %d", $receiver)->save(['pmsg' => 1]);
+                case 0:
+                    if ($userId == $_data['sender']) {
+                        $flag = $this->where("id = %d", $pmId)->save(['status' => 1]);
+                    } else if ($userId == $_data['receiver']) {
+                        $flag = $this->where("id = %d", $pmId)->save(['status' => -1]);
+                    }
+                    break;
+
+                case 1:
+                    if ($userId == $_data['receiver']) {
+                        $flag = $this->where("id = %d", $pmId)->delete();
+                    }
+                    break;
+
+                default:
+            }
         }
-        return $add;
+        return $flag;
+    }
+
+    public function markRecPMsg($userId, $markId)
+    {
+        return $this->where("id = %d and receiver = %d", $markId, $userId)->save(['mark' => 1]);
     }
 
 }

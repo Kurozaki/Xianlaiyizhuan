@@ -166,4 +166,9 @@ class BaseController extends Controller
             return current($info);
         }
     }
+
+    protected function sendSystemMsgToUser($content, $receiver)
+    {
+
+    }
 }
