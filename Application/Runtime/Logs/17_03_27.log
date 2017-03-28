@@ -1,0 +1,11 @@
+[ 2017-03-27T19:54:37+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/getrecentTransactionlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.061047s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.016017s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.021206s ]
+

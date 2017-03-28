@@ -50,7 +50,7 @@ class PMsgController extends BaseController
     {
         $userId = $this->reqLogin();
         $mType = I('post.m_type');
-        $model = new PMsgModel();   
+        $model = new PMsgModel();
         $mList = $model->getPMList($userId, $mType);
         $this->ajaxReturn(qc_json_success($mList));
     }

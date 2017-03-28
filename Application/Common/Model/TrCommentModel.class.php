@@ -28,4 +28,15 @@ class TrCommentModel extends BaseModel
         else
             return -1;
     }
+
+    public function leaveComment($info)
+    {
+        $add = $this->add($info);
+        if ($add) {
+            $tr_id = $info['tr_id'];
+            $tModel = new TransactModel();
+            $tModel->where("id = %d", $tr_id)->save(['has_comm' => 1]);
+        }
+        return $add;
+    }
 }

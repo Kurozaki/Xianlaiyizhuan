@@ -18,7 +18,7 @@ class TransactController extends BaseController
     {
         $userId = $this->reqLogin();
 
-        $tInfo = $this->reqPost(array('intro', 'type', 'price'));
+        $tInfo = $this->reqPost(array('intro', 'type', 'price', 'free'));
 
         //set seller id and create time
         $tInfo['seller_id'] = $userId;
@@ -66,7 +66,7 @@ class TransactController extends BaseController
     {
         $userId = $this->reqLogin();
         $update_id = I('post.update_id');
-        $data = $this->reqPost(null, array('intro', 'type', 'price'));
+        $data = $this->reqPost(null, array('intro', 'type', 'price', 'free'));
         if (count($data, COUNT_NORMAL) == 0) {
             $this->ajaxReturn(qc_json_error('No data update'));
         }
@@ -102,16 +102,18 @@ class TransactController extends BaseController
     public function getMyTransactionList()
     {
         $userId = $this->reqLogin();
+        $freeFlag = I('post.free');
         $model = new TransactModel();
-        $data = $model->where("seller_id = %d", $userId)->select();
+        $data = $model->getUseerTransactList($userId, $freeFlag);
         $this->ajaxReturn(qc_json_success($data));
     }
 
     public function specifyUserTransactionList()
     {
         $seller_id = I('post.seller_id');
+        $freeFlag = I('post.free');
         $model = new TransactModel();
-        $data = $model->where("seller_id = %d", $seller_id)->select();
+        $data = $model->getUseerTransactList($seller_id, $freeFlag);
         $this->ajaxReturn(qc_json_success($data));
     }
 
@@ -149,6 +151,7 @@ class TransactController extends BaseController
             $this->ajaxReturn(qc_json_error('Failed to operate'));
         }
     }
+
 
 //    public function test()
 //    {

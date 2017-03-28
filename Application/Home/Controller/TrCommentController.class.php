@@ -31,9 +31,14 @@ class TrCommentController extends BaseController
             'ctime' => time()
         );
         $model = new TrCommentModel();
-        $add = $model->add($comm);
+        $add = $model->leaveComment($comm);
         if ($add) {
+
             //send system message to the seller
+            $tmodel = new TransactModel();
+            $tInfo = $tmodel->where("id = %d", $traId)->find();
+            $receiver = $tInfo['seller_id'];
+            $this->sendSystemMsgToUser("有人给你留言了！快去查看吧", $receiver);
 
             $comm['id'] = $add;
             $this->ajaxReturn(qc_json_success($comm));

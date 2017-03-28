@@ -80,6 +80,9 @@ class TransactModel extends BaseModel
 
     public function createTransact($info)
     {
+        if ($info['free'] == 1) {
+            $info['price'] = 0;
+        }
         $addId = $this->add($info);
         if ($addId) {
             $recent = F('recent_tra');
@@ -113,6 +116,24 @@ class TransactModel extends BaseModel
         $data = [];
         if (is_array($recent)) {
             $data = $this->where(['id' => ['in', $recent]])->select();
+        }
+        return $data;
+    }
+
+    public function getUseerTransactList($userId, $free)
+    {
+        switch ($free) {
+            case 'true':
+                $data = $this->where(array('seller_id' => $userId, 'free' => 1))->select();
+                break;
+
+            case 'false':
+                $data = $this->where(array('seller_id' => $userId, 'free' => 0))->select();
+                break;
+
+            default:
+                $data = $this->where(array('seller_id' => $userId))->select();
+                break;
         }
         return $data;
     }

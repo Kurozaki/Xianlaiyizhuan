@@ -20,6 +20,7 @@ Home/Transact/createTransaction
 intro|物品介绍|Y|VARCHAR
 type|类型|Y|VARCHAR|
 price|价格|Y|VARCHAR|
+free|是否免费|Y|INT|非0免费，否则免费
 *|描述图片|Y|FILE|最多5张图片
 
 **返回结果**
@@ -58,6 +59,7 @@ update_id|id|Y|INT
 intro|介绍|N|VARCHAR
 type|种类|N|VARCHAR
 price|价格|N|VARCHAR
+free|是否免费|N|VARCHAR
 
 
 **返回结果**
@@ -151,9 +153,13 @@ t_id|交易信息id|Y|VARCHAR
 Home/Transact/getMyTransactionList
 
 **提交参数**
-``需要登录``
-(无)
-
+``post，需要登录``
+字段|描述|是否必须|类型
+-|-|-|-|-
+free|是否免费|N|VARCHAR
+free 为 true 只获取免费列表，
+false 只获取非免费列表，
+不提交则获取全部。
 
 **返回结果**
 
@@ -177,6 +183,10 @@ Home/Transact/specifyUserTransactionList
 字段|描述|是否必须|类型
 -|-|-|-|-
 seller_id|指定用户的id|Y|INT|
+free|是否免费|N|VARCHAR
+free 为 true 只获取免费列表，
+false 只获取非免费列表，
+不提交则获取全部。
 
 
 **返回结果**

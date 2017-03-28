@@ -7,6 +7,7 @@
  */
 namespace Common\Controller;
 
+use Common\Model\PMsgModel;
 use Think\Controller;
 use Think\Upload;
 
@@ -169,6 +170,7 @@ class BaseController extends Controller
 
     protected function sendSystemMsgToUser($content, $receiver)
     {
-
+        $pModel = new PMsgModel();
+        $pModel->sendPM(-1, $receiver, $content, 1);
     }
 }
