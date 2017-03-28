@@ -18,7 +18,7 @@ class TrCommentModel extends BaseModel
 
     public function giveLikeToComment($user_id, $comm_id)
     {
-        $data = $this->where("id = %d and user_id = %d", $comm_id, $user_id)->find();
+        $data = $this->where("id = %d ", $comm_id)->find();
         if (!$data) {
             return -1;
         }

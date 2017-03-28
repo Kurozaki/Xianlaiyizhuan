@@ -157,3 +157,89 @@ Home/Requirement/recentRequirementList
     ]
 }
 ```
+
+###发表评论###
+``url``
+Home/ReqComment/leaveComment
+
+
+**提交参数**
+``Post提交，需要登录``
+
+字段|描述|是否必须|类型
+-|-|-|-|-
+reqId|需求信息id|Y|INT|
+content|评论内容|Y|VARCHAR
+
+**返回结果**
+
+```
+{
+    "code":20000,
+    "response":{
+        "id": "1",
+        "tr_id": "1",
+        "user_id": "2",
+        "content": "comment!",
+        "ctime": "12",
+        "likec": "0"
+    }
+}
+```
+***
+###删除评论###
+
+``url``
+Home/ReqComment/deleteComment
+
+
+**提交参数**
+``Post提交，需要登录``
+
+字段|描述|是否必须|类型
+-|-|-|-|-
+del_id|评论的id|Y|INT|
+
+**返回结果**
+```
+{
+    "code": 20000,
+    "response": "Delete success"
+}
+```
+
+***
+###获取评论列表###
+
+``url``
+Home/ReqComment/getCommentList
+
+
+**提交参数**
+``Post提交``
+
+字段|描述|是否必须|类型
+-|-|-|-|-
+reqId|需求信息id|Y|INT|
+
+**返回结果**
+
+```
+{
+    "code": 20000,
+    "response": {
+        "count": 1,
+        "comm_list": [
+            {
+                "id": "1",
+                "tr_id": "1",
+                "user_id": "2",
+                "content": "comment!",
+                "ctime": "12",
+                "likec": "0"
+            },    
+            ...    //可能有多条评论
+        ]
+    }
+}
+```
