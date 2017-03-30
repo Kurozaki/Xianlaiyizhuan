@@ -1,0 +1,311 @@
+[ 2017-03-30T08:52:56+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.092627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.198175s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.58' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.58' is not allowed to connect to this MySQL server
+
+[ 2017-03-30T08:52:56+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.025532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.234381s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.58' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.58' is not allowed to connect to this MySQL server
+
+[ 2017-03-30T08:53:10+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.58' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.58' is not allowed to connect to this MySQL server
+
+[ 2017-03-30T08:53:23+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/getmytransactionlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001416s ]
+
+[ 2017-03-30T08:53:31+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.58' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.58' is not allowed to connect to this MySQL server
+
+[ 2017-03-30T08:55:12+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005335s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010644s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.008839s ]
+
+[ 2017-03-30T08:55:28+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010942s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.009441s ]
+
+[ 2017-03-30T08:55:30+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/getmytransactionlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+
+[ 2017-03-30T08:55:31+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002209s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.011615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.019203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019518s ]
+
+[ 2017-03-30T08:55:32+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.045111s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.011753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001285s ]
+
+[ 2017-03-30T08:58:44+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/LEAVECOMMENT
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+
+[ 2017-03-30T09:32:48+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+
+[ 2017-03-30T09:33:04+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.011832s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id_number = '3115002333' and password = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.012101s ]
+
+[ 2017-03-30T09:33:09+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.011223s ]
+
+[ 2017-03-30T09:33:23+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.011064s ]
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.011931s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.010190s ]
+SQL: INSERT INTO `xlyz_comment` (`p_id`,`type`,`user_id`,`content`,`ctime`,`likec`) VALUES (2,1,1,'content',1490837603,0) [ RunTime:0.014011s ]
+
+[ 2017-03-30T09:33:40+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.015006s ]
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.013731s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 4 ) LIMIT 1   [ RunTime:0.011866s ]
+
+[ 2017-03-30T09:33:44+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.009269s ]
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.008990s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.007274s ]
+SQL: INSERT INTO `xlyz_comment` (`p_id`,`type`,`user_id`,`content`,`ctime`,`likec`) VALUES (5,1,1,'content',1490837624,0) [ RunTime:0.008477s ]
+
+[ 2017-03-30T09:33:52+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003293s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.012614s ]
+SQL: SHOW COLUMNS FROM `xlyz_requirement` [ RunTime:0.011968s ]
+SQL: SELECT * FROM `xlyz_requirement` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.010109s ]
+
+[ 2017-03-30T09:34:05+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001401s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.012155s ]
+SQL: SHOW COLUMNS FROM `xlyz_requirement` [ RunTime:0.011943s ]
+SQL: SELECT * FROM `xlyz_requirement` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.010272s ]
+SQL: INSERT INTO `xlyz_comment` (`p_id`,`type`,`user_id`,`content`,`ctime`,`likec`) VALUES (13,2,1,'content',1490837645,0) [ RunTime:0.011322s ]
+
+[ 2017-03-30T09:34:11+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002429s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.012725s ]
+SQL: SHOW COLUMNS FROM `xlyz_requirement` [ RunTime:0.012868s ]
+SQL: SELECT * FROM `xlyz_requirement` WHERE ( id = 15 ) LIMIT 1   [ RunTime:0.011064s ]
+
+[ 2017-03-30T09:34:17+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001899s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.011907s ]
+
+[ 2017-03-30T09:34:45+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/myCommentList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002332s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.013246s ]
+SQL: SELECT * FROM `xlyz_comment` WHERE ( user_id = 1 )  [ RunTime:0.011481s ]
+
+[ 2017-03-30T09:36:06+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/deleteComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.010903s ]
+SQL: DELETE FROM `xlyz_comment` WHERE ( id = 5 and user_id = 1 ) [ RunTime:0.012646s ]
+
+[ 2017-03-30T09:36:09+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/deleteComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001408s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.011147s ]
+SQL: DELETE FROM `xlyz_comment` WHERE ( id = 2 and user_id = 1 ) [ RunTime:0.010420s ]
+
+[ 2017-03-30T09:43:42+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/deleteComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002476s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.009836s ]
+SQL: DELETE FROM `xlyz_comment` WHERE ( id = 0 and user_id = 1 ) [ RunTime:0.007513s ]
+
+[ 2017-03-30T09:45:23+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/myCommentList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001863s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.009305s ]
+SQL: SELECT * FROM `xlyz_comment` WHERE ( user_id = 1 )  [ RunTime:0.007630s ]
+
+[ 2017-03-30T09:49:11+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/deleteComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002120s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.011592s ]
+SQL: DELETE FROM `xlyz_comment` WHERE ( id = 0 and user_id = 1 ) [ RunTime:0.009683s ]
+
+[ 2017-03-30T09:49:15+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/postCommentList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001923s ]
+
+[ 2017-03-30T09:51:17+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/postCommentList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002213s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.013355s ]
+SQL: SELECT * FROM `xlyz_comment` WHERE ( p_id = 13 and type = 1 )  [ RunTime:0.009589s ]
+
+[ 2017-03-30T09:51:33+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/postCommentList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.012874s ]
+SQL: SELECT * FROM `xlyz_comment` WHERE ( p_id = 13 and type = 2 )  [ RunTime:0.010727s ]
+
