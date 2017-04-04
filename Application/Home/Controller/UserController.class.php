@@ -40,6 +40,9 @@ class UserController extends BaseController
             $regData['id_number'] = $id_number;
             $regData['realname'] = $realname;
 
+            if ($this->hasIllegalInfo($regData)) {
+                $this->ajaxReturn(qc_json_error('包含非法参数'));
+            }
             $model = new UserModel();
             $regRes = $model->regUserInfo($regData);
 
@@ -72,6 +75,7 @@ class UserController extends BaseController
         session('user_idn', null);
         $this->ajaxReturn(qc_json_success('Logout success'));
     }
+
 
     public function getUserInfo()
     {
@@ -135,8 +139,11 @@ class UserController extends BaseController
         $userId = $this->reqLogin();
         $info = $this->reqPost(null, array('qq_num', 'wx_id', 'nickname', 'addr', 'sign'));
 
-        if (count($info) == 0) {
+        if (count($info, COUNT_NORMAL) == 0) {
             $this->ajaxReturn(qc_json_error('Request at least one param.'));
+        }
+        if ($this->hasIllegalInfo($info)) {
+            $this->ajaxReturn(qc_json_error('包含非法参数'));
         }
 
         $userModel = new UserModel();
@@ -153,8 +160,13 @@ class UserController extends BaseController
         $userModel = new UserModel();
         $save = $userModel->where("id = $userId")->save(['avatar' => $savePath]);
         $save ? $this->ajaxReturn(qc_json_success('Update success')) : $this->ajaxReturn(qc_json_error('Failed to
-            update user info'));
+            update user avatar'));
     }
 
-
+//    public function test()
+//    {
+//        $info = $this->reqPost(array('tel', 'password'));
+//        $res = $this->hasIllegalInfo($info);
+//        var_dump($res);
+//    }
 }

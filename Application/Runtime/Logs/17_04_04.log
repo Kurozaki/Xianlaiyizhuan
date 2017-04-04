@@ -1,0 +1,53 @@
+[ 2017-04-04T14:21:38+08:00 ] ::1 /Xianlaiyizhuan/Home/User/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.015665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.062040s ]
+
+[ 2017-04-04T14:21:45+08:00 ] ::1 /Xianlaiyizhuan/Home/User/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.019147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019767s ]
+
+[ 2017-04-04T14:21:52+08:00 ] ::1 /Xianlaiyizhuan/Home/User/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2017-04-04T14:21:56+08:00 ] ::1 /Xianlaiyizhuan/Home/User/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001060s ]
+
+[ 2017-04-04T14:21:59+08:00 ] ::1 /Xianlaiyizhuan/Home/User/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001167s ]
+
+[ 2017-04-04T14:22:02+08:00 ] ::1 /Xianlaiyizhuan/Home/User/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-04T14:22:06+08:00 ] ::1 /Xianlaiyizhuan/Home/User/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001147s ]
+

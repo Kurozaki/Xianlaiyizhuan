@@ -173,4 +173,14 @@ class BaseController extends Controller
         $pModel = new PMsgModel();
         $pModel->sendPM(-1, $receiver, $content, 1);
     }
+
+    protected function hasIllegalInfo($info)
+    {
+        $patternArr = array(
+            'tel' => '/^1[0-9]{10}$/',
+            'password' => '/^[a-zA-Z0-9]{6,20}$/',
+            'qq_num' => '/^[0-9]{6,15}$/',
+            'wx_id' => '/^[a-zA-Z0-9]{6,20}$/');
+        return regex_confirm_patterns($info, $patternArr);
+    }
 }

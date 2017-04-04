@@ -14,11 +14,6 @@ use Common\Model\CommentModel;
 
 class CommentController extends BaseController
 {
-//    public function test()
-//    {
-//        $model = new CommentModel();
-//        var_dump($model->getDbFields());
-//    }
 
     public function leaveComment()
     {
@@ -86,4 +81,6 @@ class CommentController extends BaseController
             $this->ajaxReturn(qc_json_error('Operate error'));
         }
     }
+
+
 }

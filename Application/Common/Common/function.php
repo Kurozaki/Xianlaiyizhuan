@@ -77,8 +77,17 @@ function is_password_pattern($password)
     if (!is_string($password)) {
         return false;
     }
-    $pattern = "/^[0-9a-zA-Z]{3,20}$/";
+    $pattern = "/^[0-9a-zA-Z]{6,20}$/";
     return preg_match($pattern, $password);
+}
+
+function is_phone_pattern($phone)
+{
+    if (!is_string($phone)) {
+        return false;
+    }
+    $pattern = "/^1[0-9]{10}$/";
+    return preg_match($pattern, $phone);
 }
 
 function split_str($str = '', $split_pos = 0)
@@ -98,4 +107,17 @@ function array_del_by_val(array &$arr, $delVal)
             }
     }
     return false;
+}
+
+function regex_confirm_patterns($info, $confirm_patterns = array())
+{
+    foreach ($confirm_patterns as $key => $val) {
+        if (isset($info[$key])) {
+            $flag = preg_match($val, $info[$key]);
+            if (!$flag) {
+                return false;
+            }
+        }
+    }
+    return true;
 }

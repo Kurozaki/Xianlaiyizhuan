@@ -24,9 +24,17 @@ realname|真实姓名|Y|VARCHAR|
 **返回结果**
 
 ```
+//验证成功
 {
     "code":20000,
     "response":"Confirm success"
+}
+
+
+//验证失败
+{
+    "code":40000,
+    "response":"Wrong student info."
 }
 ```
 
@@ -55,9 +63,16 @@ sign|签名|N|VARCHAR
 **返回结果**
 
 ```
+//注册成功
 {
     "code":20000,
     "response":"Register success"
+}
+
+//注册失败
+{
+    "code":40000,
+    "response":"Failed to register"
 }
 ```
 ***
@@ -77,9 +92,16 @@ password|密码|Y|VARCHAR|
 **返回结果**
 
 ```
+//登录成功
 {
     "code":20000,
     "response":"Login success"
+}
+
+//登录失败
+{
+    "code":40000,
+    "response":"Wrong password or id number"
 }
 ```
 
@@ -95,9 +117,16 @@ Home/User/userLogout
 **返回结果**
 
 ```
+//登出成功
 {
     "code":20000,
     "response":"Logout success"
+}
+
+//登出失败
+{
+    "code":40001,
+    "response":"No login"
 }
 ```
 ***
@@ -118,6 +147,7 @@ srh_id|用户id|N|INT
 **返回结果**
 
 ```
+//获取成功
 {
     "code": 20000,
     "response": {
@@ -130,6 +160,12 @@ srh_id|用户id|N|INT
         "addr": "Akina",
         "sign": null
     }
+}
+
+//获取失败
+{
+    "code":40000,
+    "response":"This user does not exist"
 }
 
 ```
@@ -150,6 +186,7 @@ val|查找值|Y|VARCHAR
 **返回结果**
 
 ```
+//成功1
 {
     "code": 20000,
     "response": {
@@ -162,6 +199,12 @@ val|查找值|Y|VARCHAR
         "addr": "Akina",
         "sign": null
     }
+}
+
+//成功2，未找到符合条件的用户
+{
+    "code": 20000,
+    "response": false
 }
 
 ```
@@ -182,9 +225,16 @@ newPwd|新密码|Y|VARCHAR
 **返回结果**
 
 ```
+//更新成功
 {
     "code":20000,
     "response":"Update success"
+}
+
+//更新失败
+{
+    "code":40000,
+    "response":"Failed to update password"
 }
 ```
 ***
@@ -200,9 +250,16 @@ Home/User/updateAvatar
 **返回结果**
 
 ```
+//成功
 {
     "code":20000,
     "response":"Update success"
+}
+
+//更新失败
+{
+    "code":40000,
+    "response":"Failed to update avatar"
 }
 ```
 
@@ -222,4 +279,17 @@ addr|地址|N|VARCHAR
 sign|签名|N|VARCHAR
 
 
-**返回结果
+**返回结果**
+```
+//更新成功
+{
+    "code":20000,
+    "response":"Update success"
+}
+
+//更新失败
+{
+    "code":40000,
+    "response":"Failed to update"
+}
+```

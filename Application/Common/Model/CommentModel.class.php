@@ -61,4 +61,5 @@ class CommentModel extends BaseModel
         $data = $this->where("p_id = %d and type = %d", $p_id, $type)->select();
         return $data;
     }
+
 }
