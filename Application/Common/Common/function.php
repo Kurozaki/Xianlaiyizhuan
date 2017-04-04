@@ -57,9 +57,9 @@ function http_post($ch, $url, $data, $header)
     return $output;
 }
 
-function qc_json_error($msg = 'operate error', $error_code = 40000)
+function qc_json_error($msg = 'operate error', $code = 40000)
 {
-    return array('error_code' => $error_code, 'msg' => $msg);
+    return array('code' => $code, 'response' => $msg);
 }
 
 function qc_json_success($data = 'operate successfully', $code = 20000)
