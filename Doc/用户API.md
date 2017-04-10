@@ -52,7 +52,8 @@ Home/User/userRegister
 字段|描述|是否必须|类型|备注
 -|-|-|-|-
 tel|电话号码|Y|VARCHAR
-password|账号登录密码|Y|VARCHAR|
+password|账号登录密码|Y|VARCHAR|长度6-20
+pay_pad|支付密码|Y|VARCHAR|长度6-10
 |||
 qq_num|qq号码|N|VARCHAR
 wx_id|微信号|N|VARCHAR

@@ -1,0 +1,213 @@
+[ 2017-04-06T13:17:09+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.039627s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:18:13+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001940s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:18:14+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001672s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:18:14+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:18:15+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:18:15+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001997s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:19:06+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003793s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:19:06+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:19:07+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002388s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:19:07+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001448s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:19:23+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002048s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:19:24+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002050s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:19:24+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:19:24+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:19:25+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:19:25+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001590s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:19:25+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002219s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '221.4.190.174' is not allowed to connect to this MySQL server F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Host '221.4.190.174' is not allowed to connect to this MySQL server
+
+[ 2017-04-06T13:19:31+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_givelike` [ RunTime:0.009421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.019399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019744s ]
+
+[ 2017-04-06T13:19:32+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_givelike` [ RunTime:0.009191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001090s ]
+

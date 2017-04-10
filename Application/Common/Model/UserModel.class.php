@@ -28,9 +28,17 @@ class UserModel extends BaseModel
         }
     }
 
+    public function payPasswordConfirm($userId, $payPwd)
+    {
+        $payPwd = md5($payPwd);
+        $find = $this->where(array('id' => $userId, 'pay_pwd' => $payPwd))->find();
+        return $find;
+    }
+
     public function regUserInfo($userInfo)
     {
         $userInfo['password'] = md5($userInfo['password']);
+        $userInfo['pay_pwd'] = md5($userInfo['pay_pwd']);
         return $this->add($userInfo);
     }
 
@@ -46,4 +54,18 @@ class UserModel extends BaseModel
         return $data;
     }
 
+    public function addBalance($userId, $price)
+    {
+        $info = $this->where("id = %d", $userId)->find();
+        if (!$info) {
+            return false;
+        }
+        $balance = floatval($info['balance']);
+        $balance += floatval($price);
+        if ($balance < 0) {
+            return false;
+        }
+        $save = $this->where("id = %d", $userId)->save(['balance' => $balance]);
+        return $save;
+    }
 }

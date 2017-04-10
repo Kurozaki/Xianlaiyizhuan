@@ -35,7 +35,7 @@ class UserController extends BaseController
             $realname = $data['realname'];
             session('verify_info', null);
 
-            $regData = $this->reqPost(array('tel', 'password'),
+            $regData = $this->reqPost(array('tel', 'password', 'pay_pwd'),
                 array('qq_num', 'wx_id', 'nickname', 'addr', 'sign'));
             $regData['id_number'] = $id_number;
             $regData['realname'] = $realname;

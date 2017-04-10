@@ -26,6 +26,7 @@ free|是否免费|Y|INT|非0免费，否则免费
 **返回结果**
 
 ```
+//成功
 {
     "code": 20000,
     "response": {
@@ -39,6 +40,12 @@ free|是否免费|Y|INT|非0免费，否则免费
         "sell": "0",
         "seller_id": "1"
     }
+}
+
+//失败
+{
+    "code": 40000,
+    "response": "Failed to create."
 }
 ```
 
@@ -65,9 +72,16 @@ free|是否免费|N|VARCHAR
 **返回结果**
 
 ```
+//成功
 {
     "code":20000,
     "response":"Update success"
+}
+
+//失败
+{
+    "code": 40000,
+    "response": "Update failed"
 }
 ```
 
@@ -92,7 +106,15 @@ del_id|删除id|Y|VARCHAR
     "code":20000,
     "response":"Delete success"
 }
+
+//失败
+{
+    "code": 40000,
+    "response": "Failed to delete."
+}
 ```
+
+
 
 ***
 
@@ -120,6 +142,12 @@ d代表删除，u代表更新
 {
     "code":20000,
     "response": [修改后图片的url]
+}
+
+//失败
+{
+    "code": 40000,
+    "response": "Failed to update."
 }
 ```
 
@@ -192,9 +220,16 @@ false 只获取非免费列表，
 **返回结果**
 
 ```
+//成功1
 {
     "code":20000,
     "response":[json格式的多条交易信息列表]
+}
+
+//成功2
+{
+    "code": 20000,
+    "response": false    //未找到结果
 }
 ```
 
@@ -238,6 +273,12 @@ tid|交易信息id|Y|INT|
 {
     "code":20000,
     "response":3      //当前赞的数量
+}
+
+//失败
+{
+    "code": 40000,
+    "response": "Failed"
 }
 ```
 

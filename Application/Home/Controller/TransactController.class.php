@@ -10,7 +10,9 @@ namespace Home\Controller;
 
 
 use Common\Controller\BaseController;
+use Common\Model\OrderModel;
 use Common\Model\TransactModel;
+use Common\Model\UserModel;
 
 class TransactController extends BaseController
 {
@@ -104,7 +106,7 @@ class TransactController extends BaseController
         $userId = $this->reqLogin();
         $freeFlag = I('post.free');
         $model = new TransactModel();
-        $data = $model->getUseerTransactList($userId, $freeFlag);
+        $data = $model->getUserTransactList($userId, $freeFlag);
         $this->ajaxReturn(qc_json_success($data));
     }
 
@@ -113,17 +115,18 @@ class TransactController extends BaseController
         $seller_id = I('post.seller_id');
         $freeFlag = I('post.free');
         $model = new TransactModel();
-        $data = $model->getUseerTransactList($seller_id, $freeFlag);
+        $data = $model->getUserTransactList($seller_id, $freeFlag);
         $this->ajaxReturn(qc_json_success($data));
     }
 
+
     public function giveLikeToTransaction()
     {
-        $this->reqLogin();
+        $userId = $this->reqLogin();
         $like_tId = I('post.tid');
 
         $model = new TransactModel();
-        $giveLike = $model->giveLike($like_tId);
+        $giveLike = $model->giveLike($userId, $like_tId);
 
         if ($giveLike != -1) {
             $this->ajaxReturn(qc_json_success(['likec' => $giveLike]));
@@ -152,11 +155,62 @@ class TransactController extends BaseController
         }
     }
 
+    //order
+    public function createOrder()
+    {
+        $userId = $this->reqLogin();
+        $data = $this->reqPost(array('pay_pwd', 'tr_id'));
+        $payPwd = $data['pay_pwd'];
+        $tr_id = $data['tr_id'];
+
+        $userModel = new UserModel();   //confirm pay password
+        $payConfirm = $userModel->payPasswordConfirm($userId, $payPwd);
+        if (!$payConfirm) {
+            $this->ajaxReturn(qc_json_error('Error pay password!'));
+        }
+
+        $tModel = new TransactModel();
+        $tInfo = $tModel->where("id = %d", $tr_id)->find();
+        if (!$tInfo) {
+            $this->ajaxReturn(qc_json_error('Transaction info does not exist'));
+        }
+
+        $seller = $tInfo['seller_id'];
+        $price = $tInfo['price'];
+
+        if ($seller == $userId) {
+            $this->ajaxReturn(qc_json_error('Could not buy something you sell.'));
+        }
+
+        $orderData = array(
+            't_id' => $tr_id,
+            'buyer' => $userId,
+            'seller' => $seller,
+            'price' => $price,
+            'status' => 0
+        );
+
+        $model = new OrderModel();
+        $create = $model->createOrderInfo($orderData);
+        if ($create > 0) {
+            $content = "有人买了你的东西！";
+            $this->sendSystemMsgToUser($content, $seller);
+            $this->ajaxReturn(qc_json_error('Create order success'));
+        } else {
+            if ($create == -1) {
+                $this->ajaxReturn(qc_json_error('Low balance'));
+            } else if ($create == -2){
+                $this->ajaxReturn(qc_json_error('The order has exist'));
+            }else
+                $this->ajaxReturn(qc_json_error('Failed to create order.'));
+        }
+    }
+
+
 
 //    public function test()
 //    {
-//        $res = $this->uploadPictures('transact_intro', true);
-//        var_dump($res);
-//        echo 'Your are my son?  ';
+//        $model = new OrderModel();
+//        var_dump($model->getDbFields());
 //    }
 }

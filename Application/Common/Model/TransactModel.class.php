@@ -66,10 +66,16 @@ class TransactModel extends BaseModel
         return $this->save(['pics' => $newPicsStr]);
     }
 
-    public function giveLike($tra_id)
+    public function giveLike($userId, $tra_id)
     {
         $find = $this->where("id = %d", $tra_id)->find();
         if ($find) {
+            return -1;
+        }
+        $type = C('COMMENT_TYPE_TRANSACT');
+        $likeModel = new GiveLikeModel();
+        $give = $likeModel->giveLike($userId, $tra_id, $type);
+        if (!$give) {
             return -1;
         }
         $like = intval($find['likec']);
@@ -77,6 +83,7 @@ class TransactModel extends BaseModel
         $save = $this->save(['likec' => $like]);
         return $save > 0 ? $like : -1;
     }
+
 
     public function createTransact($info)
     {
@@ -120,7 +127,7 @@ class TransactModel extends BaseModel
         return $data;
     }
 
-    public function getUseerTransactList($userId, $free)
+    public function getUserTransactList($userId, $free)
     {
         switch ($free) {
             case 'true':

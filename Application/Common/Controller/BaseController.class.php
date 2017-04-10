@@ -179,6 +179,7 @@ class BaseController extends Controller
         $patternArr = array(
             'tel' => '/^1[0-9]{10}$/',
             'password' => '/^[a-zA-Z0-9]{6,20}$/',
+            'pay_pwd' => '/^[a-zA-Z0-9]{6,10}$/',
             'qq_num' => '/^[0-9]{6,15}$/',
             'wx_id' => '/^[a-zA-Z0-9]{6,20}$/');
         return regex_confirm_patterns($info, $patternArr);
