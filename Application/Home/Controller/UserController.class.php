@@ -33,7 +33,7 @@ class UserController extends BaseController
 
             $id_number = $data['id_number'];
             $realname = $data['realname'];
-            session('verify_info', null);
+//            session('verify_info', null);
 
             $regData = $this->reqPost(array('tel', 'password', 'pay_pwd'),
                 array('qq_num', 'wx_id', 'nickname', 'addr', 'sign'));

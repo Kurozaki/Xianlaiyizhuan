@@ -155,7 +155,7 @@ class TransactController extends BaseController
         }
     }
 
-    //order
+    //创建订单
     public function createOrder()
     {
         $userId = $this->reqLogin();
@@ -199,13 +199,37 @@ class TransactController extends BaseController
         } else {
             if ($create == -1) {
                 $this->ajaxReturn(qc_json_error('Low balance'));
-            } else if ($create == -2){
+            } else if ($create == -2) {
                 $this->ajaxReturn(qc_json_error('The order has exist'));
-            }else
+            } else
                 $this->ajaxReturn(qc_json_error('Failed to create order.'));
         }
     }
 
+
+    public function changeOrderStatus()
+    {
+        $userId = $this->reqLogin();
+        $postData = $this->reqPost(array('order_id', 'status'));
+
+        $uModel = new UserModel();
+        $info = $uModel->where("id = %d", $userId)->find();
+        if (!$info) {
+            $this->ajaxReturn(qc_json_error('Error'));
+        }
+        if ($info['perm'] == 0) {
+            $this->ajaxReturn(qc_json_error('No operate permission'));
+        }
+
+        $oId = $postData['order_id'];
+        $status = $postData['status'];
+        $oModel = new OrderModel();
+        $save = $oModel->where("id = %d", $oId)->save(array('status' => $status));
+        if ($save)
+            $this->ajaxReturn(qc_json_success('Operate success'));
+        else
+            $this->ajaxReturn(qc_json_error('Operate failed'));
+    }
 
 
 //    public function test()

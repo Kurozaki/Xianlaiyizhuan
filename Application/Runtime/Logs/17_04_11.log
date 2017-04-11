@@ -1,0 +1,128 @@
+[ 2017-04-11T14:16:12+08:00 ] ::1 /Xianlaiyizhuan/Home/User/idnCheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.096913s ]
+
+[ 2017-04-11T14:17:27+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002276s ]
+
+[ 2017-04-11T14:17:56+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001937s ]
+
+[ 2017-04-11T14:19:15+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+
+[ 2017-04-11T14:19:16+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001922s ]
+
+[ 2017-04-11T14:19:17+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001575s ]
+
+[ 2017-04-11T14:19:53+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001687s ]
+
+[ 2017-04-11T14:20:23+08:00 ] ::1 /Xianlaiyizhuan/Home/User/idnCheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+
+[ 2017-04-11T14:20:32+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+
+[ 2017-04-11T14:22:04+08:00 ] ::1 /Xianlaiyizhuan/Home/User/idnCheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001798s ]
+
+[ 2017-04-11T14:22:06+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001381s ]
+
+[ 2017-04-11T14:22:21+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002019s ]
+
+[ 2017-04-11T14:23:51+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001525s ]
+
+[ 2017-04-11T14:23:55+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
+
+[ 2017-04-11T14:24:10+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001885s ]
+
+[ 2017-04-11T14:24:24+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001699s ]
+
+[ 2017-04-11T14:24:34+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+
+[ 2017-04-11T14:24:56+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001729s ]
+
+[ 2017-04-11T14:25:05+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001399s ]
+
+[ 2017-04-11T14:25:16+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001373s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.012730s ]
+SQL: INSERT INTO `xlyz_user` (`tel`,`password`,`pay_pwd`,`id_number`,`realname`) VALUES ('15014331669','c33367701511b4f6020ec61ded352059','e10adc3949ba59abbe56e057f20f883e','3215000603','何嘉仪') [ RunTime:0.020202s ]
+
+[ 2017-04-11T14:28:51+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001876s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.011403s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id_number = '3115002333' and password = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.009473s ]
+
+[ 2017-04-11T14:29:06+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001502s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.011291s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id_number = '1169559037' and password = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.009959s ]
+
