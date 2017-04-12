@@ -126,3 +126,23 @@ NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be rem
 SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.011291s ]
 SQL: SELECT * FROM `xlyz_user` WHERE ( id_number = '1169559037' and password = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.009959s ]
 
+[ 2017-04-11T15:42:10+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024290s ]
+
+[ 2017-04-11T15:42:53+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001972s ]
+
+[ 2017-04-11T15:42:58+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+
+[ 2017-04-11T15:43:04+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001896s ]
+

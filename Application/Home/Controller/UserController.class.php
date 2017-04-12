@@ -83,10 +83,8 @@ class UserController extends BaseController
         $searchId = intval(I('post.srh_id'));
         $searchId = (0 == $searchId) ? $userId : $searchId;
         $model = new UserModel();
-        $info = $model->where("id = %d", $searchId)->find();
+        $info = $model->getUserInfo($searchId);
         if ($info) {
-            unset($info['password']);
-            unset($info['pmsg']);
             $this->ajaxReturn(qc_json_success($info));
         } else {
             $this->ajaxReturn(qc_json_error('This user does not exist'));

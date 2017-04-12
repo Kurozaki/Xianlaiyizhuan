@@ -68,4 +68,20 @@ class UserModel extends BaseModel
         $save = $this->where("id = %d", $userId)->save(['balance' => $balance]);
         return $save;
     }
+
+    public function getUserInfo($userId)
+    {
+        $info = $this->where("id = %d", $userId)
+            ->field('id_number, realname, tel, qq_num, wx_id, nickname, avatar, addr, sign')->find();
+        return $info;
+    }
+
+    public function getUserPermission($userId)
+    {
+        $info = $this->where("id = %d", $userId)->find();
+        if (!$info)
+            return 0;
+        else
+            return $info['perm'];
+    }
 }

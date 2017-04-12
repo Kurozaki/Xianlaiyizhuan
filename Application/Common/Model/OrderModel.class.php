@@ -26,10 +26,15 @@ class OrderModel extends BaseModel
             return -1;
         }
         $existFlag = $this->where($info)->find();
-        if($existFlag){
+        if ($existFlag) {
             return -2;
         }
         $create = $this->add($info);
         return $create;
+    }
+
+    public function finishOrder($orderId)
+    {
+
     }
 }

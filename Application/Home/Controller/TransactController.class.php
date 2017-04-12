@@ -206,31 +206,43 @@ class TransactController extends BaseController
         }
     }
 
-
-    public function changeOrderStatus()
+    public function finishOrder()
     {
         $userId = $this->reqLogin();
-        $postData = $this->reqPost(array('order_id', 'status'));
+        $orderId = I('post.order_id');
 
         $uModel = new UserModel();
-        $info = $uModel->where("id = %d", $userId)->find();
-        if (!$info) {
-            $this->ajaxReturn(qc_json_error('Error'));
+        $perm = $uModel->getUserPermission($userId);
+        if ($perm != C('USER_PERM_SUPER')) {
+            $this->ajaxReturn(qc_json_error('No permission'));
         }
-        if ($info['perm'] == 0) {
-            $this->ajaxReturn(qc_json_error('No operate permission'));
-        }
-
-        $oId = $postData['order_id'];
-        $status = $postData['status'];
+//        $this->ajaxReturn(qc_json_success('success'));
         $oModel = new OrderModel();
-        $save = $oModel->where("id = %d", $oId)->save(array('status' => $status));
-        if ($save)
+        $save = $oModel->where("id = %d", $orderId)->save(['perm' => 1]);
+        if ($save) {
             $this->ajaxReturn(qc_json_success('Operate success'));
-        else
-            $this->ajaxReturn(qc_json_error('Operate failed'));
+        } else {
+            $this->ajaxReturn(qc_json_error('Failed to operate'));
+        }
     }
 
+    public function getOrderList()
+    {
+        $userId = $this->reqLogin();
+        $uModel = new UserModel();
+        $perm = $uModel->getUserPermission($userId);
+        if ($perm != C('USER_PERM_SUPER')) {
+            $this->ajaxReturn(qc_json_error('No permission'));
+        }
+        $oModel = new OrderModel();
+        $data = $oModel->select();
+        $this->ajaxReturn(qc_json_success($data));
+    }
+
+    public function test()
+    {
+
+    }
 
 //    public function test()
 //    {
