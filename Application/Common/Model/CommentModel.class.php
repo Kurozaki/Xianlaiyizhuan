@@ -37,6 +37,7 @@ class CommentModel extends BaseModel
 
         $find = $model->where("id = %d", $p_id)->find();    //check if the post id exist first
         if ($find) {
+            $model->where("id = %d", $p_id)->save(['has_comm' => (intval($find['has_comm']) + 1)]);
             $add = $this->add($commInfo);   //if post found, add this comment
             return $add;
         } else {
@@ -46,6 +47,29 @@ class CommentModel extends BaseModel
 
     public function deleteComment($user_id, $comm_id)
     {
+//        $delFlag = $this->where("id = %d and user_id = %d", $comm_id, $user_id)->delete();
+//        return $delFlag;
+        $info = $this->where("id = %d and user_id = %d", $comm_id, $user_id)->find();
+        if (!$info) {
+            return false;
+        }
+        switch ($info['type']) {
+            case C('COMMENT_TYPE_TRANSACT'):
+                $model = new TransactModel();
+                break;
+
+            case C('COMMENT_TYPE_REQ'):
+                $model = new RequirementModel();
+                break;
+
+            default:
+                return false;
+        }
+        $del_id = $info['p_id'];
+
+        $find = $model->where("id = $del_id")->find();
+        $model->where("id = $del_id")->save(['has_comm' => (intval($find['has_comm']) - 1)]);
+
         $delFlag = $this->where("id = %d and user_id = %d", $comm_id, $user_id)->delete();
         return $delFlag;
     }

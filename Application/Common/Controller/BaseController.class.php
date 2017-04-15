@@ -8,6 +8,7 @@
 namespace Common\Controller;
 
 use Common\Model\PMsgModel;
+use Common\Model\UserModel;
 use Think\Controller;
 use Think\Upload;
 
@@ -174,7 +175,17 @@ class BaseController extends Controller
         $pModel->sendPM(-1, $receiver, $content, 1);
     }
 
-    protected function hasIllegalInfo($info)
+    protected function reqUserWithPermission($userId, $permission)
+    {
+        $userModel = new UserModel();
+        $find = $userModel->where("id = %d and perm = %d", $userId, $permission)->find();
+        if (!$find) {
+            $this->ajaxReturn(qc_json_error_request('No permission'));
+        }
+    }
+
+    protected
+    function hasIllegalInfo($info)
     {
         $patternArr = array(
             'tel' => '/^1[0-9]{10}$/',
@@ -184,5 +195,13 @@ class BaseController extends Controller
             'wx_id' => '/^[a-zA-Z0-9]{6,20}$/'
         );
         return !regex_confirm_patterns($info, $patternArr);
+    }
+
+    protected function base64FileDecode($base64, $path)
+    {
+        $file = fopen($path, 'w');
+        fwrite($file, base64_decode($base64));
+        $flag = fclose($file);
+        return $flag;
     }
 }

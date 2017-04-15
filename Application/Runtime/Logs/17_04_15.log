@@ -1,0 +1,91 @@
+[ 2017-04-15T19:02:51+08:00 ] ::1 /xianlaiyizhuan/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.058757s ]
+ERR: 无法加载控制器:Index
+
+[ 2017-04-15T19:03:07+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001659s ]
+NOTIC: [2] file_put_contents(./Public/test/test.jpg): failed to open stream: No such file or directory F:\PHP Projects\Xianlaiyizhuan\Application\Home\Controller\TestController.class.php 第 19 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.021824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022330s ]
+
+[ 2017-04-15T19:04:32+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001559s ]
+NOTIC: [2] file_put_contents(./Public/test/test.jpg): failed to open stream: No such file or directory F:\PHP Projects\Xianlaiyizhuan\Application\Home\Controller\TestController.class.php 第 20 行.
+
+[ 2017-04-15T19:05:00+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003420s ]
+NOTIC: [2] file_put_contents(./Public/test/test.jpg): failed to open stream: No such file or directory F:\PHP Projects\Xianlaiyizhuan\Application\Home\Controller\TestController.class.php 第 20 行.
+
+[ 2017-04-15T19:06:09+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001810s ]
+NOTIC: [2] fopen(./Public/test/test.jpg): failed to open stream: No such file or directory F:\PHP Projects\Xianlaiyizhuan\Application\Home\Controller\TestController.class.php 第 20 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given F:\PHP Projects\Xianlaiyizhuan\Application\Home\Controller\TestController.class.php 第 21 行.
+
+[ 2017-04-15T19:06:28+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+NOTIC: [2] fopen(./Public/test/test.jpg): failed to open stream: No such file or directory F:\PHP Projects\Xianlaiyizhuan\Application\Home\Controller\TestController.class.php 第 20 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given F:\PHP Projects\Xianlaiyizhuan\Application\Home\Controller\TestController.class.php 第 21 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given F:\PHP Projects\Xianlaiyizhuan\Application\Home\Controller\TestController.class.php 第 22 行.
+
+[ 2017-04-15T19:07:02+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001637s ]
+NOTIC: [2] fopen(./Public/test/test.jpg): failed to open stream: No such file or directory F:\PHP Projects\Xianlaiyizhuan\Application\Home\Controller\TestController.class.php 第 20 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given F:\PHP Projects\Xianlaiyizhuan\Application\Home\Controller\TestController.class.php 第 21 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given F:\PHP Projects\Xianlaiyizhuan\Application\Home\Controller\TestController.class.php 第 22 行.
+
+[ 2017-04-15T19:07:50+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001493s ]
+
+[ 2017-04-15T19:08:27+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+
+[ 2017-04-15T19:09:22+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001525s ]
+
+[ 2017-04-15T19:11:08+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+
+[ 2017-04-15T19:18:00+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001182s ]
+
+[ 2017-04-15T19:18:57+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002165s ]
+
+[ 2017-04-15T19:19:07+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001018s ]
+

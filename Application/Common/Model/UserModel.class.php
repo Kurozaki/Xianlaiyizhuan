@@ -84,4 +84,5 @@ class UserModel extends BaseModel
         else
             return $info['perm'];
     }
+
 }

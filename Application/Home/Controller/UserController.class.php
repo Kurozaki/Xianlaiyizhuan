@@ -161,7 +161,7 @@ class UserController extends BaseController
             update user avatar'));
     }
 
-//    public function test()
+//    public function test.jpg()
 //    {
 //        $info = $this->reqPost(array('tel', 'password'));
 //        $res = $this->hasIllegalInfo($info);

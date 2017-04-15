@@ -211,12 +211,7 @@ class TransactController extends BaseController
         $userId = $this->reqLogin();
         $orderId = I('post.order_id');
 
-        $uModel = new UserModel();
-        $perm = $uModel->getUserPermission($userId);
-        if ($perm != C('USER_PERM_SUPER')) {
-            $this->ajaxReturn(qc_json_error('No permission'));
-        }
-//        $this->ajaxReturn(qc_json_success('success'));
+        $this->reqUserWithPermission($userId, C('USER_PERM_SUPER'));
         $oModel = new OrderModel();
         $save = $oModel->where("id = %d", $orderId)->save(['perm' => 1]);
         if ($save) {
@@ -229,22 +224,14 @@ class TransactController extends BaseController
     public function getOrderList()
     {
         $userId = $this->reqLogin();
-        $uModel = new UserModel();
-        $perm = $uModel->getUserPermission($userId);
-        if ($perm != C('USER_PERM_SUPER')) {
-            $this->ajaxReturn(qc_json_error('No permission'));
-        }
+        $this->reqUserWithPermission($userId, C('USER_PERM_SUPER'));
         $oModel = new OrderModel();
         $data = $oModel->select();
         $this->ajaxReturn(qc_json_success($data));
     }
 
-    public function test()
-    {
 
-    }
-
-//    public function test()
+//    public function test.jpg()
 //    {
 //        $model = new OrderModel();
 //        var_dump($model->getDbFields());
