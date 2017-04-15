@@ -184,8 +184,7 @@ class BaseController extends Controller
         }
     }
 
-    protected
-    function hasIllegalInfo($info)
+    protected function hasIllegalInfo($info)
     {
         $patternArr = array(
             'tel' => '/^1[0-9]{10}$/',
@@ -200,8 +199,9 @@ class BaseController extends Controller
     protected function base64FileDecode($base64, $path)
     {
         $file = fopen($path, 'w');
-        fwrite($file, base64_decode($base64));
-        $flag = fclose($file);
+        $flag = fwrite($file, base64_decode($base64));
+        fclose($file);
         return $flag;
     }
+
 }

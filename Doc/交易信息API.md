@@ -20,8 +20,8 @@ Home/Transact/createTransaction
 intro|物品介绍|Y|VARCHAR
 type|类型|Y|VARCHAR|
 price|价格|Y|VARCHAR|
-free|是否免费|Y|INT|非0免费，否则免费
-*|描述图片|Y|FILE|最多5张图片
+free|是否免费|Y|BOOL|非0免费，否则免费
+picstr|描述图片(1-5张)|Y|VARCHAR|base64编码图片，多张用","分隔
 
 **返回结果**
 
@@ -123,18 +123,8 @@ del_id|删除id|Y|VARCHAR
 ``url``
 Home/Transact/editTransactionIntroPics
 
-**提交参数**
-``Post提交，需要登录``
 
-字段|描述|是否必须|类型
--|-|-|-|-
-update_id|删除id|Y|VARCHAR
-op_str|操作字段|Y|VARCHAR
-
-操作字段格式：d,u+k，k为图片url的id索引，用-连接可多步操作
-d代表删除，u代表更新
-例如，有3张图片，提交d0-u1-u3
-其含义为删除第0张图片，替换第1张图片，添加一张图片（3大于已存在图片的索引，认为是添加，如果有d3则不会执行任何操作）
+(正在整改...)
 
 **返回结果**
 

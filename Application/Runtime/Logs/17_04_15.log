@@ -89,3 +89,127 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.000739s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001018s ]
 
+[ 2017-04-15T19:33:10+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2017-04-15T19:33:55+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002244s ]
+
+[ 2017-04-15T19:34:39+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001771s ]
+
+[ 2017-04-15T19:35:20+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002060s ]
+
+[ 2017-04-15T19:36:07+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2017-04-15T19:37:05+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2017-04-15T20:07:45+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/createTransaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+
+[ 2017-04-15T20:08:04+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.010711s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id_number = '1169559037' and password = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.007732s ]
+
+[ 2017-04-15T20:08:06+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/createTransaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+
+[ 2017-04-15T20:08:41+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/createTransaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001720s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014705s ]
+SQL: INSERT INTO `xlyz_transact` (`intro`,`type`,`price`,`free`,`seller_id`,`ctime`,`sell`,`pics`) VALUES ('hahah','1',190,0,1,1492258121,0,'Public/transact/800a57675bd288a3befa0e910632c3c7.jpg|Public/transact/800a57675bd288a3befa0e910632c3c7.jpg|') [ RunTime:0.013649s ]
+
+[ 2017-04-15T20:13:50+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/createTransaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001747s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014556s ]
+SQL: INSERT INTO `xlyz_transact` (`intro`,`type`,`price`,`free`,`seller_id`,`ctime`,`sell`,`pics`) VALUES ('hahah','1',200,0,1,1492258430,0,'Public/transact/transact_infoae092aaa49c7463942a60ad5dc076500.jpg') [ RunTime:0.022128s ]
+
+[ 2017-04-15T20:14:09+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/createTransaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.015375s ]
+SQL: INSERT INTO `xlyz_transact` (`intro`,`type`,`price`,`free`,`seller_id`,`ctime`,`sell`,`pics`) VALUES ('hahah','1',200,0,1,1492258449,0,'Public/transact/transact_infofe02b9d0e2c64d19766c0b181fc92db9.jpg|Public/transact/transact_infofe02b9d0e2c64d19766c0b181fc92db9.jpg') [ RunTime:0.022513s ]
+
+[ 2017-04-15T20:14:39+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/createTransaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+NOTIC: [2] fopen(./Public/transact/transact_info/930f4e57bad705aab90a9db1f6dff44e.jpg): failed to open stream: No such file or directory F:\PHP Projects\Xianlaiyizhuan\Application\Common\Controller\BaseController.class.php 第 201 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given F:\PHP Projects\Xianlaiyizhuan\Application\Common\Controller\BaseController.class.php 第 202 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given F:\PHP Projects\Xianlaiyizhuan\Application\Common\Controller\BaseController.class.php 第 203 行.
+NOTIC: [2] fopen(./Public/transact/transact_info/521b8921a4450c80c873199978c9697e.jpg): failed to open stream: No such file or directory F:\PHP Projects\Xianlaiyizhuan\Application\Common\Controller\BaseController.class.php 第 201 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given F:\PHP Projects\Xianlaiyizhuan\Application\Common\Controller\BaseController.class.php 第 202 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given F:\PHP Projects\Xianlaiyizhuan\Application\Common\Controller\BaseController.class.php 第 203 行.
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.013298s ]
+SQL: INSERT INTO `xlyz_transact` (`intro`,`type`,`price`,`free`,`seller_id`,`ctime`,`sell`,`pics`) VALUES ('hahah','1',200,0,1,1492258479,0,'Public/transact/transact_info/930f4e57bad705aab90a9db1f6dff44e.jpg|Public/transact/transact_info/521b8921a4450c80c873199978c9697e.jpg') [ RunTime:0.012018s ]
+
+[ 2017-04-15T20:17:29+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/createTransaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.011198s ]
+SQL: INSERT INTO `xlyz_transact` (`intro`,`type`,`price`,`free`,`seller_id`,`ctime`,`sell`,`pics`) VALUES ('hahah','1',190,0,1,1492258649,0,'Public/transact/transact_intro/f2b79d8111ed62ed9845969ce1050b15.jpg|Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg') [ RunTime:0.018297s ]
+

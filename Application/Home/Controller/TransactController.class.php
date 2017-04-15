@@ -20,25 +20,25 @@ class TransactController extends BaseController
     {
         $userId = $this->reqLogin();
 
-        $tInfo = $this->reqPost(array('intro', 'type', 'price', 'free'));
+        $tInfo = $this->reqPost(array('intro', 'type', 'price', 'free', 'picstr'));
 
         //set seller id and create time
         $tInfo['seller_id'] = $userId;
         $tInfo['ctime'] = time();
         $tInfo['sell'] = 0;
 
-        $fPaths = '';
-        $fInfo = $this->uploadPictures('transact_intro', true);
-        $fArr = $fInfo['success_array'];
-
-        if (!is_array($fArr) || count($fArr, COUNT_NORMAL) == 0)
-            $this->ajaxReturn(qc_json_error_request('Request at least one picture'));
-
-        foreach ($fArr as $f) {
-            $fPaths .= $f['url'] . '|';     //connect pic urls with '|'
+        //transfer base64 to pic file
+        $picStr = $tInfo['picstr'];
+        $picArr = explode(",", $picStr);
+        $picsPath = "";
+        unset($tInfo['picstr']);
+        $rootPath = C('FILE_STORE_ROOT') . "transact/transact_intro/";
+        foreach ($picArr as $val) {
+            $savePath = $rootPath . md5(time() * rand()) . ".jpg";
+            $this->base64FileDecode($val, $savePath);
+            $picsPath .= (substr($savePath, 2) . "|");
         }
-        $fPaths = substr($fPaths, 0, strlen($fPaths) - 1);
-        $tInfo['pics'] = $fPaths;
+        $tInfo['pics'] = substr($picsPath, 0, strlen($picsPath) - 1);
 
         $model = new TransactModel();
         $add = $model->createTransact($tInfo);
@@ -83,22 +83,22 @@ class TransactController extends BaseController
 
     public function editTransactionIntroPics()
     {
-        $userId = $this->reqLogin();
-        $postData = $this->reqPost(array('update_id', 'op_str'));
-        $fInfo = $this->uploadPictures('transact_intro', true);
-        $fArr = $fInfo['success_array'];
-
-        $fPaths = array();
-        foreach ($fArr as $f) {
-            array_push($fPaths, $f['url']);
-        }
-        $model = new TransactModel();
-        $update = $model->editTransactPics($userId, $postData['update_id'], $postData['op_str'], $fPaths);
-
-        if ($update) {
-            $this->ajaxReturn(qc_json_success($update));
-        } else
-            $this->ajaxReturn(qc_json_error('Failed to update'));
+//        $userId = $this->reqLogin();
+//        $postData = $this->reqPost(array('update_id', 'op_str'));
+//        $fInfo = $this->uploadPictures('transact_intro', true);
+//        $fArr = $fInfo['success_array'];
+//
+//        $fPaths = array();
+//        foreach ($fArr as $f) {
+//            array_push($fPaths, $f['url']);
+//        }
+//        $model = new TransactModel();
+//        $update = $model->editTransactPics($userId, $postData['update_id'], $postData['op_str'], $fPaths);
+//
+//        if ($update) {
+//            $this->ajaxReturn(qc_json_success($update));
+//        } else
+//            $this->ajaxReturn(qc_json_error('Failed to update'));
     }
 
     public function getMyTransactionList()
@@ -231,9 +231,4 @@ class TransactController extends BaseController
     }
 
 
-//    public function test.jpg()
-//    {
-//        $model = new OrderModel();
-//        var_dump($model->getDbFields());
-//    }
 }
