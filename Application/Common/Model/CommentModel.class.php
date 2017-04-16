@@ -21,7 +21,6 @@ class CommentModel extends BaseModel
         $p_id = $commInfo['p_id'];
         $type = $commInfo['type'];
 
-
         switch ($type) {
             case C('COMMENT_TYPE_TRANSACT'):
                 $model = new TransactModel();
@@ -30,6 +29,11 @@ class CommentModel extends BaseModel
             case C('COMMENT_TYPE_REQ'):
                 $model = new RequirementModel();
                 break;
+
+            case C('COMMENT_TYPE_DONATION'):
+                $model = new DonationModel();
+                break;
+
 
             default:
                 return false;
@@ -62,13 +66,17 @@ class CommentModel extends BaseModel
                 $model = new RequirementModel();
                 break;
 
+            case C('COMMENT_TYPE_DONATION'):
+                $model = new DonationModel();
+                break;
+
             default:
                 return false;
         }
-        $del_id = $info['p_id'];
+        $p_id = $info['p_id'];
 
-        $find = $model->where("id = $del_id")->find();
-        $model->where("id = $del_id")->save(['has_comm' => (intval($find['has_comm']) - 1)]);
+        $find = $model->where("id = $p_id")->find();
+        $model->where("id = $p_id")->save(['has_comm' => (intval($find['has_comm']) - 1)]);
 
         $delFlag = $this->where("id = %d and user_id = %d", $comm_id, $user_id)->delete();
         return $delFlag;

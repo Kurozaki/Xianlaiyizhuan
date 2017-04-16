@@ -83,22 +83,33 @@ class TransactController extends BaseController
 
     public function editTransactionIntroPics()
     {
-//        $userId = $this->reqLogin();
-//        $postData = $this->reqPost(array('update_id', 'op_str'));
-//        $fInfo = $this->uploadPictures('transact_intro', true);
-//        $fArr = $fInfo['success_array'];
-//
-//        $fPaths = array();
-//        foreach ($fArr as $f) {
-//            array_push($fPaths, $f['url']);
-//        }
-//        $model = new TransactModel();
-//        $update = $model->editTransactPics($userId, $postData['update_id'], $postData['op_str'], $fPaths);
-//
-//        if ($update) {
-//            $this->ajaxReturn(qc_json_success($update));
-//        } else
-//            $this->ajaxReturn(qc_json_error('Failed to update'));
+        $userId = $this->reqLogin();
+        $postData = $this->reqPost(array('tr_id', 'op_str', 'pics_str'));
+
+        $picStr = $postData['pics_str'];
+        $base64_arr = explode(",", $picStr);
+        $pic_arr = array();
+
+        $rootPath = C('FILE_STORE_ROOT') . "transact/transact_intro/";
+        foreach ($base64_arr as $base64) {
+            $savePath = $rootPath . md5(time() * rand()) . ".jpg";
+            $save = $this->base64FileDecode($base64, $savePath);
+            if ($save)
+                array_push($pic_arr, substr($savePath, 2));
+        }
+
+        $model = new TransactModel();
+
+        $editFlag = $model->editTransactPictures($postData['tr_id'], $userId, $postData['op_str'], $pic_arr);
+        if ($editFlag > 0) {
+            $this->ajaxReturn(qc_json_success('Update success'));
+        } else {
+            if (-1 == $editFlag) {
+                $this->ajaxReturn(qc_json_error('Could not find transact info'));
+            } elseif (-2 == $editFlag) {
+                $this->ajaxReturn(qc_json_error('Illegal param'));
+            }
+        }
     }
 
     public function getMyTransactionList()

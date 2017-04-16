@@ -1,0 +1,956 @@
+[ 2017-04-16T09:46:05+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.014519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.068857s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010781s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 ) LIMIT 1   [ RunTime:0.009500s ]
+
+[ 2017-04-16T10:00:09+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012092s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 0 ) LIMIT 1   [ RunTime:0.010363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.040205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.040477s ]
+
+[ 2017-04-16T10:00:10+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.009221s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 0 ) LIMIT 1   [ RunTime:0.007734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001094s ]
+
+[ 2017-04-16T10:00:11+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002002s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010114s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 0 ) LIMIT 1   [ RunTime:0.008492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2017-04-16T10:00:12+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001935s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.011797s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 0 ) LIMIT 1   [ RunTime:0.009693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001395s ]
+
+[ 2017-04-16T10:00:47+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001817s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.009760s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 0 ) LIMIT 1   [ RunTime:0.007827s ]
+
+[ 2017-04-16T10:01:33+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002569s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.013833s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.013046s ]
+NOTIC: [2] preg_match(): Unknown modifier '{' F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 112 行.
+
+[ 2017-04-16T10:01:34+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.011349s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.009921s ]
+NOTIC: [2] preg_match(): Unknown modifier '{' F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 112 行.
+
+[ 2017-04-16T10:02:33+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001984s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014113s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.012251s ]
+
+[ 2017-04-16T10:02:34+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001450s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.009957s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.008639s ]
+
+[ 2017-04-16T10:02:46+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012179s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.010039s ]
+
+[ 2017-04-16T10:02:47+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001750s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.008979s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007557s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:02:47+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001342s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014835s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.012770s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:04:13+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001686s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.009426s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007642s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:04:29+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003748s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012429s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.010210s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:06:01+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.011157s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.009694s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:06:02+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.011401s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.008562s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:06:02+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001489s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012952s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.010990s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:06:02+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010209s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007894s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:06:27+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001567s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014737s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.012708s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:06:27+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.009588s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007776s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:06:28+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001463s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014065s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.012343s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:06:28+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012068s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.010637s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:06:28+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001902s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010606s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.008629s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:06:32+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001945s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010554s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.008302s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:06:33+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010075s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007546s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:06:33+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010065s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007281s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:06:34+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001722s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.009180s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007876s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:09:09+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001937s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.015584s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.013033s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:09:10+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002528s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.013143s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.011259s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:09:11+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002583s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012869s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.011076s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:09:11+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001420s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.009416s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007442s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:09:12+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012213s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.010377s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:09:23+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001716s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012402s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.009955s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:09:23+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.011404s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.009508s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:09:24+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001521s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.016150s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.013847s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:09:51+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.011415s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.010322s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:09:51+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012246s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.010875s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:09:52+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010987s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.008334s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:09:52+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001665s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.009134s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007899s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:09:52+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.011905s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.009311s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:10:16+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002203s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012075s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007821s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:10:17+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002543s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012201s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.009634s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:10:17+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014290s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.012151s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:10:17+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.015927s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.012166s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:10:19+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012656s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.010145s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:10:20+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001887s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.011062s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.008763s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:10:28+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.011058s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.008191s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:10:29+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012086s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.010432s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:10:29+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010069s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.008295s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:11:18+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.009427s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007896s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:11:19+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001711s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010611s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.008531s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:11:19+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.009147s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007741s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:11:19+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.016131s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.014595s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:11:20+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001663s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010880s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.009673s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:11:20+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001542s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.015572s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.013245s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:12:42+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001626s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014164s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.012515s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:12:42+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.016203s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.014041s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:12:43+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001623s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007653s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:12:43+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001373s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.009542s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.007323s ]
+NOTIC: [2] preg_match(): No ending delimiter '^' found F:\PHP Projects\Xianlaiyizhuan\Application\Common\Model\TransactModel.class.php 第 113 行.
+
+[ 2017-04-16T10:13:19+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001658s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.010252s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.008426s ]
+
+[ 2017-04-16T10:13:34+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.020016s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.013674s ]
+
+[ 2017-04-16T10:13:34+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.009219s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.008124s ]
+
+[ 2017-04-16T10:13:37+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.013361s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.011723s ]
+
+[ 2017-04-16T10:13:40+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.009923s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.008915s ]
+
+[ 2017-04-16T10:17:04+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002093s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.017080s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( id = 19 and seller_id = 1 ) LIMIT 1   [ RunTime:0.014173s ]
+
+[ 2017-04-16T10:27:48+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001288s ]
+
+[ 2017-04-16T10:27:56+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001399s ]
+
+[ 2017-04-16T10:27:59+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000979s ]
+
+[ 2017-04-16T10:28:18+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001152s ]
+
+[ 2017-04-16T10:28:18+08:00 ] ::1 /Xianlaiyizhuan/Home/Transact/editTransactionIntroPics
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002045s ]
+
+[ 2017-04-16T11:28:23+08:00 ] ::1 /Xianlaiyizhuan/Home/Donation/createDonation
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015406s ]
+
+[ 2017-04-16T11:28:55+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.011963s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id_number = '3115003090' and password = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.009683s ]
+
+[ 2017-04-16T11:28:57+08:00 ] ::1 /Xianlaiyizhuan/Home/Donation/createDonation
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002893s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.012972s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id = 2 and perm = 1 ) LIMIT 1   [ RunTime:0.009039s ]
+
+[ 2017-04-16T11:29:04+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.011103s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id_number = '1169559037' and password = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.009330s ]
+
+[ 2017-04-16T11:29:09+08:00 ] ::1 /Xianlaiyizhuan/Home/Donation/createDonation
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.010983s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id = 1 and perm = 1 ) LIMIT 1   [ RunTime:0.009511s ]
+
+[ 2017-04-16T11:30:01+08:00 ] ::1 /Xianlaiyizhuan/Home/Donation/createDonation
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001989s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.011560s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id = 1 and perm = 1 ) LIMIT 1   [ RunTime:0.010231s ]
+SQL: SHOW COLUMNS FROM `xlyz_donate` [ RunTime:0.011127s ]
+SQL: INSERT INTO `xlyz_donate` (`intro`,`publisher`,`addr`,`ctime`,`has_comm`,`likec`) VALUES ('捐书啦','wyu','wyu',1492313401,0,0) [ RunTime:0.024793s ]
+
+[ 2017-04-16T11:32:39+08:00 ] ::1 /Xianlaiyizhuan/Home/Donation/createDonation
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002518s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.009446s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id = 1 and perm = 1 ) LIMIT 1   [ RunTime:0.008709s ]
+SQL: SHOW COLUMNS FROM `xlyz_donate` [ RunTime:0.009821s ]
+SQL: INSERT INTO `xlyz_donate` (`intro`,`publisher`,`addr`,`ctime`,`has_comm`,`likec`) VALUES ('捐书啦','wyu','wyu',1492313559,0,0) [ RunTime:0.008845s ]
+
+[ 2017-04-16T11:36:55+08:00 ] ::1 /Xianlaiyizhuan/Home/Donation/getDonationList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002383s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_donate` [ RunTime:0.011572s ]
+SQL: SELECT * FROM `xlyz_donate`  [ RunTime:0.310873s ]
+
+[ 2017-04-16T11:37:21+08:00 ] ::1 /Xianlaiyizhuan/Home/Donation/createDonation
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002008s ]
+ERR: 非法操作:createdonation
+
+[ 2017-04-16T11:37:36+08:00 ] ::1 /Xianlaiyizhuan/Home/Donation/createDonationInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.015107s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id = 1 and perm = 1 ) LIMIT 1   [ RunTime:0.012569s ]
+SQL: SHOW COLUMNS FROM `xlyz_donate` [ RunTime:0.014997s ]
+SQL: INSERT INTO `xlyz_donate` (`intro`,`publisher`,`addr`,`ctime`,`has_comm`,`likec`) VALUES ('捐书啦hahah','wyu','wyu',1492313856,0,0) [ RunTime:0.014535s ]
+
+[ 2017-04-16T11:37:41+08:00 ] ::1 /Xianlaiyizhuan/Home/Donation/getDonationList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_donate` [ RunTime:0.009871s ]
+SQL: SELECT * FROM `xlyz_donate`  [ RunTime:0.007960s ]
+
+[ 2017-04-16T11:38:41+08:00 ] ::1 /Xianlaiyizhuan/Home/Donation/getDonationList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_donate` [ RunTime:0.011900s ]
+SQL: SELECT * FROM `xlyz_donate`  [ RunTime:0.009483s ]
+

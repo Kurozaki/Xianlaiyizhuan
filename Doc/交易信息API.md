@@ -123,8 +123,19 @@ del_id|删除id|Y|VARCHAR
 ``url``
 Home/Transact/editTransactionIntroPics
 
+``Post提交，需要登录``
 
-(正在整改...)
+字段|描述|是否必须|类型
+-|-|-|-|-
+tr_id|信息id|Y|VARCHAR
+op_str|操作串|Y|VARCHAR
+pics_str|图片的base64|Y|TEXT
+
+
+特别说明：
+1、op_str: 用d/u+i的形式操作图片，d表示删除，u表示更新，i表示操作图片的索引，多步操作用"-"连接，如d1-u2-u4-d0
+2、pics_str: 用base64编码的图片，多图用","分割
+
 
 **返回结果**
 

@@ -14,7 +14,8 @@ use Common\Model\DonationModel;
 
 class DonationController extends BaseController
 {
-    public function createDonation()
+
+    public function createDonationInfo()
     {
         $userId = $this->reqLogin();
         $this->reqUserWithPermission($userId, C('USER_PERM_SUPER'));
@@ -57,12 +58,26 @@ class DonationController extends BaseController
         }
     }
 
+    public function deleteDonationInfo()
+    {
+        $userId = $this->reqLogin();
+        $this->reqUserWithPermission($userId, C('USER_PERM_SUPER'));
+        $delId = I('post.del_id');
+
+        $model = new DonationModel();
+        $delFlag = $model->where("id =%d", $delId)->delete();
+        if ($delFlag) {
+            $this->ajaxReturn(qc_json_success('Delete success'));
+        } else {
+            $this->ajaxReturn(qc_json_error('Delete failed'));
+        }
+    }
+
     public function getDonationList()
     {
         $dModel = new DonationModel();
         $data = $dModel->select();
         $this->ajaxReturn(qc_json_success($data));
     }
-
 
 }
