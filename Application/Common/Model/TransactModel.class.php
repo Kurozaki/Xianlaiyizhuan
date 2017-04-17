@@ -67,12 +67,17 @@ class TransactModel extends BaseModel
         return $deleteFlag;
     }
 
-    public function recentTransactList()
+    public function recentTransactList($type = null)
     {
         $recent = F('recent_tra');
         $data = [];
+
+        $condition = ['id' => ['in', $recent]];
+        if ($type)
+            $condition['type'] = $type;
+
         if (is_array($recent)) {
-            $data = $this->where(['id' => ['in', $recent]])->select();
+            $data = $this->where($condition)->select();
         }
 
         $userModel = new UserModel();
@@ -81,7 +86,8 @@ class TransactModel extends BaseModel
             //get user base info
             $sellerId = $info['seller_id'];
             $userInfo = $userModel->where("id = $sellerId")->field("nickname, avatar")->find();
-            $userInfo['avatar'] = C('BASE_URL') . $userInfo['avatar'];
+            if ($userInfo['avatar'] != null)
+                $userInfo['avatar'] = C('BASE_URL') . $userInfo['avatar'];
             $info['seller'] = $userInfo;
 
             //change pic to array

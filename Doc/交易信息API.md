@@ -18,7 +18,7 @@ Home/Transact/createTransaction
 字段|描述|是否必须|类型|备注
 -|-|-|-|-
 intro|物品介绍|Y|VARCHAR
-type|类型|Y|VARCHAR|
+type|类型|Y|INT|参见文档底部类型表
 price|价格|Y|VARCHAR|
 free|是否免费|Y|BOOL|非0免费，否则免费
 picstr|描述图片(1-5张)|Y|VARCHAR|base64编码图片，多张用","分隔
@@ -64,7 +64,7 @@ Home/Transact/updateTransactionInfo
 -|-|-|-|-
 update_id|id|Y|INT
 intro|介绍|N|VARCHAR
-type|种类|N|VARCHAR
+type|类型|Y|INT|
 price|价格|N|VARCHAR
 free|是否免费|N|VARCHAR
 
@@ -242,16 +242,57 @@ Home/Transact/getRecentTransactionList
 
 
 **提交参数**
-(无)
-
+字段|描述|是否必须|类型|备注
+-|-|-|-|-
+type|物品分类|N|INT|参见文档底部类型表，若不提交返回所有分类
 
 
 **返回结果**
 
 ```
 {
-    "code":20000,
-    "response":[json格式的多条交易信息列表]
+    "code": 20000,
+    "response": [
+        {
+            "id": "18",    
+            "free": "0",        //是否免费
+            "intro": "hahah",
+            "pics": [
+                "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg"
+            ],
+            "type": "1",
+            "price": "200",    
+            "likec": "0",    //点赞数
+            "ctime": "1492258479",
+            "sell": "0",            //是否已售
+            "has_comm": "0",    //评论数
+            "seller_id": "1",
+            "seller": {
+                "nickname": "坂田金时",
+                "avatar": null
+            }
+        },
+        {
+            "id": "19",
+            "free": "0",
+            "intro": "hahah",
+            "pics": [
+                "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg",
+                "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg"
+            ],
+            "type": "1",
+            "price": "190",
+            "likec": "0",
+            "ctime": "1492258649",
+            "sell": "0",
+            "has_comm": "0",
+            "seller_id": "2",
+            "seller": {
+                "nickname": "Kurozaki",
+                "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
+            }
+        }
+    ]
 }
 ```
 
@@ -284,3 +325,18 @@ tid|交易信息id|Y|INT|
 ```
 
 ***
+
+###类型表###
+用于交易信息的type参数
+
+提交值|含义
+-|-
+0|其他
+1|书籍
+2|生活用品
+3|体育用品
+4|学习用品
+5|手机
+6|电脑
+7|乐器
+8|电子产品

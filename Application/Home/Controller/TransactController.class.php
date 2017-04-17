@@ -148,8 +148,10 @@ class TransactController extends BaseController
 
     public function getRecentTransactionList()
     {
+        $type = I('post.type');
+
         $model = new TransactModel();
-        $dataList = $model->recentTransactList();
+        $dataList = $model->recentTransactList($type);
         $this->ajaxReturn(qc_json_success($dataList));
     }
 
