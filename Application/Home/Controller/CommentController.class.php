@@ -63,6 +63,7 @@ class CommentController extends BaseController
 
         $model = new CommentModel();
         $data = $model->userCommentList($userId, $type);
+
         if ($data) {
             $this->ajaxReturn(qc_json_success($data));
         } else {
@@ -73,14 +74,15 @@ class CommentController extends BaseController
     public function postCommentList()
     {
         $pData = $this->reqPost(array('p_id', 'type'));
+
         $model = new CommentModel();
         $list = $model->infoCommentList($pData['type'], $pData['p_id']);
+
         if ($list) {
             $this->ajaxReturn(qc_json_success($list));
         } else {
             $this->ajaxReturn(qc_json_error('Operate error'));
         }
     }
-
 
 }

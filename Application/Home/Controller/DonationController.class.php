@@ -11,6 +11,7 @@ namespace Home\Controller;
 
 use Common\Controller\BaseController;
 use Common\Model\DonationModel;
+use Common\Model\GiveLikeModel;
 
 class DonationController extends BaseController
 {
@@ -80,4 +81,18 @@ class DonationController extends BaseController
         $this->ajaxReturn(qc_json_success($data));
     }
 
+    public function giveLikeToDonationInfo()
+    {
+        $userId = $this->reqLogin();
+        $dnId = I('post.dn_id');
+        $model = new GiveLikeModel();
+
+        $like = $model->giveLike($userId, $dnId, C('COMMENT_TYPE_DONATION'));
+        if ($like) {
+            $this->ajaxReturn(qc_json_success('Success'));
+        } else {
+            $this->ajaxReturn(qc_json_error('Failed'));
+        }
+
+    }
 }

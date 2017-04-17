@@ -1,0 +1,107 @@
+[ 2017-04-17T10:22:46+08:00 ] ::1 /Xianlaiyizhuan/Home/Rubberneck/editTopic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.070398s ]
+
+[ 2017-04-17T10:23:04+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.015855s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id_number = '3115003090' and password = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.013020s ]
+
+[ 2017-04-17T10:25:45+08:00 ] ::1 /Xianlaiyizhuan/Home/Rubberneck/editTopic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001722s ]
+
+[ 2017-04-17T10:25:50+08:00 ] ::1 /Xianlaiyizhuan/Home/Rubberneck/editTopic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001700s ]
+
+[ 2017-04-17T10:26:21+08:00 ] ::1 /Xianlaiyizhuan/Home/Rubberneck/editTopic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+
+[ 2017-04-17T10:26:28+08:00 ] ::1 /Xianlaiyizhuan/Home/Rubberneck/editTopic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_rubberneck` [ RunTime:0.011237s ]
+SQL: UPDATE `xlyz_rubberneck` SET `title`='This is title' WHERE ( id = 1 and author_id = 2 ) [ RunTime:0.010330s ]
+
+[ 2017-04-17T10:26:38+08:00 ] ::1 /Xianlaiyizhuan/Home/Rubberneck/editTopic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+
+[ 2017-04-17T10:26:45+08:00 ] ::1 /Xianlaiyizhuan/Home/Rubberneck/editTopic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_rubberneck` [ RunTime:0.013375s ]
+SQL: UPDATE `xlyz_rubberneck` SET `title`='This is titlesss' WHERE ( id = 2 and author_id = 2 ) [ RunTime:0.013930s ]
+
+[ 2017-04-17T11:16:32+08:00 ] ::1 /Xianlaiyizhuan/Home/Rubberneck/createTopic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+
+[ 2017-04-17T11:16:51+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001733s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.013890s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id_number = '3115003090' and password = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.012235s ]
+
+[ 2017-04-17T11:16:53+08:00 ] ::1 /Xianlaiyizhuan/Home/Rubberneck/createTopic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001541s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_rubberneck` [ RunTime:0.010318s ]
+SQL: INSERT INTO `xlyz_rubberneck` (`title`,`content`,`author_id`,`ctime`,`has_comm`) VALUES ('这是标题','这是内容',2,1492399013,0) [ RunTime:0.010738s ]
+
+[ 2017-04-17T11:24:45+08:00 ] ::1 /Xianlaiyizhuan/Home/Rubberneck/getmytopiclist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001521s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_rubberneck` [ RunTime:0.009721s ]
+SQL: SELECT * FROM `xlyz_rubberneck` WHERE ( author_id = 2 )  [ RunTime:0.008573s ]
+
+[ 2017-04-17T11:27:23+08:00 ] ::1 /Xianlaiyizhuan/Home/Rubberneck/getRecentTopicList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_rubberneck` [ RunTime:0.009924s ]
+SQL: SELECT * FROM `xlyz_rubberneck` WHERE ( `id` IN (4,2) )  [ RunTime:0.009742s ]
+

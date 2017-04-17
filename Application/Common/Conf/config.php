@@ -5,6 +5,7 @@ return array(
     'COMMENT_TYPE_TRANSACT' => 1,
     'COMMENT_TYPE_REQ' => 2,
     'COMMENT_TYPE_DONATION' => 3,
+    'COMMENT_TYPE_RUBBERNECK' => 4,
 
     'USER_PERM_SUPER' => 1
 );

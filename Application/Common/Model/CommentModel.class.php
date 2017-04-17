@@ -34,6 +34,9 @@ class CommentModel extends BaseModel
                 $model = new DonationModel();
                 break;
 
+            case C('COMMENT_TYPE_RUBBERNECK'):
+                $model = new RubberneckModel();
+                break;
 
             default:
                 return false;
@@ -68,6 +71,10 @@ class CommentModel extends BaseModel
 
             case C('COMMENT_TYPE_DONATION'):
                 $model = new DonationModel();
+                break;
+
+            case C('COMMENT_TYPE_RUBBERNECK'):
+                $model = new RubberneckModel();
                 break;
 
             default:
