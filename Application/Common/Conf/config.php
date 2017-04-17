@@ -1,5 +1,6 @@
 <?php
 return array(
+    'BASE_URL' => 'http://139.199.195.54/xianlaiyizhuan/',
 
     'FILE_STORE_ROOT' => './Public/',
     'COMMENT_TYPE_TRANSACT' => 1,

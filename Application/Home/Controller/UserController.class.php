@@ -155,6 +155,7 @@ class UserController extends BaseController
         $userId = $this->reqLogin();
         $uploadInfo = $this->uploadPictures('user_avatar');
         $savePath = $path = C('FILE_STORE_ROOT') . $uploadInfo['savepath'] . $uploadInfo['savename'];
+        $savePath = substr($savePath, 2);
         $userModel = new UserModel();
         $save = $userModel->where("id = $userId")->save(['avatar' => $savePath]);
         $save ? $this->ajaxReturn(qc_json_success('Update success')) : $this->ajaxReturn(qc_json_error('Failed to

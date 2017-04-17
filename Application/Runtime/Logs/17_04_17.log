@@ -299,3 +299,257 @@ SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.012106s ]
 SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.010504s ]
 SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.009952s ]
 
+[ 2017-04-17T22:06:08+08:00 ] ::1 /xianlaiyizhuan/Home/Test/test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001465s ]
+NOTIC: [2] Missing argument 2 for http_get(), called in F:\PHP Projects\Xianlaiyizhuan\Application\Home\Controller\TestController.class.php on line 18 and defined F:\PHP Projects\Xianlaiyizhuan\Application\Common\Common\function.php 第 25 行.
+NOTIC: [8] Undefined variable: url F:\PHP Projects\Xianlaiyizhuan\Application\Common\Common\function.php 第 28 行.
+NOTIC: [2] curl_setopt_array(): supplied argument is not a valid cURL handle resource F:\PHP Projects\Xianlaiyizhuan\Application\Common\Common\function.php 第 35 行.
+NOTIC: [2] curl_exec() expects parameter 1 to be resource, string given F:\PHP Projects\Xianlaiyizhuan\Application\Common\Common\function.php 第 37 行.
+NOTIC: [2] curl_getinfo() expects parameter 1 to be resource, string given F:\PHP Projects\Xianlaiyizhuan\Application\Common\Common\function.php 第 38 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.021850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022123s ]
+
+[ 2017-04-17T22:06:11+08:00 ] ::1 /xianlaiyizhuan/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001945s ]
+ERR: 无法加载控制器:Index
+
+[ 2017-04-17T22:09:50+08:00 ] ::1 /Xianlaiyizhuan/Home/Rubberneck/getRecentTopicList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_rubberneck` [ RunTime:0.012419s ]
+SQL: SELECT * FROM `xlyz_rubberneck` WHERE ( `id` IN (4,2) )  [ RunTime:0.010597s ]
+
+[ 2017-04-17T22:09:58+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002064s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014445s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.012230s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.014456s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.011876s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.012137s ]
+
+[ 2017-04-17T22:10:37+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001722s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.015136s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.013201s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.015751s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.013321s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.012941s ]
+
+[ 2017-04-17T22:15:07+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001878s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012433s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.011292s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.012916s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.011003s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.011183s ]
+
+[ 2017-04-17T22:15:44+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014405s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.013219s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.014197s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.011839s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.011935s ]
+
+[ 2017-04-17T22:16:07+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001693s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012576s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.011116s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.013859s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.010457s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.010469s ]
+
+[ 2017-04-17T22:16:49+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001497s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.013956s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.011528s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.013541s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.011420s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.012260s ]
+
+[ 2017-04-17T22:16:50+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001406s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014387s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.012034s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.013485s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.012077s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.011880s ]
+
+[ 2017-04-17T22:16:50+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014638s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.012520s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.014599s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.011847s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.012111s ]
+
+[ 2017-04-17T22:17:01+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001747s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014121s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.011732s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.013470s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.011438s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.011557s ]
+
+[ 2017-04-17T22:17:12+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001456s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014306s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.012423s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.014044s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.011853s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.012523s ]
+
+[ 2017-04-17T22:17:27+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001613s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.014330s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.012494s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.014849s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.012665s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.012098s ]
+
+[ 2017-04-17T22:17:28+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012385s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.011316s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.014287s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.011521s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.010658s ]
+
+[ 2017-04-17T22:17:30+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.012539s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.010563s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.012599s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.010507s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.010279s ]
+
+[ 2017-04-17T22:17:33+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.013940s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.012784s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.014005s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.012316s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.012852s ]
+
+[ 2017-04-17T22:17:34+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.015082s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.013589s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.014444s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.013403s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.013119s ]
+
+[ 2017-04-17T22:18:42+08:00 ] ::1 /xianlaiyizhuan/Home/Transact/getRecentTransactionList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001847s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_transact` [ RunTime:0.015089s ]
+SQL: SELECT * FROM `xlyz_transact` WHERE ( `id` IN (19,18,17,16,15,5,84,20,91,100,26,72,87,52,5,5,1,2,3) )  [ RunTime:0.012210s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.016673s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.012407s ]
+SQL: SELECT `nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.012111s ]
+

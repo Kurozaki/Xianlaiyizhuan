@@ -77,15 +77,20 @@ class TransactModel extends BaseModel
 
         $userModel = new UserModel();
         foreach ($data as &$info) {
+
             //get user base info
             $sellerId = $info['seller_id'];
             $userInfo = $userModel->where("id = $sellerId")->field("nickname, avatar")->find();
+            $userInfo['avatar'] = C('BASE_URL') . $userInfo['avatar'];
             $info['seller'] = $userInfo;
-            unset($info['seller_id']);
 
             //change pic to array
             $pic_string = $info['pics'];
             $pic_arr = explode("|", $pic_string);
+            foreach ($pic_arr as &$url) {
+                $url = C('BASE_URL') . $url;
+            }
+
             $info['pics'] = $pic_arr;
         }
 
