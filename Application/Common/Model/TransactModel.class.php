@@ -74,6 +74,21 @@ class TransactModel extends BaseModel
         if (is_array($recent)) {
             $data = $this->where(['id' => ['in', $recent]])->select();
         }
+
+        $userModel = new UserModel();
+        foreach ($data as &$info) {
+            //get user base info
+            $sellerId = $info['seller_id'];
+            $userInfo = $userModel->where("id = $sellerId")->field("nickname, avatar")->find();
+            $info['seller'] = $userInfo;
+            unset($info['seller_id']);
+
+            //change pic to array
+            $pic_string = $info['pics'];
+            $pic_arr = explode("|", $pic_string);
+            $info['pics'] = $pic_arr;
+        }
+
         return $data;
     }
 
@@ -129,6 +144,7 @@ class TransactModel extends BaseModel
 
             if ($op_type == 'd') {
                 if (isset($pic_arr[$op_index])) {
+                    unlink("./" . $pic_arr[$op_index]);         //delete file
                     unset($pic_arr[$op_index]);
                 }
             } elseif ($op_type == 'u') {
