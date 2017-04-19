@@ -83,7 +83,7 @@ class UserController extends BaseController
         $searchId = intval(I('post.srh_id'));
         $searchId = (0 == $searchId) ? $userId : $searchId;
         $model = new UserModel();
-        $info = $model->getUserInfo($searchId);
+        $info = $model->getUserDetailInfo($searchId);
         if ($info) {
             $this->ajaxReturn(qc_json_success($info));
         } else {

@@ -98,6 +98,16 @@ class CommentModel extends BaseModel
     public function infoCommentList($type, $p_id)
     {
         $data = $this->where("p_id = %d and type = %d", $p_id, $type)->select();
+        if ($data) {
+            $userModel = new UserModel();
+            foreach ($data as &$comm) {
+                $userId = $comm['user_id'];
+                $uInfo = $userModel->userBaseInfo($userId);
+                $comm['author'] = $uInfo;
+                unset($comm['user_id']);
+            }
+        }
+
         return $data;
     }
 

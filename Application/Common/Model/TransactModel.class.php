@@ -71,6 +71,9 @@ class TransactModel extends BaseModel
     {
         $recent = F('recent_tra');
         $data = [];
+        if (!$recent) {
+            return null;
+        }
 
         $condition = ['id' => ['in', $recent]];
         if ($type)
@@ -85,10 +88,9 @@ class TransactModel extends BaseModel
 
             //get user base info
             $sellerId = $info['seller_id'];
-            $userInfo = $userModel->where("id = $sellerId")->field("nickname, avatar")->find();
-            if ($userInfo['avatar'] != null)
-                $userInfo['avatar'] = C('BASE_URL') . $userInfo['avatar'];
+            $userInfo = $userModel->userBaseInfo($sellerId);
             $info['seller'] = $userInfo;
+            unset($info['seller_id']);
 
             //change pic to array
             $pic_string = $info['pics'];

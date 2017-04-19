@@ -48,9 +48,26 @@ class RubberneckModel extends BaseModel
     {
         $recent = F('recent_rubberneck');
         $data = [];
+
+        if (!$recent) {
+            return null;
+        }
+
         if (is_array($recent)) {
             $data = $this->where(['id' => ['in', $recent]])->select();
         }
+
+        $userModel = new UserModel();
+        foreach ($data as &$info) {
+            $userInfo = $userModel->where("id = %d", $info['author_id'])
+                ->field('id, nickname, avatar')->find();
+            if ($userInfo['avatar']) {
+                $userInfo['avatar'] = C('BASE_URL') . $userInfo['avatar'];
+            }
+            $info['author'] = $userInfo;
+            unset($info['author_id']);
+        }
+
         return $data;
     }
 }

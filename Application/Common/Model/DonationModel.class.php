@@ -16,10 +16,17 @@ class DonationModel extends BaseModel
         parent::__construct('donate', $this->tablePrefix, $this->connection);
     }
 
-    public function createDonation($info)
+    public function createDonationInfo($info)
     {
         $add = $this->add($info);
         return $add;
     }
 
+
+    public function deleteDonationInfo($delId)
+    {
+        $delFlag = $this->where("id = %d", $delId)->delete();
+
+        return $delFlag;
+    }
 }

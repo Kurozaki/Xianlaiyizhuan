@@ -69,12 +69,8 @@ class RequirementController extends BaseController
 
     public function recentRequirementList()
     {
-        $recentList = F('recent_req');
-        $data = array();
-        if (is_array($recentList)) {
-            $model = new RequirementModel();
-            $data = $model->where(['id' => ['in', $recentList]])->select();
-        }
+        $model = new RequirementModel();
+        $data = $model->recentRequirementList();
         $this->ajaxReturn(qc_json_success($data));
     }
 

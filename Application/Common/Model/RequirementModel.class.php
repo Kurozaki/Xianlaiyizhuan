@@ -46,4 +46,25 @@ class RequirementModel extends BaseModel
         return $delete;
     }
 
+    public function recentRequirementList()
+    {
+        $recent = F('recent_req');
+        if (!$recent) {
+            return null;
+        }
+
+        $condition = ['id' => ['in', $recent]];
+        $data = $this->where($condition)->select();
+
+//        debug_exit($this->_sql());
+
+        $userModel = new UserModel();
+        foreach ($data as &$info) {
+            $reqUser = $info['req_user'];
+            $userInfo = $userModel->userBaseInfo($reqUser);
+            $info['req_user'] = $userInfo;
+        }
+
+        return $data;
+    }
 }

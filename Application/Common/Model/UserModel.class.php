@@ -69,7 +69,7 @@ class UserModel extends BaseModel
         return $save;
     }
 
-    public function getUserInfo($userId)
+    public function getUserDetailInfo($userId)
     {
         $info = $this->where("id = %d", $userId)
             ->field('id_number, realname, tel, qq_num, wx_id, nickname, avatar, addr, sign')->find();
@@ -85,5 +85,13 @@ class UserModel extends BaseModel
             return $info['perm'];
     }
 
-
+    public function userBaseInfo($userId)
+    {
+        $info = $this->where("id = $userId")->field(['id', 'nickname', 'avatar'])->find();
+        if ($info) {
+            if ($info['avatar'])
+                $info['avatar'] = C('BASE_URL') . $info['avatar'];
+        }
+        return $info;
+    }
 }

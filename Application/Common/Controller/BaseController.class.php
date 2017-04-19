@@ -127,6 +127,11 @@ class BaseController extends Controller
                 $upload->savePath = 'transact/transact_intro/';
                 break;
 
+            case 'donation':
+                $upload->maxSize = 1048576;
+                $upload->savePath = 'donation/donation_info/';
+                break;
+
             default:
                 echo '$type error.';
                 exit;
