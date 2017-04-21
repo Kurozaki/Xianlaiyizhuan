@@ -20,11 +20,23 @@ class RubberneckController extends BaseController
     {
         $userId = $this->reqLogin();
 
-        $data = $this->reqPost(array('title', 'content'));
+        $data = $this->reqPost(array('content', 'picstr'));
 
         $data['author_id'] = $userId;
         $data['ctime'] = time();
         $data['has_comm'] = 0;
+
+        $picStr = $data['picstr'];
+        $pic_arr = explode(",", $picStr);
+        $rootPath = C('FILE_STORE_ROOT') . "rubberneck/rubberneck_info/";
+        $picsPath = "";
+        unset($data['picstr']);
+        foreach ($pic_arr as $base64) {
+            $savePath = $rootPath . md5(rand()) . ".jpg";
+            $this->base64FileDecode($base64, $savePath);
+            $picsPath .= (substr($savePath, 2) . "|");
+        }
+        $data['pics'] = substr($picsPath, 0, strlen($picsPath) - 1);
 
         $model = new RubberneckModel();
         $create = $model->createTopic($data);
@@ -53,7 +65,7 @@ class RubberneckController extends BaseController
     public function editTopic()
     {
         $userId = $this->reqLogin();
-        $postData = $this->reqPost(array('tp_id'), array('title', 'content'));
+        $postData = $this->reqPost(array('tp_id'), array('content'));
         $topic_id = $postData['tp_id'];
         unset($postData['tp_id']);
 
@@ -74,6 +86,16 @@ class RubberneckController extends BaseController
         $userId = $this->reqLogin();
         $model = new RubberneckModel();
         $data = $model->where("author_id = $userId")->select();
+
+        if (!$data) {
+            $this->ajaxReturn(qc_json_null_data());
+        }
+
+        if (is_array($data)) {
+            foreach ($data as &$info) {
+                $info['pics'] = explode("|", $info['pics']);
+            }
+        }
         $this->ajaxReturn(qc_json_success($data));
     }
 
@@ -85,6 +107,16 @@ class RubberneckController extends BaseController
         }
         $model = new RubberneckModel();
         $data = $model->where("author_id = %d", $userId)->select();
+
+        if (!$data) {
+            $this->ajaxReturn(qc_json_null_data());
+        }
+
+        if (is_array($data)) {
+            foreach ($data as &$info) {
+                $info['pics'] = explode("|", $info['pics']);
+            }
+        }
         $this->ajaxReturn(qc_json_success($data));
     }
 
@@ -93,8 +125,10 @@ class RubberneckController extends BaseController
     {
         $model = new RubberneckModel();
         $list = $model->recentTopicList();
-        $this->ajaxReturn(qc_json_success($list));
+        if ($list)
+            $this->ajaxReturn(qc_json_success($list));
+        else
+            $this->ajaxReturn(qc_json_null_data());
     }
-
 
 }

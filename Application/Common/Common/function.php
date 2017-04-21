@@ -67,6 +67,11 @@ function qc_json_success($data = 'operate successfully', $code = 20000)
     return array('code' => $code, 'response' => $data);
 }
 
+function qc_json_null_data()
+{
+    return array('code' => 40002, 'response' => null);
+}
+
 function qc_json_error_request($data = 'request method error', $code = 40001)
 {
     return array('code' => $code, 'response' => $data);

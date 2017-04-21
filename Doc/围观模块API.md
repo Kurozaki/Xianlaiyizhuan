@@ -14,11 +14,10 @@ Home/Rubberneck/createTopic
 **提交参数**
 ``Post提交，需要登录``
 
-字段|描述|是否必须|类型
+字段|描述|是否必须|类型|备注
 -|-|-|-|-
-title|话题标题|Y|VARCHAR
 content|话题内容|Y|TEXT|
-
+picstr|图片|Y|VARCHAR|base64编码，1-5张，逗号隔开
 
 
 **返回结果**
@@ -26,15 +25,15 @@ content|话题内容|Y|TEXT|
 ```
 //成功
 {
-    "code": 20000,
-    "response": {
-        "title": "这是标题",
-        "content": "这是内容",
-        "author_id": "2",
-        "ctime": 1492399013,
-        "has_comm": 0,
-        "id": 4
-    }
+    "id": "6",
+    "author_id": "2",
+    "content": "Call me father",
+    "pics": [
+        "Public/rubberneck/rubberneck_info/581558c2bf98874720c8e98262ea77bf.jpg",
+        "Public/rubberneck/rubberneck_info/581558c2bf98874720c8e98262ea77bf.jpg"
+    ],
+    "ctime": "1492681358",
+    "has_comm": "0"
 }
 
 
@@ -60,8 +59,7 @@ Home/Rubberneck/editTopic
 字段|描述|是否必须|类型
 -|-|-|-|-
 tp_id|话题id|Y|INT
-title|话题标题|N|VARCHAR
-content|话题内容|N|TEXT|
+content|话题内容|Y|TEXT|
 
 **返回结果**
 
@@ -124,19 +122,14 @@ Home/Rubberneck/getMyTopicList
     "code": 20000,
     "response": [
         {
-            "id": "2",
+            "id": "6",
             "author_id": "2",
-            "title": "This is titlesss",
-            "content": "Content222",
-            "ctime": "1492350727",
-            "has_comm": "0"
-        },
-        {
-            "id": "4",
-            "author_id": "2",
-            "title": "这是标题",
-            "content": "这是内容",
-            "ctime": "1492399013",
+            "content": "Call me father",
+            "pics": [
+                "Public/rubberneck/rubberneck_info/581558c2bf98874720c8e98262ea77bf.jpg",
+                "Public/rubberneck/rubberneck_info/581558c2bf98874720c8e98262ea77bf.jpg"
+            ],
+            "ctime": "1492681358",
             "has_comm": "0"
         }
     ]
@@ -145,7 +138,7 @@ Home/Rubberneck/getMyTopicList
 //失败
 {
     "code":40000,
-    "response":"Failed"
+    "response": null
 }
 ```
 ***
@@ -167,19 +160,14 @@ user_id|话题id|Y|INT
     "code": 20000,
     "response": [
         {
-            "id": "2",
+            "id": "6",
             "author_id": "2",
-            "title": "This is titlesss",
-            "content": "Content222",
-            "ctime": "1492350727",
-            "has_comm": "0"
-        },
-        {
-            "id": "4",
-            "author_id": "2",
-            "title": "这是标题",
-            "content": "这是内容",
-            "ctime": "1492399013",
+            "content": "Call me father",
+            "pics": [
+                "Public/rubberneck/rubberneck_info/581558c2bf98874720c8e98262ea77bf.jpg",
+                "Public/rubberneck/rubberneck_info/581558c2bf98874720c8e98262ea77bf.jpg"
+            ],
+            "ctime": "1492681358",
             "has_comm": "0"
         }
     ]
@@ -188,7 +176,7 @@ user_id|话题id|Y|INT
 //失败
 {
     "code":40000,
-    "response":"Failed"
+    "response": null
 }
 ```
 ***
@@ -207,30 +195,41 @@ Home/Rubberneck/getRecentTopicList
     "code": 20000,
     "response": [
         {
-            "id": "2",
-            "author_id": "2",
-            "title": "This is titlesss",
-            "content": "Content222",
-            "ctime": "1492350727",
-            "has_comm": "0"
+            "id": "5",
+            "content": "Content",
+            "pics": [
+                "Public/rubberneck/rubberneck_info/3eb6116899911886ed4d82a36117d087.jpg"
+            ],
+            "ctime": "1492681204",
+            "has_comm": "0",
+            "author": {
+                "id": "1",
+                "nickname": "爸爸",
+                "avatar": null
+            }
         },
         {
-            "id": "4",
-            "author_id": "2",
-            "title": "这是标题",
-            "content": "这是内容",
-            "ctime": "1492399013",
-            "has_comm": "0"
+            "id": "6",
+            "content": "Call me father",
+            "pics": [
+                "Public/rubberneck/rubberneck_info/581558c2bf98874720c8e98262ea77bf.jpg",
+                "Public/rubberneck/rubberneck_info/581558c2bf98874720c8e98262ea77bf.jpg"
+            ],
+            "ctime": "1492681358",
+            "has_comm": "0",
+            "author": {
+                "id": "2",
+                "nickname": "吉尔伽美什",
+                "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
+            }
         }
     ]
 }
 
 //失败
 {
-    "code":40000,
-    "response":"Failed"
+    "code":40002,
+    "response": null
 }
 ```
 ***
-
-

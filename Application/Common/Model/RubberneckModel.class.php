@@ -59,6 +59,11 @@ class RubberneckModel extends BaseModel
 
         $userModel = new UserModel();
         foreach ($data as &$info) {
+
+            $pics = $info['pics'];
+            $pic_arr = explode("|", $pics);
+            $info['pics'] = $pic_arr;
+
             $userInfo = $userModel->where("id = %d", $info['author_id'])
                 ->field('id, nickname, avatar')->find();
             if ($userInfo['avatar']) {

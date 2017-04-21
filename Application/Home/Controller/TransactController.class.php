@@ -10,6 +10,7 @@ namespace Home\Controller;
 
 
 use Common\Controller\BaseController;
+use Common\Model\GiveLikeModel;
 use Common\Model\OrderModel;
 use Common\Model\TransactModel;
 use Common\Model\UserModel;
@@ -152,6 +153,18 @@ class TransactController extends BaseController
 
         $model = new TransactModel();
         $dataList = $model->recentTransactList($type);
+
+        $userId = $this->onlineUserId();
+
+        if ($userId) {
+            $likeModel = new GiveLikeModel();
+            foreach ($dataList as &$data) {
+                $p_id = $data['id'];
+                $likeStatus = $likeModel->getLikeStatus($userId, C('COMMENT_TYPE_TRANSACT'), $p_id);
+                $data['like_status'] = $likeStatus;
+            }
+        }
+
         $this->ajaxReturn(qc_json_success($dataList));
     }
 
@@ -222,9 +235,10 @@ class TransactController extends BaseController
     public function finishOrder()
     {
         $userId = $this->reqLogin();
+        $this->reqUserWithPermission($userId, C('USER_PERM_SUPER'));
+
         $orderId = I('post.order_id');
 
-        $this->reqUserWithPermission($userId, C('USER_PERM_SUPER'));
         $oModel = new OrderModel();
         $save = $oModel->where("id = %d", $orderId)->save(['perm' => 1]);
         if ($save) {
@@ -238,6 +252,7 @@ class TransactController extends BaseController
     {
         $userId = $this->reqLogin();
         $this->reqUserWithPermission($userId, C('USER_PERM_SUPER'));
+
         $oModel = new OrderModel();
         $data = $oModel->select();
         $this->ajaxReturn(qc_json_success($data));

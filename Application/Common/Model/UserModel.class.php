@@ -72,7 +72,7 @@ class UserModel extends BaseModel
     public function getUserDetailInfo($userId)
     {
         $info = $this->where("id = %d", $userId)
-            ->field('id_number, realname, tel, qq_num, wx_id, nickname, avatar, addr, sign')->find();
+            ->field('id, id_number, realname, tel, qq_num, wx_id, nickname, avatar, addr, sign')->find();
         return $info;
     }
 

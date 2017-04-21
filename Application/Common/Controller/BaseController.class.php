@@ -209,4 +209,11 @@ class BaseController extends Controller
         return $flag;
     }
 
+    protected function onlineUserId()
+    {
+        if (session("?user_id") && session('?user_idn')) {
+            return session('user_id');
+        }
+        return false;
+    }
 }

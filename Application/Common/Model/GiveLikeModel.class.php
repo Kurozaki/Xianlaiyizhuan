@@ -39,4 +39,10 @@ class GiveLikeModel extends BaseModel
         $delFlag = $this->where($condition)->delete();
         return $delFlag;
     }
+
+    public function getLikeStatus($user_id, $type, $p_id)
+    {
+        $find = $this->where(array('user_id' => $user_id, 'p_id' => $p_id, 'type' => $type))->find();
+        return $find ? 1 : 0;
+    }
 }
