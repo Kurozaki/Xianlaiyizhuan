@@ -17,16 +17,36 @@ class RequirementController extends BaseController
     public function createRequirement()
     {
         $userId = $this->reqLogin();
-        $reqInfo = $this->reqPost(array('intro', 'type', 'price'));
+        $reqInfo = $this->reqPost(array('intro', 'type', 'price', 'picstr'));
 
+        //add default info
         $reqInfo['req_user'] = $userId;
         $reqInfo['ctime'] = time();
         $reqInfo['solve'] = 0;
 
+        //decode pic base64 string to picture
+        $pic_arr = explode(",", $reqInfo['picstr']);
+        $pic_arr = array_slice($pic_arr, 0, 5);     //max 5 picture
+        $saveRoot = C('FILE_STORE_ROOT') . "requirement/requirement_info/";     //file save root
+        $picsPath = "";
+        foreach ($pic_arr as $base64) {
+            $path = $saveRoot . random_string() . ".jpg";
+            $this->base64FileDecode($base64, $path);
+            $picsPath .= (substr($path, 2) . "|");
+        }
+        $reqInfo['pics'] = substr($picsPath, 0, strlen($picsPath) - 1);
+        unset($reqInfo['picstr']);
+
         $reqModel = new RequirementModel();
         $add = $reqModel->createReq($reqInfo);
+
         if ($add) {
             $reqInfo['id'] = $add;
+            $reqInfo['pics'] = explode("|", $reqInfo['pics']);
+            foreach ($reqInfo['pics'] as &$pic) {
+                $pic = C('BASE_URL') . $pic;
+            }
+
             $this->ajaxReturn(qc_json_success($reqInfo));
         } else
             $this->ajaxReturn(qc_json_error('Failed to create this requirement'));
@@ -47,10 +67,12 @@ class RequirementController extends BaseController
         $userId = $this->reqLogin();
         $updateInfo = $this->reqPost(array('req_id'), array('intro', 'type', 'price'));
         $reqId = $updateInfo['req_id'];
+
         unset($updateInfo['req_id']);
         if (count($updateInfo, COUNT_NORMAL) == 0) {
             $this->ajaxReturn(qc_json_error_request('Require more update param'));
         }
+
         $model = new RequirementModel();
         $save = $model->where("id = %d and req_user = %d", $reqId, $userId)->save($updateInfo);
         if ($save)
@@ -64,14 +86,32 @@ class RequirementController extends BaseController
         $userId = $this->reqLogin();
         $model = new RequirementModel();
         $data = $model->where(['req_user' => $userId])->select();
-        $this->ajaxReturn(qc_json_success($data));
+
+        if ($data) {
+            //process the pic url
+            foreach ($data as &$info) {
+                $info['pics'] = explode("|", $info['pics']);
+                foreach ($info['pics'] as &$url) {
+                    $url = C('BASE_URL') . $url;
+                }
+            }
+
+            $this->ajaxReturn(qc_json_success($data));
+        } else {
+            $this->ajaxReturn(qc_json_null_data());
+        }
     }
 
     public function recentRequirementList()
     {
         $model = new RequirementModel();
         $data = $model->recentRequirementList();
-        $this->ajaxReturn(qc_json_success($data));
+
+        if ($data) {
+            $this->ajaxReturn(qc_json_success($data));
+        } else {
+            $this->ajaxReturn(qc_json_null_data());
+        }
     }
 
     public function setToSolvedStatus()
@@ -79,10 +119,12 @@ class RequirementController extends BaseController
         $userId = $this->reqLogin();
         $reqId = I('post.req_id');
         $model = new RequirementModel();
+
         $flag = $model->where("id = %d and req_user = %d", $reqId, $userId)->save(['solve' => 1]);
         if ($flag) {
             $this->ajaxReturn(qc_json_success('Operate success'));
-        } else
+        } else {
             $this->ajaxReturn(qc_json_error('Failed to operate'));
+        }
     }
 }

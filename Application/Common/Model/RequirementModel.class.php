@@ -56,10 +56,10 @@ class RequirementModel extends BaseModel
         $condition = ['id' => ['in', $recent]];
         $data = $this->where($condition)->select();
 
-//        debug_exit($this->_sql());
-
         $userModel = new UserModel();
         foreach ($data as &$info) {
+            $info['pics'] = explode("|", $info['pics']);
+
             $reqUser = $info['req_user'];
             $userInfo = $userModel->userBaseInfo($reqUser);
             $info['req_user'] = $userInfo;

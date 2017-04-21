@@ -126,3 +126,8 @@ function regex_confirm_patterns($info, $confirm_patterns = array())
     }
     return true;
 }
+
+function random_string()
+{
+    return md5(rand());
+}

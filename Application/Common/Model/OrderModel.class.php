@@ -35,6 +35,7 @@ class OrderModel extends BaseModel
 
     public function finishOrder($orderId)
     {
-
+        $flag = $this->where("id = %d", $orderId)->save(['status' => 1]);
+        return $flag;
     }
 }

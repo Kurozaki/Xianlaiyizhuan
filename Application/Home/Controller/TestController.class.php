@@ -13,8 +13,4 @@ use Common\Controller\BaseController;
 
 class TestController extends BaseController
 {
-    public function test()
-    {
-        $html = http_get("http://yulezibenlun.baijia.baidu.com/article/825927");
-    }
 }

@@ -117,18 +117,44 @@ class TransactController extends BaseController
     {
         $userId = $this->reqLogin();
         $freeFlag = I('post.free');
+
         $model = new TransactModel();
         $data = $model->getUserTransactList($userId, $freeFlag);
-        $this->ajaxReturn(qc_json_success($data));
+
+        if ($data) {
+            foreach ($data as &$info) {
+                $info['pics'] = explode("|", $info['pics']);
+                foreach ($info['pics'] as &$url) {
+                    $url = C('BASE_URL') . $url;
+                }
+            }
+
+            $this->ajaxReturn(qc_json_success($data));
+        } else
+            $this->ajaxReturn(qc_json_null_data());
     }
 
     public function specifyUserTransactionList()
     {
         $seller_id = I('post.seller_id');
         $freeFlag = I('post.free');
+
         $model = new TransactModel();
         $data = $model->getUserTransactList($seller_id, $freeFlag);
-        $this->ajaxReturn(qc_json_success($data));
+
+        if ($data) {
+
+            //process url info
+            foreach ($data as &$info) {
+                $info['pics'] = explode("|", $info['pics']);
+                foreach ($info['pics'] as &$url) {
+                    $url = C('BASE_URL') . $url;
+                }
+            }
+
+        } else {
+            $this->ajaxReturn(qc_json_null_data());
+        }
     }
 
 
@@ -168,6 +194,26 @@ class TransactController extends BaseController
         $this->ajaxReturn(qc_json_success($dataList));
     }
 
+    public function getAllTransactionList()
+    {
+        $offset = I('post.offset');
+        if (!$offset)
+            $offset = 0;
+        else
+            $offset = intval($offset);
+
+        $tModel = new TransactModel();
+        $data = $tModel->transactionList($offset, C('COUNT_PAGING'));
+
+        if ($data) {
+            $this->ajaxReturn(qc_json_success(array(
+                'offset' => $offset + C('COUNT_PAGING'),
+                'data' => $data
+            )));
+        } else
+            $this->ajaxReturn(qc_json_null_data());
+    }
+
     public function setToSoldStatus()
     {
         $userId = $this->reqLogin();
@@ -181,7 +227,7 @@ class TransactController extends BaseController
         }
     }
 
-    //创建订单
+    //create order
     public function createOrder()
     {
         $userId = $this->reqLogin();
@@ -240,7 +286,7 @@ class TransactController extends BaseController
         $orderId = I('post.order_id');
 
         $oModel = new OrderModel();
-        $save = $oModel->where("id = %d", $orderId)->save(['perm' => 1]);
+        $save = $oModel->finishOrder($orderId);
         if ($save) {
             $this->ajaxReturn(qc_json_success('Operate success'));
         } else {
@@ -257,6 +303,5 @@ class TransactController extends BaseController
         $data = $oModel->select();
         $this->ajaxReturn(qc_json_success($data));
     }
-
 
 }

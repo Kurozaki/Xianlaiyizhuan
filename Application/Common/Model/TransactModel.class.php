@@ -123,6 +123,28 @@ class TransactModel extends BaseModel
         return $data;
     }
 
+    public function transactionList($offset, $length)
+    {
+        $data = $this->limit($offset, $length)->select();
+        if ($data) {
+
+            $userModel = new UserModel();
+            foreach ($data as &$info) {
+                $info['pics'] = explode("|", $info['pics']);
+                foreach ($info['pics'] as &$url) {
+                    $url = C('BASE_URL') . $url;
+                }
+
+                $seller = $info['seller_id'];
+                $userInfo = $userModel->userBaseInfo($seller);
+                $info['seller'] = $userInfo;
+                unset($info['seller_id']);
+            }
+            return $data;
+
+        } else
+            return false;
+    }
 
     /**
      * @param $tranId

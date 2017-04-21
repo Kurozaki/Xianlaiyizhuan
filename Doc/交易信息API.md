@@ -268,6 +268,7 @@ type|物品分类|N|INT|参见文档底部类型表，若不提交返回所有�
             "has_comm": "0",    //评论数
             "seller_id": "1",
             "seller": {
+                "id": 1,
                 "nickname": "坂田金时",
                 "avatar": null
             }
@@ -288,6 +289,7 @@ type|物品分类|N|INT|参见文档底部类型表，若不提交返回所有�
             "has_comm": "0",
             "seller_id": "2",
             "seller": {
+                "id": 2,
                 "nickname": "Kurozaki",
                 "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
             }
@@ -295,6 +297,95 @@ type|物品分类|N|INT|参见文档底部类型表，若不提交返回所有�
     ]
 }
 ```
+***
+###获取交易信息列表（分页）###
+
+``url``
+Home/Transact/getAllTransactionList
+**提交参数**
+``Post提交``
+
+字段|描述|是否必须|类型|说明
+-|-|-|-|-
+offset|分页偏移量|N|INT|不提交默认为0
+
+**返回结果**
+```
+//成功
+{
+    "code": 20000,
+    "response": {
+        "offset": 10,
+        "data": [
+            {
+                "id": "18",
+                "free": "0",
+                "intro": "hahah",
+                "pics": [
+                    "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg"
+                ],
+                "type": "1",
+                "price": "200",
+                "likec": "0",
+                "ctime": "1492258479",
+                "sell": "0",
+                "has_comm": "0",
+                "seller": {
+                    "id": "1",
+                    "nickname": "爸爸",
+                    "avatar": null
+                }
+            },
+            {
+                "id": "19",
+                "free": "0",
+                "intro": "hahah",
+                "pics": ["http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg",
+                   "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg"
+                ],
+                "type": "2",
+                "price": "190",
+                "likec": "0",
+                "ctime": "1492258649",
+                "sell": "0",
+                "has_comm": "0",
+                "seller": {
+                    "id": "2",
+                    "nickname": "吉尔伽美什",
+                    "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
+                }
+            },
+            {
+                "id": "20",
+                "free": "0",
+                "intro": "123",
+                "pics": [
+                    "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5845c3de2a5bff771d8cc1af467875b1.jpg"
+                ],
+                "type": "0",
+                "price": "123",
+                "likec": "0",
+                "ctime": "1492571830",
+                "sell": "0",
+                "has_comm": "0",
+                "seller": {
+                    "id": "6",
+                    "nickname": "3115003835",
+                    "avatar": null
+                }
+            }
+        ]
+    }
+}
+
+//失败（结果为空）
+{
+    "code": 40002,
+    "response": null        
+}
+```
+
+***
 
 ###点赞###
 
