@@ -70,7 +70,6 @@ class TransactModel extends BaseModel
     public function recentTransactList($type = null)
     {
         $recent = F('recent_tra');
-        $data = [];
         if (!$recent) {
             return null;
         }
@@ -79,9 +78,7 @@ class TransactModel extends BaseModel
         if ($type)
             $condition['type'] = $type;
 
-        if (is_array($recent)) {
-            $data = $this->where($condition)->select();
-        }
+        $data = $this->where($condition)->select();
 
         $userModel = new UserModel();
         foreach ($data as &$info) {
@@ -93,13 +90,14 @@ class TransactModel extends BaseModel
             unset($info['seller_id']);
 
             //change pic to array
-            $pic_string = $info['pics'];
-            $pic_arr = explode("|", $pic_string);
-            foreach ($pic_arr as &$url) {
-                $url = C('BASE_URL') . $url;
+            if ($info['pics']) {
+                $info['pics'] = explode("|", $info['pics']);
+                foreach ($info['pics'] as &$url) {
+                    $url = C('BASE_URL') . $url;
+                }
+            } else {
+                $info['pics'] = null;
             }
-
-            $info['pics'] = $pic_arr;
         }
 
         return $data;
@@ -130,10 +128,13 @@ class TransactModel extends BaseModel
 
             $userModel = new UserModel();
             foreach ($data as &$info) {
-                $info['pics'] = explode("|", $info['pics']);
-                foreach ($info['pics'] as &$url) {
-                    $url = C('BASE_URL') . $url;
-                }
+                if ($info['pics']) {
+                    $info['pics'] = explode("|", $info['pics']);
+                    foreach ($info['pics'] as &$url) {
+                        $url = C('BASE_URL') . $url;
+                    }
+                } else
+                    $info['pics'] = null;
 
                 $seller = $info['seller_id'];
                 $userInfo = $userModel->userBaseInfo($seller);

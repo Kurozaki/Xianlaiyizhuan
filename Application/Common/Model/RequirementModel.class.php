@@ -58,11 +58,43 @@ class RequirementModel extends BaseModel
 
         $userModel = new UserModel();
         foreach ($data as &$info) {
-            $info['pics'] = explode("|", $info['pics']);
-
+            if ($info['pics']) {
+                $info['pics'] = explode("|", $info['pics']);
+                foreach ($info['pics'] as &$url) {
+                    $url = C('BASE_URL') . $url;
+                }
+            } else {
+                $info['pics'] = null;
+            }
             $reqUser = $info['req_user'];
             $userInfo = $userModel->userBaseInfo($reqUser);
             $info['req_user'] = $userInfo;
+        }
+
+        return $data;
+    }
+
+    public function requirementList($offset, $length)
+    {
+        $data = $this->limit($offset, $length)->select();
+        if (!$data)
+            return null;
+
+        $userModel = new UserModel();
+        foreach ($data as &$info) {
+            $userInfo = $info['req_user'];
+            $userInfo = $userModel->userBaseInfo($userInfo);
+            $info['req_user'] = $userInfo;
+
+
+            if ($info['pics']) {
+                $info['pics'] = explode("|", $info['pics']);
+                foreach ($info['pics'] as &$url) {
+                    $url = C('BASE_URL') . $url;
+                }
+            } else {
+                $info['pics'] = null;
+            }
         }
 
         return $data;

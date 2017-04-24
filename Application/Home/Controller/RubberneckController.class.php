@@ -25,6 +25,7 @@ class RubberneckController extends BaseController
         $data['author_id'] = $userId;
         $data['ctime'] = time();
         $data['has_comm'] = 0;
+        $data['likec'] = 0;
 
         $picStr = $data['picstr'];
         $pic_arr = explode(",", $picStr);
@@ -125,10 +126,27 @@ class RubberneckController extends BaseController
     {
         $model = new RubberneckModel();
         $list = $model->recentTopicList();
+
         if ($list)
             $this->ajaxReturn(qc_json_success($list));
         else
             $this->ajaxReturn(qc_json_null_data());
     }
 
+    public function getAllTopicList()
+    {
+        $offset = I('post.offset');
+        if (!$offset)
+            $offset = 0;
+        else
+            $offset = intval($offset);
+
+        $model = new RubberneckModel();
+        $data = $model->topicList($offset, C('COUNT_PAGING'));
+
+        if ($data)
+            $this->ajaxReturn(qc_json_success($data));
+        else
+            $this->ajaxReturn(qc_json_null_data());
+    }
 }

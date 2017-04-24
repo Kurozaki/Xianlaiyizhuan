@@ -47,32 +47,52 @@ class RubberneckModel extends BaseModel
     public function recentTopicList()
     {
         $recent = F('recent_rubberneck');
-        $data = [];
 
         if (!$recent) {
             return null;
         }
 
-        if (is_array($recent)) {
-            $data = $this->where(['id' => ['in', $recent]])->select();
-        }
+        $data = $this->where(['id' => ['in', $recent]])->select();
 
         $userModel = new UserModel();
         foreach ($data as &$info) {
+            $info['author_id'] = $userModel->userBaseInfo($info['author_id']);
 
-            $pics = $info['pics'];
-            $pic_arr = explode("|", $pics);
-            $info['pics'] = $pic_arr;
-
-            $userInfo = $userModel->where("id = %d", $info['author_id'])
-                ->field('id, nickname, avatar')->find();
-            if ($userInfo['avatar']) {
-                $userInfo['avatar'] = C('BASE_URL') . $userInfo['avatar'];
+            if ($info['pics']) {
+                $info['pics'] = explode("|", $info['pics']);
+                foreach ($info['pics'] as &$url) {
+                    $url = C('BASE_URL') . $url;
+                }
+            } else {
+                $info['pics'] = null;
             }
-            $info['author'] = $userInfo;
-            unset($info['author_id']);
         }
 
         return $data;
     }
+
+    public function topicList($offset, $length)
+    {
+        $data = $this->limit($offset, $length)->select();
+
+        if (!$data) return null;
+
+        $userModel = new UserModel();
+        foreach ($data as &$info) {
+            $info['author_id'] = $userModel->userBaseInfo($info['author_id']);
+
+             if ($info['pics']) {
+                $info['pics'] = explode("|", $info['pics']);
+                foreach ($info['pics'] as &$url) {
+                    $url = C('BASE_URL') . $url;
+                }
+
+            } else {
+                $info['pics'] = null;
+            }
+        }
+
+        return $data;
+    }
+
 }

@@ -114,6 +114,23 @@ class RequirementController extends BaseController
         }
     }
 
+    public function getAllRequirementList()
+    {
+        $offset = I('post.offset');
+        if (!$offset) {
+            $offset = 0;
+        } else
+            $offset = intval($offset);
+
+        $model = new RequirementModel();
+        $data = $model->requirementList($offset, C('COUNT_PAGING'));
+
+        if ($data) {
+            $this->ajaxReturn(qc_json_success($data));
+        } else
+            $this->ajaxReturn(qc_json_null_data());
+    }
+
     public function setToSolvedStatus()
     {
         $userId = $this->reqLogin();

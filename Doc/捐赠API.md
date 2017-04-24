@@ -159,7 +159,7 @@ del_id|捐赠信息id|Y|INT|
 ```
 ***
 
-###获取捐赠信息列表###
+###获取捐赠信息列表（分页）###
 
 ``url``
 Home/Donation/getDonationList
