@@ -95,4 +95,21 @@ class RubberneckModel extends BaseModel
         return $data;
     }
 
+    public function giveLike($userId, $tp_id)
+    {
+        $find = $this->where("id = %d", $tp_id)->find();
+        if ($find) {
+            $give = $this->giveLikeToPost($userId, $tp_id, C('COMMENT_TYPE_RUBBERNECK'));
+            if ($give) {
+                $likec = $find['likec'] + 1;
+
+                $save = $this->where("id = %d", $tp_id)->save(['likec' => $likec]);
+
+                return $save ? $likec : false;
+            } else
+                return $give;
+        }
+        return false;
+    }
+
 }

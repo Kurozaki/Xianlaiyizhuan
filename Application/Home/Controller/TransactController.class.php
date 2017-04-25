@@ -161,37 +161,33 @@ class TransactController extends BaseController
     public function giveLikeToTransaction()
     {
         $userId = $this->reqLogin();
-        $like_tId = I('post.tid');
+        $tr_id = I('post.t_id');
+
+        if (!$tr_id) {
+            $this->ajaxReturn(qc_json_error('Need param: t_id'));
+        }
 
         $model = new TransactModel();
-        $giveLike = $model->giveLike($userId, $like_tId);
+        $like = $model->giveLike($userId, $tr_id);
 
-        if ($giveLike != -1) {
-            $this->ajaxReturn(qc_json_success(['likec' => $giveLike]));
-        } else {
-            $this->ajaxReturn(qc_json_error('Failed to give like'));
-        }
+        if ($like) {
+            $this->ajaxReturn(qc_json_success(['likec' => $like]));
+        } else
+            $this->ajaxReturn(qc_json_error('Failed'));
     }
 
     public function getRecentTransactionList()
     {
-        $type = I('post.type');
+        $type = I('post.type');     //stands for the transaction info free or not
 
         $model = new TransactModel();
         $dataList = $model->recentTransactList($type);
 
-        $userId = $this->onlineUserId();
-
-        if ($userId) {
-            $likeModel = new GiveLikeModel();
-            foreach ($dataList as &$data) {
-                $p_id = $data['id'];
-                $likeStatus = $likeModel->getLikeStatus($userId, C('COMMENT_TYPE_TRANSACT'), $p_id);
-                $data['like_status'] = $likeStatus;
-            }
+        if ($dataList) {
+            $this->ajaxReturn(qc_json_success($dataList));
+        } else {
+            $this->ajaxReturn(qc_json_null_data());
         }
-
-        $this->ajaxReturn(qc_json_success($dataList));
     }
 
     public function getAllTransactionList()

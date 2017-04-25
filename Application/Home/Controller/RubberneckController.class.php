@@ -149,4 +149,24 @@ class RubberneckController extends BaseController
         else
             $this->ajaxReturn(qc_json_null_data());
     }
+
+
+    public function giveLikeToTopic()
+    {
+        $userId = $this->reqLogin();
+        $tp_id = I('post.tp_id');
+
+        if (!$tp_id) {
+            $this->ajaxReturn(qc_json_error('Need param: tp_id'));
+        }
+
+        $model = new RubberneckModel();
+        $likec = $model->giveLike($userId, $tp_id);
+
+        if ($likec) {
+            $this->ajaxReturn(qc_json_success(['likec' => $likec]));
+        } else {
+            $this->ajaxReturn(qc_json_error('Failed'));
+        }
+    }
 }

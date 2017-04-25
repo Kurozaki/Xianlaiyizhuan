@@ -290,3 +290,35 @@ offset|分页偏移量|N|INT
     "response": null
 }
 ```
+
+***
+###点赞###
+
+``url``
+Home/Rubberneck/giveLikeToTopic
+
+
+**提交参数**
+``Post提交，需要登录``
+
+字段|描述|是否必须|类型
+-|-|-|-|-
+tp_id|围观话题id|Y|INT|
+
+**返回结果**
+
+```
+//成功
+{
+    "code":20000,
+    "response":{
+        "likec": 3    //当前赞的数量
+    }      
+}
+
+//失败
+{
+    "code": 40000,
+    "response": "Failed"
+}
+```

@@ -20,4 +20,11 @@ class BaseModel extends Model
         'db_name' => 'db_xlyz');
 
     protected $tablePrefix = 'xlyz_';
+
+    protected function giveLikeToPost($user_id, $p_id, $post_type)
+    {
+        $model = new GiveLikeModel();
+        $give = $model->giveLike($user_id, $p_id, $post_type);
+        return $give;
+    }
 }

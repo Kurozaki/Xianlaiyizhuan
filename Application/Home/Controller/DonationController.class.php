@@ -154,17 +154,35 @@ class DonationController extends BaseController
         )));
     }
 
-    public function giveLikeToDonationInfo()
+
+    public function getRecentDonationList()
+    {
+        $model = new DonationModel();
+        $list = $model->recentDonationList();
+
+        if ($list) {
+            $this->ajaxReturn(qc_json_success($list));
+        } else {
+            $this->ajaxReturn(qc_json_null_data());
+        }
+    }
+
+    public function giveLikeToDonation()
     {
         $userId = $this->reqLogin();
-        $dnId = I('post.dn_id');
-        $model = new GiveLikeModel();
+        $dn_id = I('post.dn_id');
 
-        $like = $model->giveLike($userId, $dnId, C('COMMENT_TYPE_DONATION'));
-        if ($like) {
-            $this->ajaxReturn(qc_json_success('Success'));
+        if (!$dn_id)
+            $this->ajaxReturn(qc_json_error('Need param: dn_id'));
+
+        $model = new DonationModel();
+        $likec = $model->giveLike($userId, $dn_id);
+
+        if ($likec) {
+            $this->ajaxReturn(qc_json_success(['likec' => $likec]));
         } else {
             $this->ajaxReturn(qc_json_error('Failed'));
         }
     }
+
 }

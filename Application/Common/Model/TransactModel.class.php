@@ -20,18 +20,17 @@ class TransactModel extends BaseModel
     {
         $find = $this->where("id = %d", $tra_id)->find();
         if ($find) {
-            return -1;
+            $give = $this->giveLikeToPost($userId, $tra_id, C('COMMENT_TYPE_TRANSACT'));
+            if ($give) {
+                $likec = $find['likec'] + 1;
+
+                $save = $this->where("id = %d", $tra_id)->save(['likec' => $likec]);
+
+                return $save ? $likec : false;
+            } else
+                return $give;
         }
-        $type = C('COMMENT_TYPE_TRANSACT');
-        $likeModel = new GiveLikeModel();
-        $give = $likeModel->giveLike($userId, $tra_id, $type);
-        if (!$give) {
-            return -1;
-        }
-        $like = intval($find['likec']);
-        $like++;
-        $save = $this->save(['likec' => $like]);
-        return $save > 0 ? $like : -1;
+        return false;
     }
 
 

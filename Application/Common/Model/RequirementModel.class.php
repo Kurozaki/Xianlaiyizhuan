@@ -99,4 +99,21 @@ class RequirementModel extends BaseModel
 
         return $data;
     }
+
+    public function giveLike($userId, $req_id)
+    {
+        $find = $this->where("id = %d", $req_id)->find();
+        if ($find) {
+            $give = $this->giveLikeToPost($userId, $req_id, C('COMMENT_TYPE_REQ'));
+            if ($give) {
+                $likec = $find['likec'] + 1;
+
+                $save = $this->where("id = %d", $req_id)->save(['likec' => $likec]);
+
+                return $save ? $likec : false;
+            } else
+                return $give;
+        }
+        return false;
+    }
 }

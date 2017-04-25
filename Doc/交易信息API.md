@@ -398,14 +398,16 @@ Home/Transact/giveLikeToTransaction
 
 字段|描述|是否必须|类型
 -|-|-|-|-
-tid|交易信息id|Y|INT|
+t_id|交易信息id|Y|INT|
 
 **返回结果**
 
 ```
 {
     "code":20000,
-    "response":3      //当前赞的数量
+    "response":{
+        "likec": 3    //当前赞的数量
+    }      
 }
 
 //失败

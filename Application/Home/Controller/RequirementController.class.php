@@ -144,4 +144,22 @@ class RequirementController extends BaseController
             $this->ajaxReturn(qc_json_error('Failed to operate'));
         }
     }
+
+    public function giveLikeToRequirement()
+    {
+        $userId = $this->reqLogin();
+        $req_id = I('post.req_id');
+
+        if (!$req_id)
+            $this->ajaxReturn(qc_json_error('Need param: req_id'));
+
+        $model = new RequirementModel();
+        $give = $model->giveLike($userId, $req_id);
+
+        if ($give) {
+            $this->ajaxReturn(qc_json_success(['likec' => $give]));
+        } else {
+            $this->ajaxReturn(qc_json_error('Failed'));
+        }
+    }
 }
