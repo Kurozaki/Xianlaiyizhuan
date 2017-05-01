@@ -10,7 +10,6 @@ namespace Home\Controller;
 
 
 use Common\Controller\BaseController;
-use Common\Model\GiveLikeModel;
 use Common\Model\OrderModel;
 use Common\Model\TransactModel;
 use Common\Model\UserModel;

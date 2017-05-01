@@ -21,11 +21,19 @@ define('APP_DEBUG', True);
 define('APP_PATH', './Application/');
 
 $allow_origin = array(
+
+    'http://119.29.121.240',
+    'http://119.29.121.240:80',
+    'http://119.29.121.240:3000',
+    'http://119.29.121.240:3002',
+    'http://119.29.121.240:63342',
+
     'http://192.168.16.1',
     'http://192.168.16.1:80',
     'http://192.168.16.1:3000',
     'http://192.168.16.1:3002',
     'http://192.168.16.1:63342',
+
     'http://localhost',
     'http://localhost:80',
     'http://localhost:3000',

@@ -23,6 +23,10 @@ class CommentController extends BaseController
         $type = I('post.type');
         $content = I('post.content');
 
+        if ($type > 0 && $type <= 4) {
+            $this->ajaxReturn(qc_json_error('Illegal type'));
+        }
+
         $commInfo = array(
             'p_id' => $p_id,
             'type' => $type,
@@ -67,7 +71,7 @@ class CommentController extends BaseController
         if ($data) {
             $this->ajaxReturn(qc_json_success($data));
         } else {
-            $this->ajaxReturn(qc_json_error('Operate error.'));
+            $this->ajaxReturn(qc_json_null_data());
         }
     }
 
@@ -84,5 +88,6 @@ class CommentController extends BaseController
             $this->ajaxReturn(qc_json_error('Operate error'));
         }
     }
+
 
 }
