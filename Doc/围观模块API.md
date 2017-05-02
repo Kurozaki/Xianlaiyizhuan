@@ -249,39 +249,42 @@ offset|分页偏移量|N|INT
 //成功
 {
     "code": 20000,
-    "response": [
-        {
-            "id": "5",
-            "author_id": {
-                "id": "1",
-                "nickname": "爸爸",
-                "avatar": null
+    "response": {
+        "offset": 10,
+        "data": [
+            {
+                "id": "5",
+                "author_id": {
+                    "id": "1",
+                    "nickname": "爸爸",
+                    "avatar": null
+                },
+                "content": "Content",
+                "pics": [
+                    "http://139.199.195.54/xianlaiyizhuan/Public/rubberneck/rubberneck_info/3eb6116899911886ed4d82a36117d087.jpg"
+                ],
+                "ctime": "1492681204",
+                "has_comm": "0",
+                "likec": "1"
             },
-            "content": "Content",
-            "pics": [
-                "http://139.199.195.54/xianlaiyizhuan/Public/rubberneck/rubberneck_info/3eb6116899911886ed4d82a36117d087.jpg"
-            ],
-            "ctime": "1492681204",
-            "has_comm": "0",
-            "likec": "0"
-        },
-        {
-            "id": "6",
-            "author_id": {
-                "id": "2",
-                "nickname": "吉尔伽美什",
-                "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
-            },
-            "content": "Call me father",
-            "pics": [
-                "http://139.199.195.54/xianlaiyizhuan/Public/rubberneck/rubberneck_info/581558c2bf98874720c8e98262ea77bf.jpg",
-                "http://139.199.195.54/xianlaiyizhuan/Public/rubberneck/rubberneck_info/581558c2bf98874720c8e98262ea77bf.jpg"
-            ],
-            "ctime": "1492681358",
-            "has_comm": "0",
-            "likec": "0"
-        }
-    ]
+            {
+                "id": "6",
+                "author_id": {
+                    "id": "2",
+                    "nickname": "吉尔伽美什",
+                    "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
+                },
+                "content": "Call me father",
+                "pics": [
+                    "http://139.199.195.54/xianlaiyizhuan/Public/rubberneck/rubberneck_info/581558c2bf98874720c8e98262ea77bf.jpg",
+                    "http://139.199.195.54/xianlaiyizhuan/Public/rubberneck/rubberneck_info/581558c2bf98874720c8e98262ea77bf.jpg"
+                ],
+                "ctime": "1492681358",
+                "has_comm": "0",
+                "likec": "0"
+            }
+        ]
+    }
 }
 
 //失败

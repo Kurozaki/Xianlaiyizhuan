@@ -145,7 +145,10 @@ class RubberneckController extends BaseController
         $data = $model->topicList($offset, C('COUNT_PAGING'));
 
         if ($data)
-            $this->ajaxReturn(qc_json_success($data));
+            $this->ajaxReturn(qc_json_success(array(
+                'offset' => $offset + C('COUNT_PAGING'),
+                'data' => $data
+            )));
         else
             $this->ajaxReturn(qc_json_null_data());
     }

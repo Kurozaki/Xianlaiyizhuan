@@ -315,7 +315,7 @@ offset|分页偏移量|N|INT|不提交默认为0
 {
     "code": 20000,
     "response": {
-        "offset": 10,
+        "offset": 10,    //分页偏移量，表示当前最后一条的位置
         "data": [
             {
                 "id": "18",
@@ -326,7 +326,7 @@ offset|分页偏移量|N|INT|不提交默认为0
                 ],
                 "type": "1",
                 "price": "200",
-                "likec": "0",
+                "likec": "2",
                 "ctime": "1492258479",
                 "sell": "0",
                 "has_comm": "0",
@@ -340,12 +340,13 @@ offset|分页偏移量|N|INT|不提交默认为0
                 "id": "19",
                 "free": "0",
                 "intro": "hahah",
-                "pics": ["http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg",
-                   "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg"
+                "pics": [
+                    "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg",
+                    "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg"
                 ],
                 "type": "2",
                 "price": "190",
-                "likec": "0",
+                "likec": "1",
                 "ctime": "1492258649",
                 "sell": "0",
                 "has_comm": "0",

@@ -173,63 +173,117 @@ offset|分页偏移|N|INT
 ```
 {
     "code": 20000,
-    "response": [
-        {
-            "id": "17",
-            "intro": "1",
-            "type": "0",
-            "pics": null,
-            "price": "1",
-            "ctime": "1492575679",
-            "solve": "0",
-            "req_user": {
-                "id": "6",
-                "nickname": "3115003835",
-                "avatar": null
+    "response": {
+        "offset": 10,
+        "data": [
+            {
+                "id": "13",
+                "intro": "Req2",
+                "type": "book",
+                "pics": null,
+                "price": "12",
+                "ctime": "1490194561",
+                "solve": "0",
+                "req_user": {
+                    "id": "1",
+                    "nickname": "爸爸",
+                    "avatar": null
+                },
+                "likec": "0",
+                "has_comm": "0"
             },
-            "likec": "0",
-            "has_comm": "0"
-        },
-        {
-            "id": "20",
-            "intro": "奶茶多少钱在线等",
-            "type": "0",
-            "pics": [
-                "http://139.199.195.54/xianlaiyizhuan/Public/requirement/requirement_info/beb04c41b45927cf7e9f8fd4bb519e86.jpg",
-                "http://139.199.195.54/xianlaiyizhuan/Public/requirement/requirement_info/39461a19e9eddfb385ea76b26521ea48.jpg"
-            ],
-            "price": "10",
-            "ctime": "1492744686",
-            "solve": "0",
-            "req_user": {
-                "id": "2",
-                "nickname": "吉尔伽美什",
-                "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
+            {
+                "id": "14",
+                "intro": "Req2",
+                "type": "book",
+                "pics": null,
+                "price": "12",
+                "ctime": "1490194573",
+                "solve": "0",
+                "req_user": {
+                    "id": "1",
+                    "nickname": "爸爸",
+                    "avatar": null
+                },
+                "likec": "0",
+                "has_comm": "0"
             },
-            "likec": "0",
-            "has_comm": "0"
-        },
-        {
-            "id": "21",
-            "intro": "奶茶多少钱在线等",
-            "type": "0",
-            "pics": [
-                "http://139.199.195.54/xianlaiyizhuan/Public/requirement/requirement_info/36b3b5f54143786b7ab2ebb6bcd06e75.jpg",
-                "http://139.199.195.54/xianlaiyizhuan/Public/requirement/requirement_info/4efb80f630ccecb2d3b9b2087b0f9c89.jpg"
-            ],
-            "price": "10",
-            "ctime": "1492744833",
-            "solve": "0",
-            "req_user": {
-                "id": "2",
-                "nickname": "吉尔伽美什",
-                "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
+            {
+                "id": "16",
+                "intro": "I need an NDS",
+                "type": "game",
+                "pics": null,
+                "price": "998",
+                "ctime": "1490239702",
+                "solve": "0",
+                "req_user": {
+                    "id": "1",
+                    "nickname": "爸爸",
+                    "avatar": null
+                },
+                "likec": "0",
+                "has_comm": "0"
             },
-            "likec": "0",
-            "has_comm": "0"
-        }
-    ]
+            {
+                "id": "17",
+                "intro": "1",
+                "type": "0",
+                "pics": null,
+                "price": "1",
+                "ctime": "1492575679",
+                "solve": "0",
+                "req_user": {
+                    "id": "6",
+                    "nickname": "3115003835",
+                    "avatar": null
+                },
+                "likec": "1",
+                "has_comm": "0"
+            },
+            {
+                "id": "20",
+                "intro": "奶茶多少钱在线等",
+                "type": "0",
+                "pics": [
+                    "http://139.199.195.54/xianlaiyizhuan/Public/requirement/requirement_info/beb04c41b45927cf7e9f8fd4bb519e86.jpg",
+                    "http://139.199.195.54/xianlaiyizhuan/Public/requirement/requirement_info/39461a19e9eddfb385ea76b26521ea48.jpg"
+                ],
+                "price": "10",
+                "ctime": "1492744686",
+                "solve": "0",
+                "req_user": {
+                    "id": "2",
+                    "nickname": "吉尔伽美什",
+                    "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
+                },
+                "likec": "0",
+                "has_comm": "0"
+            },
+            {
+                "id": "21",
+                "intro": "奶茶多少钱在线等",
+                "type": "0",
+                "pics": [
+                    "http://139.199.195.54/xianlaiyizhuan/Public/requirement/requirement_info/36b3b5f54143786b7ab2ebb6bcd06e75.jpg",
+                    "http://139.199.195.54/xianlaiyizhuan/Public/requirement/requirement_info/4efb80f630ccecb2d3b9b2087b0f9c89.jpg"
+                ],
+                "price": "10",
+                "ctime": "1492744833",
+                "solve": "0",
+                "req_user": {
+                    "id": "2",
+                    "nickname": "吉尔伽美什",
+                    "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
+                },
+                "likec": "1",
+                "has_comm": "0"
+            }
+        ]
+    }
 }
+
+//失败
+...
 ```
 
 ###点赞###
