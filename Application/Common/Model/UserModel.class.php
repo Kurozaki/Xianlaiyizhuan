@@ -91,6 +91,8 @@ class UserModel extends BaseModel
         if ($info) {
             if ($info['avatar'])
                 $info['avatar'] = C('BASE_URL') . $info['avatar'];
+            else
+                $info['avatar'] = C('BASE_URL') . C('DEFAULT_AVATAR_PATH');
         }
         return $info;
     }

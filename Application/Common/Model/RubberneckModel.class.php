@@ -73,13 +73,14 @@ class RubberneckModel extends BaseModel
 
     public function topicList($offset, $length)
     {
-        $data = $this->limit($offset, $length)->select();
+        $data = $this->order("id desc")->limit($offset, $length)->select();
 
         if (!$data) return null;
 
         $userModel = new UserModel();
         foreach ($data as &$info) {
-            $info['author_id'] = $userModel->userBaseInfo($info['author_id']);
+            $info['author'] = $userModel->userBaseInfo($info['author_id']);
+            unset($info['author_id']);
 
              if ($info['pics']) {
                 $info['pics'] = explode("|", $info['pics']);

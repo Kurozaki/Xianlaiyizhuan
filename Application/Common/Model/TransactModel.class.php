@@ -122,7 +122,7 @@ class TransactModel extends BaseModel
 
     public function transactionList($offset, $length)
     {
-        $data = $this->limit($offset, $length)->select();
+        $data = $this->order("id desc")->limit($offset, $length)->select();
         if ($data) {
 
             $userModel = new UserModel();

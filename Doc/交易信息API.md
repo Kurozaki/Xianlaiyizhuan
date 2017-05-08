@@ -235,69 +235,7 @@ false 只获取非免费列表，
 ```
 
 ***
-###获取最近发布的交易信息列表###
 
-``url``
-Home/Transact/getRecentTransactionList
-
-
-**提交参数**
-字段|描述|是否必须|类型|备注
--|-|-|-|-
-type|物品分类|N|INT|参见文档底部类型表，若不提交返回所有分类
-
-
-**返回结果**
-
-```
-{
-    "code": 20000,
-    "response": [
-        {
-            "id": "18",    
-            "free": "0",        //是否免费
-            "intro": "hahah",
-            "pics": [
-                "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg"
-            ],
-            "type": "1",
-            "price": "200",    
-            "likec": "0",    //点赞数
-            "ctime": "1492258479",
-            "sell": "0",            //是否已售
-            "has_comm": "0",    //评论数
-            "seller_id": "1",
-            "seller": {
-                "id": 1,
-                "nickname": "坂田金时",
-                "avatar": null
-            }
-        },
-        {
-            "id": "19",
-            "free": "0",
-            "intro": "hahah",
-            "pics": [
-                "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg",
-                "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg"
-            ],
-            "type": "1",
-            "price": "190",
-            "likec": "0",
-            "ctime": "1492258649",
-            "sell": "0",
-            "has_comm": "0",
-            "seller_id": "2",
-            "seller": {
-                "id": 2,
-                "nickname": "Kurozaki",
-                "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
-            }
-        }
-    ]
-}
-```
-***
 ###获取交易信息列表（分页）###
 
 ``url``
@@ -315,7 +253,7 @@ offset|分页偏移量|N|INT|不提交默认为0
 {
     "code": 20000,
     "response": {
-        "offset": 10,    //分页偏移量，表示当前最后一条的位置
+        "offset": 3,    //分页偏移量，表示当前最后一条的位置
         "data": [
             {
                 "id": "18",
@@ -425,12 +363,11 @@ t_id|交易信息id|Y|INT|
 
 提交值|含义
 -|-
-0|其他
-1|书籍
-2|生活用品
-3|体育用品
-4|学习用品
-5|手机
-6|电脑
-7|乐器
-8|电子产品
+0|书籍
+1|生活用品
+2|体育用品
+3|学习用品
+4|手机
+5|电脑
+6|乐器
+7|电子产品

@@ -175,20 +175,6 @@ class TransactController extends BaseController
             $this->ajaxReturn(qc_json_error('Failed'));
     }
 
-    public function getRecentTransactionList()
-    {
-        $type = I('post.type');     //stands for the transaction info free or not
-
-        $model = new TransactModel();
-        $dataList = $model->recentTransactList($type);
-
-        if ($dataList) {
-            $this->ajaxReturn(qc_json_success($dataList));
-        } else {
-            $this->ajaxReturn(qc_json_null_data());
-        }
-    }
-
     public function getAllTransactionList()
     {
         $offset = I('post.offset');
@@ -202,7 +188,7 @@ class TransactController extends BaseController
 
         if ($data) {
             $this->ajaxReturn(qc_json_success(array(
-                'offset' => $offset + C('COUNT_PAGING'),
+                'offset' => $offset + count($data, COUNT_NORMAL),
                 'data' => $data
             )));
         } else

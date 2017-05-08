@@ -124,40 +124,7 @@ req_id|需求id|Y|INT
 ```
 ***
 
-###最新发布的求助信息###
-``url``
-Home/Requirement/recentRequirementList
 
-**提交数据**
-(无)
-
-
-**返回内容**
-```
-{
-    "code": 20000,
-    "response": [
-        {
-            "id": "14",
-            "intro": "Need a PHP book!",
-            "type": "book",
-            "price": "12",
-            "ctime": "1490194573",
-            "req_user": "1"
-        },
-        {
-            "id": "16",
-            "intro": "I need an NDS",
-            "type": "game",
-            "price": "998",
-            "ctime": "1490239702",
-            "req_user": "1"
-        }
-        ...        //至多保存20条
-    ]
-}
-```
-***
 ###求助信息列表（分页）###
 ``url``
 Home/Requirement/getAllRequirementList
@@ -174,7 +141,7 @@ offset|分页偏移|N|INT
 {
     "code": 20000,
     "response": {
-        "offset": 10,
+        "offset": 6,
         "data": [
             {
                 "id": "13",

@@ -11,7 +11,6 @@ namespace Home\Controller;
 
 use Common\Controller\BaseController;
 use Common\Model\DonationModel;
-use Common\Model\GiveLikeModel;
 
 class DonationController extends BaseController
 {
@@ -133,13 +132,13 @@ class DonationController extends BaseController
         }
     }
 
-    public function getDonationList()
+    public function getAllDonationList()
     {
         $offset = I('post.offset');
         $offset = intval($offset);
 
         $model = new DonationModel();
-        $data = $model->limit($offset, C('COUNT_PAGING'))->select();
+        $data = $model->order("id desc")->limit($offset, C('COUNT_PAGING'))->select();
 
         if (is_array($data)) {
             foreach ($data as &$info) {
@@ -149,23 +148,11 @@ class DonationController extends BaseController
         }
 
         $this->ajaxReturn(qc_json_success(array(
-            'offset' => $offset + C('COUNT_PAGING'),
+            'offset' => $offset + count($data, COUNT_NORMAL),
             'data' => $data
         )));
     }
 
-
-    public function getRecentDonationList()
-    {
-        $model = new DonationModel();
-        $list = $model->recentDonationList();
-
-        if ($list) {
-            $this->ajaxReturn(qc_json_success($list));
-        } else {
-            $this->ajaxReturn(qc_json_null_data());
-        }
-    }
 
     public function giveLikeToDonation()
     {
@@ -184,5 +171,4 @@ class DonationController extends BaseController
             $this->ajaxReturn(qc_json_error('Failed'));
         }
     }
-
 }

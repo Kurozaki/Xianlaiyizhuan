@@ -11,5 +11,8 @@ return array(
 
     'USER_PERM_SUPER' => 1,
 
-    'COUNT_PAGING' => 10
+    'COUNT_PAGING' => 10,
+
+    'DEFAULT_AVATAR_PATH' => 'Public/default/avatar_default.jpg'
+
 );

@@ -102,18 +102,6 @@ class RequirementController extends BaseController
         }
     }
 
-    public function recentRequirementList()
-    {
-        $model = new RequirementModel();
-        $data = $model->recentRequirementList();
-
-        if ($data) {
-            $this->ajaxReturn(qc_json_success($data));
-        } else {
-            $this->ajaxReturn(qc_json_null_data());
-        }
-    }
-
     public function getAllRequirementList()
     {
         $offset = I('post.offset');
@@ -127,7 +115,7 @@ class RequirementController extends BaseController
 
         if ($data) {
             $this->ajaxReturn(qc_json_success(array(
-                'offset' => $offset + C('COUNT_PAGING'),
+                'offset' => $offset + count($data, COUNT_NORMAL),
                 'data' => $data
             )));
         } else
