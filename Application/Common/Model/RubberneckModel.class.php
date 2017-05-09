@@ -67,29 +67,36 @@ class RubberneckModel extends BaseModel
                 $info['pics'] = null;
             }
         }
-
         return $data;
     }
 
-    public function topicList($offset, $length)
+    public function topicList($offset, $length, $onlineUser)
     {
         $data = $this->order("id desc")->limit($offset, $length)->select();
 
         if (!$data) return null;
 
         $userModel = new UserModel();
+        $likeModel = new GiveLikeModel();
+
         foreach ($data as &$info) {
             $info['author'] = $userModel->userBaseInfo($info['author_id']);
             unset($info['author_id']);
 
-             if ($info['pics']) {
+            if ($info['pics']) {
                 $info['pics'] = explode("|", $info['pics']);
                 foreach ($info['pics'] as &$url) {
                     $url = C('BASE_URL') . $url;
                 }
-
             } else {
                 $info['pics'] = null;
+            }
+
+            if ($onlineUser) {
+                $info['give_like'] = $likeModel
+                    ->getLikeStatus($onlineUser, C('COMMENT_TYPE_RUBBERNECK'), $info['id']);
+            } else {
+                $info['give_like'] = 0;
             }
         }
 
@@ -112,5 +119,4 @@ class RubberneckModel extends BaseModel
         }
         return false;
     }
-
 }

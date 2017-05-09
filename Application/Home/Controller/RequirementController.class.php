@@ -10,6 +10,7 @@ namespace Home\Controller;
 
 
 use Common\Controller\BaseController;
+use Common\Model\GiveLikeModel;
 use Common\Model\RequirementModel;
 
 class RequirementController extends BaseController
@@ -102,18 +103,20 @@ class RequirementController extends BaseController
         }
     }
 
-    public function getAllRequirementList()
+    public function getRecentRequirementList()
     {
         $offset = I('post.offset');
+        $userId = $this->onlineUserId();
         if (!$offset) {
             $offset = 0;
         } else
             $offset = intval($offset);
 
         $model = new RequirementModel();
-        $data = $model->requirementList($offset, C('COUNT_PAGING'));
+        $data = $model->requirementList($offset, C('COUNT_PAGING'), $userId);
 
         if ($data) {
+
             $this->ajaxReturn(qc_json_success(array(
                 'offset' => $offset + count($data, COUNT_NORMAL),
                 'data' => $data

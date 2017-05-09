@@ -73,6 +73,29 @@ class DonationModel extends BaseModel
         return $data;
     }
 
+    public function getDonationList($offset, $length, $onlineUser)
+    {
+        $data = $this->order("id desc")->limit($offset, $length)->select();
+
+        if (!$data)
+            return null;
+
+        $likeModel = new GiveLikeModel();
+
+        foreach ($data as &$info) {
+            if ($info['ac_pic'])
+                $info['ac_pic'] = C('BASE_URL') . $info['ac_pic'];
+
+            if ($onlineUser)
+                $info['give_like'] = $likeModel
+                    ->getLikeStatus($onlineUser, C('COMMENT_TYPE_DONATION'), $info['id']);
+            else
+                $info['give_like'] = 0;
+        }
+
+        return $data;
+    }
+
     public function giveLike($userId, $dn_id)
     {
         $find = $this->where("id = %d", $dn_id)->find();

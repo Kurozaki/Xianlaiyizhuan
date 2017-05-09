@@ -85,6 +85,7 @@ class UserModel extends BaseModel
             return $info['perm'];
     }
 
+
     public function userBaseInfo($userId)
     {
         $info = $this->where("id = $userId")->field(['id', 'nickname', 'avatar'])->find();

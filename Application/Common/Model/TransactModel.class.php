@@ -120,12 +120,14 @@ class TransactModel extends BaseModel
         return $data;
     }
 
-    public function transactionList($offset, $length)
+    public function transactionList($offset, $length, $onlineUser)
     {
         $data = $this->order("id desc")->limit($offset, $length)->select();
         if ($data) {
 
             $userModel = new UserModel();
+            $likeModel = new GiveLikeModel();
+
             foreach ($data as &$info) {
                 if ($info['pics']) {
                     $info['pics'] = explode("|", $info['pics']);
@@ -134,6 +136,13 @@ class TransactModel extends BaseModel
                     }
                 } else
                     $info['pics'] = null;
+
+                if ($onlineUser) {
+                    $info['give_like'] = $likeModel
+                        ->getLikeStatus($onlineUser, C('COMMENT_TYPE_TRANSACT'), $info['id']);
+                } else {
+                    $info['give_like'] = 0;
+                }
 
                 $seller = $info['seller_id'];
                 $userInfo = $userModel->userBaseInfo($seller);

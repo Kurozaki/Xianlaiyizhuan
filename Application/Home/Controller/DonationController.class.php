@@ -132,25 +132,23 @@ class DonationController extends BaseController
         }
     }
 
-    public function getAllDonationList()
+    public function getDonationList()
     {
         $offset = I('post.offset');
         $offset = intval($offset);
+        $userId = $this->onlineUserId();
 
         $model = new DonationModel();
-        $data = $model->order("id desc")->limit($offset, C('COUNT_PAGING'))->select();
+        $data = $model->getDonationList($offset, C('COUNT_PAGING'), $userId);
 
-        if (is_array($data)) {
-            foreach ($data as &$info) {
-                if ($info['ac_pic'])
-                    $info['ac_pic'] = C('BASE_URL') . $info['ac_pic'];
-            }
+        if ($data) {
+            $this->ajaxReturn(qc_json_success(array(
+                'offset' => count($data, COUNT_NORMAL),
+                'data' => $data
+            )));
+        } else {
+            $this->ajaxReturn(qc_json_null_data());
         }
-
-        $this->ajaxReturn(qc_json_success(array(
-            'offset' => $offset + count($data, COUNT_NORMAL),
-            'data' => $data
-        )));
     }
 
 

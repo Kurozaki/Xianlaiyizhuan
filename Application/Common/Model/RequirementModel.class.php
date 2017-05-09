@@ -74,18 +74,26 @@ class RequirementModel extends BaseModel
         return $data;
     }
 
-    public function requirementList($offset, $length)
+    public function requirementList($offset, $length, $onlineUser)
     {
         $data = $this->order("id desc")->limit($offset, $length)->select();
         if (!$data)
             return null;
 
         $userModel = new UserModel();
+        $likeModel = new GiveLikeModel();
+
         foreach ($data as &$info) {
             $userInfo = $info['req_user'];
             $userInfo = $userModel->userBaseInfo($userInfo);
             $info['req_user'] = $userInfo;
 
+            if ($onlineUser) {
+                $info['give_like'] =
+                    $likeModel->getLikeStatus($onlineUser, C('COMMENT_TYPE_REQ'), $info['id']);
+            } else {
+                $info['give_like'] = 0;
+            }
 
             if ($info['pics']) {
                 $info['pics'] = explode("|", $info['pics']);

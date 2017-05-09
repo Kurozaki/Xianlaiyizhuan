@@ -26,7 +26,7 @@ type可选
 1 => 交易信息
 2 => 求助信息
 3 => 捐赠信息
-
+4 => 围观话题
 
 **返回结果**
 
@@ -131,15 +131,19 @@ type可选
     "code": 20000,
     "response": [
         {
-            "id": "3",
-            "p_id": "13",
-            "type": "2",
-            "user_id": "1",
-            "content": "content",
-            "ctime": "1490837645",
-            "likec": "0"
-        }
-        ...    //多条评论
+            "id": "11",
+            "p_id": "5",
+            "type": "1",
+            "content": "This is the comment",
+            "ctime": "1492089484",
+            "likec": "0",
+            "author": {
+                "id": "2",
+                "nickname": "吉尔伽美什",
+                "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
+            }
+        },
+        ...    //可能多条评论
     ]
 }
 ```

@@ -13,4 +13,8 @@ use Common\Controller\BaseController;
 
 class TestController extends BaseController
 {
+    public function test()
+    {
+        var_dump(([1,2] == false));
+    }
 }

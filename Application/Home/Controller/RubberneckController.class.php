@@ -121,16 +121,18 @@ class RubberneckController extends BaseController
         $this->ajaxReturn(qc_json_success($data));
     }
 
-    public function getAllTopicList()
+    public function getRecentTopicList()
     {
         $offset = I('post.offset');
+        $userId = $this->onlineUserId();
+
         if (!$offset)
             $offset = 0;
         else
             $offset = intval($offset);
 
         $model = new RubberneckModel();
-        $data = $model->topicList($offset, C('COUNT_PAGING'));
+        $data = $model->topicList($offset, C('COUNT_PAGING'), $userId);
 
         if ($data)
             $this->ajaxReturn(qc_json_success(array(

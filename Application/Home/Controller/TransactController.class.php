@@ -175,16 +175,18 @@ class TransactController extends BaseController
             $this->ajaxReturn(qc_json_error('Failed'));
     }
 
-    public function getAllTransactionList()
+    public function getRecentTransactionList()
     {
         $offset = I('post.offset');
+        $userId = $this->onlineUserId();
+
         if (!$offset)
             $offset = 0;
         else
             $offset = intval($offset);
 
         $tModel = new TransactModel();
-        $data = $tModel->transactionList($offset, C('COUNT_PAGING'));
+        $data = $tModel->transactionList($offset, C('COUNT_PAGING'), $userId);
 
         if ($data) {
             $this->ajaxReturn(qc_json_success(array(
