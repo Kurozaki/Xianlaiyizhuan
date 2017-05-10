@@ -23,7 +23,7 @@ class CommentController extends BaseController
         $type = I('post.type');
         $content = I('post.content');
 
-        if ($type > 0 && $type <= 4) {
+        if ($type <= 0 && $type > 4) {
             $this->ajaxReturn(qc_json_error('Illegal type'));
         }
 
@@ -77,8 +77,8 @@ class CommentController extends BaseController
 
     public function postCommentList()
     {
-//        $pData = $this->reqPost(array('p_id', 'type'));
-        $pData = array('type' => 1, 'p_id' => 5);
+        $pData = $this->reqPost(array('p_id', 'type'));
+//        $pData = array('type' => 1, 'p_id' => 5);
 
         $model = new CommentModel();
         $list = $model->infoCommentList($pData['type'], $pData['p_id']);

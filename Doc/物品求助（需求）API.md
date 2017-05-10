@@ -127,13 +127,14 @@ req_id|需求id|Y|INT
 
 ###求助信息列表（分页）###
 ``url``
-Home/Requirement/getAllRequirementList
+Home/Requirement/recentRequirementList
 
 **提交数据**
 ``POST``
 字段|描述|是否必须|类型
 -|-|-|-
 offset|分页偏移|N|INT
+type|求助物品类型|N|INT
 
 
 **返回内容**
@@ -143,89 +144,6 @@ offset|分页偏移|N|INT
     "response": {
         "offset": 6,
         "data": [
-            {
-                "id": "13",
-                "intro": "Req2",
-                "type": "book",
-                "pics": null,
-                "price": "12",
-                "ctime": "1490194561",
-                "solve": "0",
-                "req_user": {
-                    "id": "1",
-                    "nickname": "爸爸",
-                    "avatar": null
-                },
-                "likec": "0",
-                "has_comm": "0"
-            },
-            {
-                "id": "14",
-                "intro": "Req2",
-                "type": "book",
-                "pics": null,
-                "price": "12",
-                "ctime": "1490194573",
-                "solve": "0",
-                "req_user": {
-                    "id": "1",
-                    "nickname": "爸爸",
-                    "avatar": null
-                },
-                "likec": "0",
-                "has_comm": "0"
-            },
-            {
-                "id": "16",
-                "intro": "I need an NDS",
-                "type": "game",
-                "pics": null,
-                "price": "998",
-                "ctime": "1490239702",
-                "solve": "0",
-                "req_user": {
-                    "id": "1",
-                    "nickname": "爸爸",
-                    "avatar": null
-                },
-                "likec": "0",
-                "has_comm": "0"
-            },
-            {
-                "id": "17",
-                "intro": "1",
-                "type": "0",
-                "pics": null,
-                "price": "1",
-                "ctime": "1492575679",
-                "solve": "0",
-                "req_user": {
-                    "id": "6",
-                    "nickname": "3115003835",
-                    "avatar": null
-                },
-                "likec": "1",
-                "has_comm": "0"
-            },
-            {
-                "id": "20",
-                "intro": "奶茶多少钱在线等",
-                "type": "0",
-                "pics": [
-                    "http://139.199.195.54/xianlaiyizhuan/Public/requirement/requirement_info/beb04c41b45927cf7e9f8fd4bb519e86.jpg",
-                    "http://139.199.195.54/xianlaiyizhuan/Public/requirement/requirement_info/39461a19e9eddfb385ea76b26521ea48.jpg"
-                ],
-                "price": "10",
-                "ctime": "1492744686",
-                "solve": "0",
-                "req_user": {
-                    "id": "2",
-                    "nickname": "吉尔伽美什",
-                    "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
-                },
-                "likec": "0",
-                "has_comm": "0"
-            },
             {
                 "id": "21",
                 "intro": "奶茶多少钱在线等",
@@ -244,42 +162,12 @@ offset|分页偏移|N|INT
                 },
                 "likec": "1",
                 "has_comm": "0"
-            }
-        ]
-    }
+            },
+            ...     //多条数据
+    ]
 }
 
 //失败
 ...
 ```
 
-###点赞###
-
-``url``
-Home/Requirement/giveLikeToRequirement
-
-
-**提交参数**
-``Post提交，需要登录``
-
-字段|描述|是否必须|类型
--|-|-|-|-
-req_id|求助信息id|Y|INT|
-
-**返回结果**
-
-```
-//成功
-{
-    "code":20000,
-    "response":{
-        "likec": 3    //当前赞的数量
-    }      
-}
-
-//失败
-{
-    "code": 40000,
-    "response": "Failed"
-}
-```

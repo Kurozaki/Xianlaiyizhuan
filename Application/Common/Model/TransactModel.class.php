@@ -120,39 +120,35 @@ class TransactModel extends BaseModel
         return $data;
     }
 
-    public function transactionList($offset, $length, $onlineUser)
+    public function transactionList($offset, $length, $type)
     {
-        $data = $this->order("id desc")->limit($offset, $length)->select();
-        if ($data) {
+        if ($type == -1) {
+            $data = $this->order("id desc")->limit($offset, $length)->select();
+        } else {
+            $data = $this->where("type = %d", $type)->order("id desc")
+                ->limit($offset, $length)->select();
+        }
 
-            $userModel = new UserModel();
-            $likeModel = new GiveLikeModel();
+        if (!$data) {
+            return null;
+        }
 
-            foreach ($data as &$info) {
-                if ($info['pics']) {
-                    $info['pics'] = explode("|", $info['pics']);
-                    foreach ($info['pics'] as &$url) {
-                        $url = C('BASE_URL') . $url;
-                    }
-                } else
-                    $info['pics'] = null;
-
-                if ($onlineUser) {
-                    $info['give_like'] = $likeModel
-                        ->getLikeStatus($onlineUser, C('COMMENT_TYPE_TRANSACT'), $info['id']);
-                } else {
-                    $info['give_like'] = 0;
+        $userModel = new UserModel();
+        foreach ($data as &$info) {
+            if ($info['pics']) {
+                $info['pics'] = explode("|", $info['pics']);
+                foreach ($info['pics'] as &$url) {
+                    $url = C('BASE_URL') . $url;
                 }
+            } else
+                $info['pics'] = null;
 
-                $seller = $info['seller_id'];
-                $userInfo = $userModel->userBaseInfo($seller);
-                $info['seller'] = $userInfo;
-                unset($info['seller_id']);
-            }
-            return $data;
-
-        } else
-            return false;
+            $seller = $info['seller_id'];
+            $userInfo = $userModel->userBaseInfo($seller);
+            $info['seller'] = $userInfo;
+            unset($info['seller_id']);
+        }
+        return $data;
     }
 
     /**

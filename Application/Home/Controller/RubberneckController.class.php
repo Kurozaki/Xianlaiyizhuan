@@ -121,7 +121,7 @@ class RubberneckController extends BaseController
         $this->ajaxReturn(qc_json_success($data));
     }
 
-    public function getRecentTopicList()
+    public function recentTopicList()
     {
         $offset = I('post.offset');
         $userId = $this->onlineUserId();

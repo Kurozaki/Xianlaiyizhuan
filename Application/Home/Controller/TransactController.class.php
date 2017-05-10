@@ -178,7 +178,7 @@ class TransactController extends BaseController
     public function getRecentTransactionList()
     {
         $offset = I('post.offset');
-        $userId = $this->onlineUserId();
+        $type = I('post.type', -1);
 
         if (!$offset)
             $offset = 0;
@@ -186,7 +186,7 @@ class TransactController extends BaseController
             $offset = intval($offset);
 
         $tModel = new TransactModel();
-        $data = $tModel->transactionList($offset, C('COUNT_PAGING'), $userId);
+        $data = $tModel->transactionList($offset, C('COUNT_PAGING'), $type);
 
         if ($data) {
             $this->ajaxReturn(qc_json_success(array(
@@ -286,5 +286,4 @@ class TransactController extends BaseController
         $data = $oModel->select();
         $this->ajaxReturn(qc_json_success($data));
     }
-
 }

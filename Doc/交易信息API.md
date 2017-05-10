@@ -239,13 +239,15 @@ false 只获取非免费列表，
 ###获取交易信息列表（分页）###
 
 ``url``
-Home/Transact/getAllTransactionList
+Home/Transact/getRecentTransactionList
 **提交参数**
 ``Post提交``
 
 字段|描述|是否必须|类型|说明
 -|-|-|-|-
 offset|分页偏移量|N|INT|不提交默认为0
+type|物品类型|N|INT|参见类型表
+
 
 **返回结果**
 ```
@@ -253,66 +255,28 @@ offset|分页偏移量|N|INT|不提交默认为0
 {
     "code": 20000,
     "response": {
-        "offset": 3,    //分页偏移量，表示当前最后一条的位置
+        "offset": 4,
         "data": [
             {
-                "id": "18",
+                "id": "21",
                 "free": "0",
-                "intro": "hahah",
+                "intro": "钢琴",
                 "pics": [
-                    "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg"
+                    "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/ce73dfea68bf04162382f4181b6d785c.jpg"
                 ],
-                "type": "1",
-                "price": "200",
-                "likec": "2",
-                "ctime": "1492258479",
+                "type": "6",
+                "price": "11111",
+                "likec": "0",
+                "ctime": "1494328441",
                 "sell": "0",
-                "has_comm": "0",
-                "seller": {
-                    "id": "1",
-                    "nickname": "爸爸",
-                    "avatar": null
-                }
-            },
-            {
-                "id": "19",
-                "free": "0",
-                "intro": "hahah",
-                "pics": [
-                    "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg",
-                    "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5f2983a720117b391cd8da1bb79ec045.jpg"
-                ],
-                "type": "2",
-                "price": "190",
-                "likec": "1",
-                "ctime": "1492258649",
-                "sell": "0",
-                "has_comm": "0",
+                "has_comm": "1",
                 "seller": {
                     "id": "2",
                     "nickname": "吉尔伽美什",
                     "avatar": "http://139.199.195.54/xianlaiyizhuan/Public/user/user_avatar/2017-03-19/58ce79397e7f6.jpg"
                 }
             },
-            {
-                "id": "20",
-                "free": "0",
-                "intro": "123",
-                "pics": [
-                    "http://139.199.195.54/xianlaiyizhuan/Public/transact/transact_intro/5845c3de2a5bff771d8cc1af467875b1.jpg"
-                ],
-                "type": "0",
-                "price": "123",
-                "likec": "0",
-                "ctime": "1492571830",
-                "sell": "0",
-                "has_comm": "0",
-                "seller": {
-                    "id": "6",
-                    "nickname": "3115003835",
-                    "avatar": null
-                }
-            }
+            ...    //返回多条数据    
         ]
     }
 }
@@ -326,37 +290,6 @@ offset|分页偏移量|N|INT|不提交默认为0
 
 ***
 
-###点赞###
-
-``url``
-Home/Transact/giveLikeToTransaction
-
-
-**提交参数**
-``Post提交，需要登录``
-
-字段|描述|是否必须|类型
--|-|-|-|-
-t_id|交易信息id|Y|INT|
-
-**返回结果**
-
-```
-{
-    "code":20000,
-    "response":{
-        "likec": 3    //当前赞的数量
-    }      
-}
-
-//失败
-{
-    "code": 40000,
-    "response": "Failed"
-}
-```
-
-***
 
 ###类型表###
 用于交易信息的type参数

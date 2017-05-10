@@ -775,3 +775,83 @@ SQL: SELECT * FROM `xlyz_comment` WHERE ( p_id = 5 and type = 1 )  [ RunTime:0.0
 SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.015457s ]
 SQL: SELECT `id`,`nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.013289s ]
 
+[ 2017-05-09T19:51:22+08:00 ] ::1 /Xianlaiyizhuan/Home/Requirement/recentRequirementList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001836s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_requirement` [ RunTime:0.009607s ]
+SQL: SELECT * FROM `xlyz_requirement` ORDER BY id desc LIMIT 0,10   [ RunTime:0.008064s ]
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.009581s ]
+SQL: SHOW COLUMNS FROM `xlyz_givelike` [ RunTime:0.009846s ]
+SQL: SELECT `id`,`nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.007303s ]
+SQL: SELECT * FROM `xlyz_givelike` WHERE ( `user_id` = 1 ) AND ( `p_id` = 21 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.007390s ]
+SQL: SELECT `id`,`nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.007915s ]
+SQL: SELECT * FROM `xlyz_givelike` WHERE ( `user_id` = 1 ) AND ( `p_id` = 20 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.007621s ]
+SQL: SELECT `id`,`nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 6 ) LIMIT 1   [ RunTime:0.007256s ]
+SQL: SELECT * FROM `xlyz_givelike` WHERE ( `user_id` = 1 ) AND ( `p_id` = 17 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.007368s ]
+SQL: SELECT `id`,`nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.007204s ]
+SQL: SELECT * FROM `xlyz_givelike` WHERE ( `user_id` = 1 ) AND ( `p_id` = 16 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.007435s ]
+SQL: SELECT `id`,`nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.007542s ]
+SQL: SELECT * FROM `xlyz_givelike` WHERE ( `user_id` = 1 ) AND ( `p_id` = 14 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.007348s ]
+SQL: SELECT `id`,`nickname`,`avatar` FROM `xlyz_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.008193s ]
+SQL: SELECT * FROM `xlyz_givelike` WHERE ( `user_id` = 1 ) AND ( `p_id` = 13 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.007434s ]
+
+[ 2017-05-09T20:48:22+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016470s ]
+
+[ 2017-05-09T20:48:31+08:00 ] ::1 /Xianlaiyizhuan/Home/User/userLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_user` [ RunTime:0.014109s ]
+SQL: SELECT * FROM `xlyz_user` WHERE ( id_number = '1169559037' and password = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.010794s ]
+
+[ 2017-05-09T20:48:33+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+
+[ 2017-05-09T20:48:54+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002045s ]
+
+[ 2017-05-09T20:48:56+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002008s ]
+
+[ 2017-05-09T20:48:57+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+
+[ 2017-05-09T20:49:06+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+
+[ 2017-05-09T20:50:22+08:00 ] ::1 /Xianlaiyizhuan/Home/Comment/leaveComment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+NOTIC: [8] Undefined index: db_port F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_dsn F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP Projects\Xianlaiyizhuan\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xlyz_comment` [ RunTime:0.018973s ]
+SQL: SHOW COLUMNS FROM `xlyz_rubberneck` [ RunTime:0.013182s ]
+SQL: SELECT * FROM `xlyz_rubberneck` WHERE ( id = 6 ) LIMIT 1   [ RunTime:0.009779s ]
+SQL: UPDATE `xlyz_rubberneck` SET `has_comm`=1 WHERE ( id = 6 ) [ RunTime:0.015986s ]
+SQL: INSERT INTO `xlyz_comment` (`p_id`,`type`,`user_id`,`content`,`ctime`,`likec`) VALUES (6,4,1,'123',1494334222,0) [ RunTime:0.013015s ]
+

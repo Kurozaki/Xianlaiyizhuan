@@ -15,6 +15,7 @@ class TestController extends BaseController
 {
     public function test()
     {
-        var_dump(([1,2] == false));
+
+        echo '0' == false;
     }
 }

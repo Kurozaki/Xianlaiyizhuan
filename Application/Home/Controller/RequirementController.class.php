@@ -103,17 +103,18 @@ class RequirementController extends BaseController
         }
     }
 
-    public function getRecentRequirementList()
+    public function recentRequirementList()
     {
         $offset = I('post.offset');
-        $userId = $this->onlineUserId();
+        $type = I('post.type', -1);
+
         if (!$offset) {
             $offset = 0;
         } else
             $offset = intval($offset);
 
         $model = new RequirementModel();
-        $data = $model->requirementList($offset, C('COUNT_PAGING'), $userId);
+        $data = $model->requirementList($offset, C('COUNT_PAGING'), $type);
 
         if ($data) {
 
