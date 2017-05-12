@@ -114,12 +114,21 @@ class RequirementController extends BaseController
             $offset = intval($offset);
 
         $model = new RequirementModel();
-        $data = $model->requirementList($offset, C('COUNT_PAGING'), $type);
+        $data = $model->requirementList($offset, C('COUNT_PAGING') + 1, $type);
 
         if ($data) {
 
+            $continue_load = 0;
+            $d_count = count($data, COUNT_NORMAL);
+            if ($d_count == C('COUNT_PAGING') + 1) {
+                $continue_load = 1;
+                $d_count--;
+                array_pop($data);
+            }
+
             $this->ajaxReturn(qc_json_success(array(
-                'offset' => $offset + count($data, COUNT_NORMAL),
+                'continue_load' => $continue_load,
+                'offset' => $offset + $d_count,
                 'data' => $data
             )));
         } else

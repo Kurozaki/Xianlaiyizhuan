@@ -186,11 +186,21 @@ class TransactController extends BaseController
             $offset = intval($offset);
 
         $tModel = new TransactModel();
-        $data = $tModel->transactionList($offset, C('COUNT_PAGING'), $type);
+        $data = $tModel->transactionList($offset, C('COUNT_PAGING') + 1, $type);
 
         if ($data) {
+
+            $d_count = count($data, COUNT_NORMAL);
+            $continue_load = 0;
+            if ($d_count == C('COUNT_PAGING') + 1) {
+                array_pop($data);
+                $d_count--;
+                $continue_load = 1;
+            }
+
             $this->ajaxReturn(qc_json_success(array(
-                'offset' => $offset + count($data, COUNT_NORMAL),
+                'continue_load' => $continue_load,
+                'offset' => $offset + $d_count,
                 'data' => $data
             )));
         } else

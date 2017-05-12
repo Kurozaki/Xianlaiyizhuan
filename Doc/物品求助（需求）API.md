@@ -17,6 +17,7 @@ Home/Requirement/createRequirement
 intro|需要物品的描述|Y|TEXT
 type|需要物品的类型|Y|VARCHAR
 price|预计的价格，负数表任意|Y|FLOAT
+picstr|描述图片，1~5张，base64|Y|TEXT
 
 **返回内容**
 ```
