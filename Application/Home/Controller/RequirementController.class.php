@@ -18,7 +18,7 @@ class RequirementController extends BaseController
     public function createRequirement()
     {
         $userId = $this->reqLogin();
-        $reqInfo = $this->reqPost(array('intro', 'type', 'price', 'picstr'));
+        $reqInfo = $this->reqPost(array('intro', 'type', 'price'), array('picstr'));
 
         //add default info
         $reqInfo['req_user'] = $userId;
@@ -26,17 +26,21 @@ class RequirementController extends BaseController
         $reqInfo['solve'] = 0;
 
         //decode pic base64 string to picture
-        $pic_arr = explode(",", $reqInfo['picstr']);
-        $pic_arr = array_slice($pic_arr, 0, 5);     //max 5 picture
-        $saveRoot = C('FILE_STORE_ROOT') . "requirement/requirement_info/";     //file save root
-        $picsPath = "";
-        foreach ($pic_arr as $base64) {
-            $path = $saveRoot . random_string() . ".jpg";
-            $this->base64FileDecode($base64, $path);
-            $picsPath .= (substr($path, 2) . "|");
+        if (isset($reqInfo['picstr'])) {
+            $pic_arr = explode(",", $reqInfo['picstr']);
+            $pic_arr = array_slice($pic_arr, 0, 5);     //max 5 picture
+            $saveRoot = C('FILE_STORE_ROOT') . "requirement/requirement_info/";     //file save root
+            $picsPath = "";
+            foreach ($pic_arr as $base64) {
+                $path = $saveRoot . random_string() . ".jpg";
+                $this->base64FileDecode($base64, $path);
+                $picsPath .= (substr($path, 2) . "|");
+            }
+            $reqInfo['pics'] = substr($picsPath, 0, strlen($picsPath) - 1);
+            unset($reqInfo['picstr']);
+        } else {
+            $reqInfo['pic'] = '';
         }
-        $reqInfo['pics'] = substr($picsPath, 0, strlen($picsPath) - 1);
-        unset($reqInfo['picstr']);
 
         $reqModel = new RequirementModel();
         $add = $reqModel->createReq($reqInfo);
@@ -106,12 +110,18 @@ class RequirementController extends BaseController
     public function recentRequirementList()
     {
         $offset = I('post.offset');
-        $type = I('post.type', -1);
+        $type = I('get.type', -1);
 
         if (!$offset) {
             $offset = 0;
         } else
             $offset = intval($offset);
+
+        if (!$type) {
+            $type = -1;
+        }else{
+            $type = intval($type);
+        }
 
         $model = new RequirementModel();
         $data = $model->requirementList($offset, C('COUNT_PAGING') + 1, $type);

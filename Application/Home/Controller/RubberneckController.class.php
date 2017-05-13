@@ -121,7 +121,7 @@ class RubberneckController extends BaseController
         $this->ajaxReturn(qc_json_success($data));
     }
 
-    public function recentTopicList()
+    public function getRecentTopicList()
     {
         $offset = I('post.offset');
         $userId = $this->onlineUserId();
@@ -132,14 +132,23 @@ class RubberneckController extends BaseController
             $offset = intval($offset);
 
         $model = new RubberneckModel();
-        $data = $model->topicList($offset, C('COUNT_PAGING'), $userId);
+        $data = $model->topicList($offset, C('COUNT_PAGING') + 1, $userId);
 
-        if ($data)
+        if ($data) {
+            $d_count = count($data, COUNT_NORMAL);
+            $continue_load = 0;
+            if ($d_count == C('COUNT_PAGING') + 1) {
+                $continue_load = 1;
+                $d_count--;
+                array_pop($data);
+            }
+
             $this->ajaxReturn(qc_json_success(array(
-                'offset' => $offset + count($data, COUNT_NORMAL),
+                'continue_load' => $continue_load,
+                'offset' => $offset + $d_count,
                 'data' => $data
             )));
-        else
+        } else
             $this->ajaxReturn(qc_json_null_data());
     }
 

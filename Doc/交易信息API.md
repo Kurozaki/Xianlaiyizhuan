@@ -255,6 +255,7 @@ type|物品类型|N|INT|参见类型表
 {
     "code": 20000,
     "response": {
+        "continue_load": 0    //代表能否继续加载分页
         "offset": 4,
         "data": [
             {

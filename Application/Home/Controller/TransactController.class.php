@@ -185,6 +185,11 @@ class TransactController extends BaseController
         else
             $offset = intval($offset);
 
+        if (!$type) {
+            $type = -1;
+        } else
+            $type = intval($type);
+
         $tModel = new TransactModel();
         $data = $tModel->transactionList($offset, C('COUNT_PAGING') + 1, $type);
 

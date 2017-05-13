@@ -17,7 +17,7 @@ Home/Requirement/createRequirement
 intro|需要物品的描述|Y|TEXT
 type|需要物品的类型|Y|VARCHAR
 price|预计的价格，负数表任意|Y|FLOAT
-picstr|描述图片，1~5张，base64|Y|TEXT
+picstr|描述图片，1~5张，base64|N|TEXT
 
 **返回内容**
 ```
@@ -143,6 +143,7 @@ type|求助物品类型|N|INT
 {
     "code": 20000,
     "response": {
+        "continue_load": 0,    //表示能否继续分页加载
         "offset": 6,
         "data": [
             {
